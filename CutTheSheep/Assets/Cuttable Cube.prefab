@@ -169,8 +169,8 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 786624336}
-        m_TargetAssemblyTypeName: CutTheSheep.RandomForceEffect, Assembly-CSharp
-        m_MethodName: GiveForce
+        m_TargetAssemblyTypeName: CutTheSheep.SplitImpactEffect, Assembly-CSharp
+        m_MethodName: DoImpact
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -181,8 +181,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1636096230}
-        m_TargetAssemblyTypeName: CutTheSheep.RandomForceEffect, Assembly-CSharp
-        m_MethodName: GiveForce
+        m_TargetAssemblyTypeName: CutTheSheep.SplitImpactEffect, Assembly-CSharp
+        m_MethodName: DoImpact
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -244,13 +244,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2127664284072366854}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: -0.25}
   m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 2127664283110895616}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!33 &2127664284072366857
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -341,8 +341,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2b20485a38e3b418423f3d45cc9bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeedMagnitude: 5
-  additionalSpeed: {x: 0, y: 0, z: 0}
+  rb: {fileID: 2127664284072366852}
+  speed: 2.5
 --- !u!1 &2127664284955403436
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,5 +468,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2b20485a38e3b418423f3d45cc9bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeedMagnitude: 1
-  additionalSpeed: {x: 0, y: 0, z: 0}
+  rb: {fileID: 2127664284955403447}
+  speed: 2.5
