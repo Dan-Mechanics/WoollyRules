@@ -7,6 +7,7 @@ namespace CutTheSheep
         [SerializeField] private GameObject prefab = null;
         [SerializeField] private Transform spawnExample = null;
         [SerializeField] [Min(0.1f)] private float interval = 0f;
+        [SerializeField] private bool spawnWithRandomRotation = false;
 
         private void Start()
         {
@@ -15,7 +16,8 @@ namespace CutTheSheep
 
         private void Spawn() 
         {
-            GameObject newlySpawned = Instantiate(prefab, spawnExample.position, spawnExample.rotation);
+            // very demure code here:
+            GameObject newlySpawned = Instantiate(prefab, spawnExample.position, spawnWithRandomRotation ? Random.rotationUniform : spawnExample.rotation);
             newlySpawned.name = prefab.name;
         }
     }

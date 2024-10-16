@@ -204,6 +204,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  rb: {fileID: 2127664283110895623}
+  rigidbodies:
+  - {fileID: 2127664284955403447}
+  - {fileID: 2127664284072366852}
 --- !u!114 &1492384737
 MonoBehaviour:
   m_ObjectHideFlags: 0
