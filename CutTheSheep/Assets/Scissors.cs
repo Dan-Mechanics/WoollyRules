@@ -80,6 +80,14 @@ namespace CutTheSheep
 
         private void FixedUpdate()
         {
+            CheckIfHoveringSomething();
+        }
+
+        /// <summary>
+        /// FUTURE: make a single-time event for when you mouseOver something basically because this spams it.
+        /// </summary>
+        private void CheckIfHoveringSomething()
+        {
             Cuttable cuttable = CheckCuttable();
 
             onHoverFeedback?.Invoke(cuttable != null);
