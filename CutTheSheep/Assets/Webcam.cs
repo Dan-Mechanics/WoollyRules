@@ -61,11 +61,6 @@ namespace CutTheSheep
         {
             webCamTexture = new WebCamTexture();
 
-            //texture = new Texture2D(0, 0, TextureFormat.RGB24, false);
-            //print($"webcam dimensions: ({webCamTexture.width}x{webCamTexture.height}).");
-
-            
-
             if (!webCamTexture.isPlaying) { webCamTexture.Play(); }
 
             print($"showing: {webCamTexture.deviceName}");
@@ -79,16 +74,11 @@ namespace CutTheSheep
         {
             if (webCamTexture == null) { return; }
 
+            // just in case.
             if (texture.width != webCamTexture.width || texture.height != webCamTexture.height)
             {
-                /*print($"webcam dimensions: ({webCamTexture.width}x{webCamTexture.height}).");
+                Debug.LogWarning("if (texture.width != webCamTexture.width || texture.height != webCamTexture.height) was right which is not ideal.");
                 
-                // !new
-                imageToProjectWebcamOn.rectTransform.sizeDelta = new Vector2(webCamTexture.width, webCamTexture.height);
-
-                texture = new Texture2D(webCamTexture.width, webCamTexture.height, TextureFormat.RGB24, false);
-                rect = new Rect(0f, 0f, texture.width, texture.height);*/
-
                 ResizeWebcam();
             }
 

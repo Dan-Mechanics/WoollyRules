@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd6699576c2c83c47b82743c9886b715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyAfterTime: 10
+  destroyTime: 10
 --- !u!1 &2127664284072366854
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,6 +235,7 @@ GameObject:
   - component: {fileID: 2127664284072366859}
   - component: {fileID: 2127664284072366852}
   - component: {fileID: 1636096230}
+  - component: {fileID: 760297443138327759}
   m_Layer: 0
   m_Name: Cut Cube Piece
   m_TagString: Untagged
@@ -349,6 +350,19 @@ MonoBehaviour:
   rb: {fileID: 2127664284072366852}
   speed: 2.5
   randomSpeed: 2.5
+--- !u!114 &760297443138327759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127664284072366854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd6699576c2c83c47b82743c9886b715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 3
 --- !u!1 &2127664284955403436
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,6 +377,7 @@ GameObject:
   - component: {fileID: 2127664284955403442}
   - component: {fileID: 2127664284955403447}
   - component: {fileID: 786624336}
+  - component: {fileID: 8807160636969065560}
   m_Layer: 0
   m_Name: Cut Cube Piece
   m_TagString: Untagged
@@ -477,3 +492,16 @@ MonoBehaviour:
   rb: {fileID: 2127664284955403447}
   speed: 2.5
   randomSpeed: 2.5
+--- !u!114 &8807160636969065560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127664284955403436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd6699576c2c83c47b82743c9886b715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 3

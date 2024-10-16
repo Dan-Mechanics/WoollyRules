@@ -4,6 +4,9 @@ using UnityEngine.UI;
 
 namespace CutTheSheep
 {
+    /// <summary>
+    /// With warnCount == 0 might not be best performance but I can change later and maybe it doesn't matter at all ...
+    /// </summary>
     public class CutWarning : MonoBehaviour
     {
         [SerializeField] private Text text = null;

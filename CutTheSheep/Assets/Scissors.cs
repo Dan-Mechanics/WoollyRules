@@ -5,8 +5,9 @@ namespace CutTheSheep
 {
     /// <summary>
     /// FUTURE: could add layermask for raycast.
-    /// cursor is in build settings ez peazy.
-    /// ADD: text rule.
+    /// NOTE: cursor is in build settings ez peazy.
+    /// ADD: text rule. V
+    /// ADD: rule reaction on different class then this script --> and that rule.cs class should be on the rules text maybe ??
     /// </summary>
     public class Scissors : MonoBehaviour
     {
