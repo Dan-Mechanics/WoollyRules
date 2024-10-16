@@ -15,6 +15,8 @@ namespace CutTheSheep
         {
             Application.targetFrameRate = 300;
             Cursor.visible = false;
+
+            scissors.onHoverFeedback += ChangeCursorColor;
         }
 
         private void Update()
@@ -31,6 +33,17 @@ namespace CutTheSheep
             cursorPosition.y -= Screen.height / 2f;
 
             rect.anchoredPosition = cursorPosition;
+
+            cursorPosition = Input.mousePosition;
+        }
+
+        /// <summary>
+        /// FUTURE: make the scissorcs sprite different / opening closing the scissors,
+        /// and you could also have an indication in the scissors when ur not allowed to cut ( the bear for example ).
+        /// </summary>
+        private void ChangeCursorColor(bool hoveringOverSomething) 
+        {
+            image.color = hoveringOverSomething ? Color.gray : Color.black;
         }
 
         public Vector2 GetCursorPosition() { return cursorPosition; }

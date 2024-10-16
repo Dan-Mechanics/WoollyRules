@@ -987,7 +987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 963194227}
   cutWarning: {fileID: 413889160}
-  scissorsCursor: {fileID: 0}
+  scissorsCursor: {fileID: 1547609095}
   maxCutRange: 100
   cutKey: 323
   onRuleBroken:
@@ -1085,7 +1085,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scissors: {fileID: 1497449479}
-  cursorRect: {fileID: 168078298}
+  rect: {fileID: 168078298}
+  image: {fileID: 168078299}
 --- !u!4 &1547609096
 Transform:
   m_ObjectHideFlags: 0

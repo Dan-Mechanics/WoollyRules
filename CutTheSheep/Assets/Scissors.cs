@@ -35,9 +35,6 @@ namespace CutTheSheep
         /// </summary>
         public void CheckInput()
         {
-            //PlaceCursor();
-
-            // TODO: fix this.
             if (Input.GetKeyDown(cutKey))
             {
                 Cuttable cuttable = CheckCuttable();
@@ -52,7 +49,7 @@ namespace CutTheSheep
 
             if (Physics.Raycast(ray, out RaycastHit hit, maxCutRange))
             {
-                print($"we hit: {hit.transform.name}.");
+                // print($"we hit: {hit.transform.name}.");
 
                 return hit.transform.GetComponent<Cuttable>();
             }
@@ -84,6 +81,8 @@ namespace CutTheSheep
         private void FixedUpdate()
         {
             Cuttable cuttable = CheckCuttable();
+
+            onHoverFeedback?.Invoke(cuttable != null);
 
             if (cuttable != null && !cuttable.GetIsSheep()) { cutWarning.Warn(); }
         }
