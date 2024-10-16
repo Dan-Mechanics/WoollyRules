@@ -13,6 +13,11 @@ namespace CutTheSheep
         [SerializeField] private float maxCutRange = 0f;
         [SerializeField] private KeyCode cutKey = KeyCode.None;
 
+        private void Start()
+        {
+            Application.targetFrameRate = 300;
+        }
+
         private void Update()
         {
             // TODO: fix this.

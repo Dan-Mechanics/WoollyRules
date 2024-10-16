@@ -12,7 +12,7 @@ namespace CutTheSheep
         public void DoImpact() 
         {
             // !performance VVV
-            GetComponent<Rigidbody>().AddForce(Random.insideUnitSphere.normalized * randomSpeed, ForceMode.VelocityChange);
+            rb.AddForce(Random.insideUnitSphere.normalized * randomSpeed, ForceMode.VelocityChange);
 
             rb.AddForce(transform.forward * speed, ForceMode.VelocityChange);
         }
