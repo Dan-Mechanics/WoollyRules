@@ -1,12 +1,11 @@
 ﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
 
 namespace CutTheSheep
 {
     /// <summary>
     /// FUTURE: could add layermask for raycast.
     /// cursor is in build settings ez peazy.
+    /// ADD: text rule.
     /// </summary>
     public class Scissors : MonoBehaviour
     {
@@ -16,23 +15,20 @@ namespace CutTheSheep
 
         private void Update()
         {
+            // TODO: fix this.
             if (Input.GetKeyDown(cutKey))
             {
                 Ray ray = cam.ScreenPointToRay(Input.mousePosition);
 
                 if (Physics.Raycast(ray, out RaycastHit hit, maxCutRange))
                 {
-                    StartCoroutine(ScaleMe(hit.transform));
-                    Debug.Log("You selected the " + hit.transform.name); // ensure you picked right object
+                    print($"we hit: {hit.transform.name}.");
+
+                    // if there is something to cut we cut it.
+                    Cuttable cuttable = hit.transform.GetComponent<Cuttable>();
+                    if (cuttable != null) { cuttable.Cut(); }
                 }
             }
-        }
-
-        IEnumerator ScaleMe(Transform objTr)
-        {
-            objTr.localScale *= 1.2f;
-            yield return new WaitForSeconds(0.5f);
-            objTr.localScale /= 1.2f;
         }
     }
 }
