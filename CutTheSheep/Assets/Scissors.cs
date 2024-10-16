@@ -15,24 +15,34 @@ namespace CutTheSheep
 
         [SerializeField] private Camera cam = null;
         [SerializeField] private CutWarning cutWarning = null;
-        [SerializeField] private UnityEvent onRuleBroken = null;
+
+        [SerializeField] private RectTransform cursorImage = null;
 
         [Header("Settings")]
 
         [SerializeField] private float maxCutRange = 0f;
         [SerializeField] private KeyCode cutKey = KeyCode.None;
 
+        [Header("Unity Events")]
+
+        [SerializeField] private UnityEvent onRuleBroken = null;
+
+        private Vector2 cursorPosition;
+
         private void Start()
         {
             Application.targetFrameRate = 300;
+            Cursor.visible = false;
         }
 
         private void Update()
         {
+            PlaceCursor();
+
             // TODO: fix this.
             if (Input.GetKeyDown(cutKey))
             {
-                Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+                Ray ray = cam.ScreenPointToRay(cursorPosition);
 
                 if (Physics.Raycast(ray, out RaycastHit hit, maxCutRange))
                 {
@@ -43,6 +53,15 @@ namespace CutTheSheep
                     if (cuttable != null) { Cut(cuttable); }
                 }
             }
+        }
+
+        private void PlaceCursor()
+        {
+            cursorPosition = Input.mousePosition;
+            cursorPosition.x -= Screen.width / 2f;
+            cursorPosition.y -= Screen.height / 2f;
+
+            cursorImage.anchoredPosition = cursorPosition;
         }
 
         private void Cut(Cuttable cuttable) 
