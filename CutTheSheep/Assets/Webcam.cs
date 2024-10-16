@@ -4,10 +4,14 @@ using UnityEngine.UI;
 
 namespace CutTheSheep
 {
+    /// <summary>
+    /// Todo: webcam image dimensions??
+    /// </summary>
     public class Webcam : MonoBehaviour
     {
         [SerializeField] private Image imageToProjectWebcamOn = null;
         [SerializeField] private float refreshInterval = 0f;
+        [SerializeField] private bool matchImageSizeToWebcamSize = false;
 
         private WebCamTexture webCamTexture;
         private Texture2D texture;
@@ -46,17 +50,46 @@ namespace CutTheSheep
             }
         }
 
+        private void LogWebcams()
+        {
+            for (int i = 0; i < WebCamTexture.devices.Length; i++)
+            {
+                print($"webcam {i}: {WebCamTexture.devices[i].name}");
+            }
+        }
+        private void Setup()
+        {
+            webCamTexture = new WebCamTexture();
+
+            //texture = new Texture2D(0, 0, TextureFormat.RGB24, false);
+            //print($"webcam dimensions: ({webCamTexture.width}x{webCamTexture.height}).");
+
+            
+
+            if (!webCamTexture.isPlaying) { webCamTexture.Play(); }
+
+            print($"showing: {webCamTexture.deviceName}");
+
+            ResizeWebcam();
+
+            gameObject.SetActive(false);
+        }
+
         private void RefreshWebcam()
         {
             if (webCamTexture == null) { return; }
 
             if (texture.width != webCamTexture.width || texture.height != webCamTexture.height)
             {
-                print(webCamTexture.width);
-                print(webCamTexture.height);
+                /*print($"webcam dimensions: ({webCamTexture.width}x{webCamTexture.height}).");
+                
+                // !new
+                imageToProjectWebcamOn.rectTransform.sizeDelta = new Vector2(webCamTexture.width, webCamTexture.height);
 
                 texture = new Texture2D(webCamTexture.width, webCamTexture.height, TextureFormat.RGB24, false);
-                rect = new Rect(0f, 0f, texture.width, texture.height);
+                rect = new Rect(0f, 0f, texture.width, texture.height);*/
+
+                ResizeWebcam();
             }
 
             webcamColors = webCamTexture.GetPixels();
@@ -64,27 +97,16 @@ namespace CutTheSheep
             texture.Apply();
 
             imageToProjectWebcamOn.sprite = Sprite.Create(texture, rect, pivot, 100f);
-
-            //cam.backgroundColor = BlendColors(webcamColors);
         }
 
-        public void Setup()
+        private void ResizeWebcam() 
         {
-            webCamTexture = new WebCamTexture();
+            print($"webcam dimensions: ({webCamTexture.width}x{webCamTexture.height}).");
 
-            texture = new Texture2D(0, 0, TextureFormat.RGB24, false);
+            if (matchImageSizeToWebcamSize) { imageToProjectWebcamOn.rectTransform.sizeDelta = new Vector2(webCamTexture.width, webCamTexture.height); }
 
-            if (!webCamTexture.isPlaying) { webCamTexture.Play(); }
-
-            print($"showing: {webCamTexture.deviceName}");
-        }
-
-        private void LogWebcams()
-        {
-            for (int i = 0; i < WebCamTexture.devices.Length; i++)
-            {
-                print($"webcam {i}: {WebCamTexture.devices[i].name}");
-            }
+            texture = new Texture2D(webCamTexture.width, webCamTexture.height, TextureFormat.RGB24, false);
+            rect = new Rect(0f, 0f, texture.width, texture.height);
         }
     }
 }

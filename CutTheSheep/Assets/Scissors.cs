@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 namespace CutTheSheep
 {
@@ -13,6 +14,7 @@ namespace CutTheSheep
 
         [SerializeField] private Camera cam = null;
         [SerializeField] private CutWarning cutWarning = null;
+        [SerializeField] private UnityEvent onRuleBroken = null;
 
         [Header("Settings")]
 
@@ -37,8 +39,20 @@ namespace CutTheSheep
 
                     // if there is something to cut we cut it.
                     Cuttable cuttable = hit.transform.GetComponent<Cuttable>();
-                    if (cuttable != null) { cuttable.Cut(); }
+                    if (cuttable != null) { Cut(cuttable); }
                 }
+            }
+        }
+
+        private void Cut(Cuttable cuttable) 
+        {
+            cuttable.Cut();
+
+            if (!cuttable.GetIsSheep()) 
+            {
+                // enable timer and webcam.
+
+                onRuleBroken?.Invoke();
             }
         }
 
