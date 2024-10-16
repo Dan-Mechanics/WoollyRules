@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1492384736}
   - component: {fileID: 1492384737}
   m_Layer: 0
-  m_Name: Cuttable Cube
+  m_Name: Sheep
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -347,7 +347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2127664284072366852}
-  speed: 2.5
+  speed: 1.5
   randomSpeed: 2.5
 --- !u!1 &2127664284955403436
 GameObject:
@@ -475,5 +475,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2127664284955403447}
-  speed: 2.5
+  speed: 1.5
   randomSpeed: 2.5

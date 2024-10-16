@@ -1,0 +1,4 @@
+i dont know if its the best idea to make it so the player doesnt have a cursor when
+the rule is broken but i just think its kinda funny.
+
+importnat: the game doesnt work if the cursor is deleted at the end.

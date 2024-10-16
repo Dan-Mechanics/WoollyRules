@@ -59,6 +59,8 @@ namespace CutTheSheep
         }
         private void Setup()
         {
+            imageToProjectWebcamOn.enabled = true;
+
             webCamTexture = new WebCamTexture();
 
             if (!webCamTexture.isPlaying) { webCamTexture.Play(); }
@@ -97,6 +99,11 @@ namespace CutTheSheep
 
             texture = new Texture2D(webCamTexture.width, webCamTexture.height, TextureFormat.RGB24, false);
             rect = new Rect(0f, 0f, texture.width, texture.height);
+        }
+
+        private void OnDestroy()
+        {
+            webCamTexture.Stop();
         }
     }
 }

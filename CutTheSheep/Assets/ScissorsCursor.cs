@@ -47,7 +47,7 @@ namespace CutTheSheep
             if (image == null) { return; }
             
             image.color = hoveringOverSomething ? Color.yellow : Color.black;
-            image.transform.localScale = Vector3.one * (hoveringOverSomething ? 1.25f : 1f);
+            image.transform.localScale = Vector3.one * (hoveringOverSomething ? 1f : 1.5f);
         }
 
         public Vector2 GetCursorPosition() { return cursorPosition; }

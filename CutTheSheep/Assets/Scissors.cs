@@ -10,6 +10,7 @@ namespace CutTheSheep
     /// ADD: text rule. V
     /// ADD: rule reaction on different class then this script --> and that rule.cs class should be on the rules text maybe ??
     /// TODO: order scene and make environment etc.
+    /// WARNING: NO CURSOR NO CUTTING !!
     /// </summary>
     public class Scissors : MonoBehaviour
     {
@@ -19,7 +20,7 @@ namespace CutTheSheep
 
         [SerializeField] private Camera cam = null;
         [SerializeField] private CutWarning cutWarning = null;
-
+        [SerializeField] private LayerMask cuttableMask = 0;
         [SerializeField] private ScissorsCursor scissorsCursor = null;
 
         [Header("Settings")]
@@ -49,7 +50,7 @@ namespace CutTheSheep
         {
             Ray ray = cam.ScreenPointToRay(scissorsCursor.GetCursorPosition());
 
-            if (Physics.Raycast(ray, out RaycastHit hit, maxCutRange))
+            if (Physics.Raycast(ray, out RaycastHit hit, maxCutRange, cuttableMask, QueryTriggerInteraction.Ignore))
             {
                 // print($"we hit: {hit.transform.name}.");
 
