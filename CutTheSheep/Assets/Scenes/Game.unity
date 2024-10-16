@@ -228,8 +228,10 @@ GameObject:
   - component: {fileID: 168078298}
   - component: {fileID: 168078300}
   - component: {fileID: 168078299}
+  - component: {fileID: 168078301}
+  - component: {fileID: 168078302}
   m_Layer: 5
-  m_Name: Cursor
+  m_Name: Scissors Cursor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -292,6 +294,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 168078297}
   m_CullTransparentMesh: 0
+--- !u!114 &168078301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168078297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ab8b359ba755974898f134c36889efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scissors: {fileID: 1497449479}
+  rect: {fileID: 168078298}
+  image: {fileID: 168078299}
+--- !u!114 &168078302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168078297}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd6699576c2c83c47b82743c9886b715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 0
 --- !u!1 &413889156
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,7 +816,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 103
   orthographic: 0
@@ -987,7 +1017,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 963194227}
   cutWarning: {fileID: 413889160}
-  scissorsCursor: {fileID: 1547609095}
+  scissorsCursor: {fileID: 168078301}
   maxCutRange: 100
   cutKey: 323
   onRuleBroken:
@@ -1037,7 +1067,19 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 7.5
+          m_FloatArgument: 10
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 168078302}
+        m_TargetAssemblyTypeName: CutTheSheep.Destroyable, Assembly-CSharp
+        m_MethodName: Destroy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
@@ -1054,52 +1096,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1547609094
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1547609096}
-  - component: {fileID: 1547609095}
-  m_Layer: 0
-  m_Name: Scissors Cursor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1547609095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1547609094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ab8b359ba755974898f134c36889efa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scissors: {fileID: 1497449479}
-  rect: {fileID: 168078298}
-  image: {fileID: 168078299}
---- !u!4 &1547609096
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1547609094}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1685876515
 GameObject:
@@ -1269,7 +1265,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: fd851ebd963111944973c3aca9955729, type: 2}
     - target: {fileID: 2127664283110895676, guid: f678e62e5f5921d4cbee65519f199200, type: 3}
       propertyPath: m_Name
-      value: Cuttable Cube
+      value: Bear
       objectReference: {fileID: 0}
     - target: {fileID: 2127664284072366858, guid: f678e62e5f5921d4cbee65519f199200, type: 3}
       propertyPath: m_Materials.Array.data[0]

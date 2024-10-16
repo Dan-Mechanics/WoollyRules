@@ -16,8 +16,16 @@ namespace CutTheSheep
             // idk if this works.
             for (int i = 0; i < rigidbodies.Length; i++)
             {
-                rigidbodies[i].AddForce(rb.velocity, ForceMode.VelocityChange);
-                rigidbodies[i].AddTorque(rb.angularVelocity, ForceMode.VelocityChange);
+                /*rigidbodies[i].AddForce(rb.velocity, ForceMode.VelocityChange);
+                rigidbodies[i].AddTorque(rb.angularVelocity, ForceMode.VelocityChange);*/
+
+                // maybe this works better ?
+                // yep that fixed it V
+
+                Rigidbody childRigidbody = rigidbodies[i];
+
+                childRigidbody.velocity = rb.velocity;
+                childRigidbody.angularVelocity = rb.angularVelocity;
             }
             
             onCut?.Invoke();
