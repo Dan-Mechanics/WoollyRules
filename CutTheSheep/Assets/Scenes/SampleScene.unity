@@ -987,7 +987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 963194227}
   cutWarning: {fileID: 413889160}
-  cursorImage: {fileID: 168078298}
+  scissorsCursor: {fileID: 0}
   maxCutRange: 100
   cutKey: 323
   onRuleBroken:
@@ -1066,7 +1066,7 @@ GameObject:
   - component: {fileID: 1547609096}
   - component: {fileID: 1547609095}
   m_Layer: 0
-  m_Name: Cursor
+  m_Name: Scissors Cursor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1084,6 +1084,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ab8b359ba755974898f134c36889efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scissors: {fileID: 1497449479}
+  cursorRect: {fileID: 168078298}
 --- !u!4 &1547609096
 Transform:
   m_ObjectHideFlags: 0

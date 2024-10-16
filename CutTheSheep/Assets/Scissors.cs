@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Events;
 
 namespace CutTheSheep
@@ -11,12 +12,14 @@ namespace CutTheSheep
     /// </summary>
     public class Scissors : MonoBehaviour
     {
+        public Action<bool> onHoverFeedback;
+        
         [Header("References")]
 
         [SerializeField] private Camera cam = null;
         [SerializeField] private CutWarning cutWarning = null;
 
-        [SerializeField] private RectTransform cursorImage = null;
+        [SerializeField] private ScissorsCursor scissorsCursor = null;
 
         [Header("Settings")]
 
@@ -27,42 +30,44 @@ namespace CutTheSheep
 
         [SerializeField] private UnityEvent onRuleBroken = null;
 
-        private Vector2 cursorPosition;
-
-        private void Start()
+        /// <summary>
+        /// Called from ScissorsCursor.cs every update.
+        /// </summary>
+        public void CheckInput()
         {
-            Application.targetFrameRate = 300;
-            Cursor.visible = false;
-        }
-
-        private void Update()
-        {
-            PlaceCursor();
+            //PlaceCursor();
 
             // TODO: fix this.
             if (Input.GetKeyDown(cutKey))
             {
-                Ray ray = cam.ScreenPointToRay(cursorPosition);
+                Cuttable cuttable = CheckCuttable();
 
-                if (Physics.Raycast(ray, out RaycastHit hit, maxCutRange))
-                {
-                    print($"we hit: {hit.transform.name}.");
-
-                    // if there is something to cut we cut it.
-                    Cuttable cuttable = hit.transform.GetComponent<Cuttable>();
-                    if (cuttable != null) { Cut(cuttable); }
-                }
+                if (cuttable != null) { Cut(cuttable); }
             }
         }
 
-        private void PlaceCursor()
+        private Cuttable CheckCuttable()
+        {
+            Ray ray = cam.ScreenPointToRay(scissorsCursor.GetCursorPosition());
+
+            if (Physics.Raycast(ray, out RaycastHit hit, maxCutRange))
+            {
+                print($"we hit: {hit.transform.name}.");
+
+                return hit.transform.GetComponent<Cuttable>();
+            }
+
+            return null;
+        }
+
+        /*private void PlaceCursor()
         {
             cursorPosition = Input.mousePosition;
             cursorPosition.x -= Screen.width / 2f;
             cursorPosition.y -= Screen.height / 2f;
 
             cursorImage.anchoredPosition = cursorPosition;
-        }
+        }*/
 
         private void Cut(Cuttable cuttable) 
         {
@@ -78,13 +83,9 @@ namespace CutTheSheep
 
         private void FixedUpdate()
         {
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+            Cuttable cuttable = CheckCuttable();
 
-            if (Physics.Raycast(ray, out RaycastHit hit, maxCutRange))
-            {
-                Cuttable cuttable = hit.transform.GetComponent<Cuttable>();
-                if (cuttable != null && !cuttable.GetIsSheep()) { cutWarning.Warn(); }
-            }
+            if (cuttable != null && !cuttable.GetIsSheep()) { cutWarning.Warn(); }
         }
     }
 }
