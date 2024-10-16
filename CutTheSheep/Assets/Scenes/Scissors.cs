@@ -4,18 +4,23 @@ using System.Collections.Generic;
 
 namespace CutTheSheep
 {
-    public class Scisscors : MonoBehaviour
+    /// <summary>
+    /// FUTURE: could add layermask for raycast.
+    /// cursor is in build settings ez peazy.
+    /// </summary>
+    public class Scissors : MonoBehaviour
     {
+        [SerializeField] private Camera cam = null;
+        [SerializeField] private float maxCutRange = 0f;
+        [SerializeField] private KeyCode cutKey = KeyCode.None;
+
         private void Update()
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetKeyDown(cutKey))
             {
-                RaycastHit hit;
-                // cache
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                Ray ray = cam.ScreenPointToRay(Input.mousePosition);
 
-
-                if (Physics.Raycast(ray, out hit, 100f))
+                if (Physics.Raycast(ray, out RaycastHit hit, maxCutRange))
                 {
                     StartCoroutine(ScaleMe(hit.transform));
                     Debug.Log("You selected the " + hit.transform.name); // ensure you picked right object
