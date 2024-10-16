@@ -16,7 +16,7 @@ namespace CutTheSheep
             Application.targetFrameRate = 300;
             Cursor.visible = false;
 
-            scissors.onHoverFeedback += ChangeCursorColor;
+            scissors.OnHoverFeedback += ChangeCursorColor;
         }
 
         private void Update()

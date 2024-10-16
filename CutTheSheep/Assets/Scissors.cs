@@ -14,7 +14,7 @@ namespace CutTheSheep
     /// </summary>
     public class Scissors : MonoBehaviour
     {
-        public Action<bool> onHoverFeedback;
+        public event Action<bool> OnHoverFeedback;
         
         [Header("References")]
 
@@ -93,7 +93,7 @@ namespace CutTheSheep
         {
             Cuttable cuttable = CheckCuttable();
 
-            onHoverFeedback?.Invoke(cuttable != null);
+            OnHoverFeedback?.Invoke(cuttable != null);
 
             if (cuttable != null && !cuttable.GetIsSheep()) { cutWarning.Warn(); }
         }
