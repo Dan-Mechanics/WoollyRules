@@ -13,6 +13,7 @@ namespace CutTheSheep
         [SerializeField] private Text text = null;
         [SerializeField] private float warnInterval = 0f;
         [SerializeField] private int warnCount = 0;
+        [SerializeField] private Color warnColor = Color.clear;
 
         private bool isWarning;
         private WaitForSeconds delay;
@@ -39,8 +40,8 @@ namespace CutTheSheep
         {
             for (int i = 0; i < warnCount * 2; i++)
             {
-                if (text.fontStyle != FontStyle.Bold) { text.fontStyle = FontStyle.Bold; }
-                else { text.fontStyle = FontStyle.Normal; }
+                if (text.fontStyle != FontStyle.Bold) { text.fontStyle = FontStyle.Bold; text.color = warnColor; }
+                else { text.fontStyle = FontStyle.Normal; text.color = Color.black; }
 
                 yield return delay;
             }

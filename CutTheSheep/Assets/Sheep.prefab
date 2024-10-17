@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2127664283110895619}
   - component: {fileID: 2127664283110895623}
   - component: {fileID: 1492384736}
-  - component: {fileID: 1492384737}
+  - component: {fileID: 4000651752663161429}
   m_Layer: 0
   m_Name: Sheep
   m_TagString: Untagged
@@ -192,7 +192,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1492384737}
+      - m_Target: {fileID: 4000651752663161429}
         m_TargetAssemblyTypeName: CutTheSheep.Destroyable, Assembly-CSharp
         m_MethodName: Destroy
         m_Mode: 1
@@ -208,7 +208,7 @@ MonoBehaviour:
   rigidbodies:
   - {fileID: 2127664284955403447}
   - {fileID: 2127664284072366852}
---- !u!114 &1492384737
+--- !u!114 &4000651752663161429
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd6699576c2c83c47b82743c9886b715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTime: 15
+  destroyTime: 0
 --- !u!1 &2127664284072366854
 GameObject:
   m_ObjectHideFlags: 0
