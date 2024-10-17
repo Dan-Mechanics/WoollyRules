@@ -8,7 +8,9 @@ namespace CutTheSheep
         [SerializeField] private Scissors scissors = null;
         [SerializeField] private RectTransform rect = null;
         [SerializeField] private Image image = null;
-        
+        [SerializeField] private Sprite closedScissors = null;
+        [SerializeField] private Sprite openScissors = null;
+
         private Vector2 cursorPosition;
 
         private void Start()
@@ -45,9 +47,10 @@ namespace CutTheSheep
         {
             // HOTFIX: if we destroy it we cant change the color of course.
             if (image == null) { return; }
-            
-            image.color = hoveringOverSomething ? Color.yellow : Color.black;
-            image.transform.localScale = Vector3.one * (hoveringOverSomething ? 1f : 1.5f);
+
+            image.sprite = hoveringOverSomething ? openScissors : closedScissors;
+            //image.color = hoveringOverSomething ? Color.yellow : Color.black;
+            //image.transform.localScale = Vector3.one * (hoveringOverSomething ? 1f : 1.5f);
         }
 
         public Vector2 GetCursorPosition() { return cursorPosition; }
