@@ -348,8 +348,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2127664284072366852}
-  speed: 1.5
-  randomSpeed: 2.5
+  speed: 2
+  randomSpeed: 2
 --- !u!114 &7990597869641478255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -490,8 +490,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2127664284955403447}
-  speed: 1.5
-  randomSpeed: 2.5
+  speed: 2
+  randomSpeed: 2
 --- !u!114 &2695377969087052693
 MonoBehaviour:
   m_ObjectHideFlags: 0

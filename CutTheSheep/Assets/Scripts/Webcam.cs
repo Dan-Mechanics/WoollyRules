@@ -5,7 +5,8 @@ using UnityEngine.UI;
 namespace CutTheSheep
 {
     /// <summary>
-    /// Todo: webcam image dimensions??
+    /// TODO: webcam image dimensions?? VVV
+    /// NOTE: you can either preload the webcam or not ...
     /// </summary>
     public class Webcam : MonoBehaviour
     {
@@ -20,10 +21,17 @@ namespace CutTheSheep
         private Vector2 pivot = new Vector2(0.5f, 0.5f);
         private Color[] webcamColors;
 
+        public void Show() 
+        {
+            gameObject.SetActive(true);
+            
+            StartCoroutine(Auhtorize());
+        }
+
         /// <summary>
         /// This is a coroutine.
         /// </summary>
-        private IEnumerator Start()
+        private IEnumerator Auhtorize()
         {
             LogWebcams();
 
@@ -57,9 +65,15 @@ namespace CutTheSheep
                 print($"webcam {i}: {WebCamTexture.devices[i].name}");
             }
         }
+
+        /// <summary>
+        /// We do this in the start and then disable because that way the webcam instantly pops up with no delay
+        /// or hesitation. The downsdie is that the webcam light is on the whole time which might be good idk.
+        /// i could fix it ...
+        /// </summary>
         private void Setup()
         {
-            imageToProjectWebcamOn.enabled = true;
+            //imageToProjectWebcamOn.enabled = true;
 
             webCamTexture = new WebCamTexture();
 
@@ -69,7 +83,7 @@ namespace CutTheSheep
 
             ResizeWebcam();
 
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
         }
 
         private void RefreshWebcam()
@@ -89,6 +103,8 @@ namespace CutTheSheep
             texture.Apply();
 
             imageToProjectWebcamOn.sprite = Sprite.Create(texture, rect, pivot, 100f);
+
+            imageToProjectWebcamOn.enabled = true;
         }
 
         private void ResizeWebcam() 

@@ -1126,7 +1126,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1098676777
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1358,10 +1358,10 @@ MonoBehaviour:
   onRuleBroken:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1098676776}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1098676778}
+        m_TargetAssemblyTypeName: CutTheSheep.Webcam, Assembly-CSharp
+        m_MethodName: Show
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

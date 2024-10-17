@@ -6,6 +6,7 @@ namespace CutTheSheep
 {
     /// <summary>
     /// With warnCount == 0 might not be best performance but I can change later and maybe it doesn't matter at all ...
+    /// MAYBE: rename to TextWarning.cs or something and make it work for the timer also to make it feel more threatening.
     /// </summary>
     public class CutWarning : MonoBehaviour
     {
