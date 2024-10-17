@@ -12,3 +12,8 @@ i guess next thing is the planet logic but screw that honestly.
 maybe revert so its back to preload ???
 
 timer.cs type compomenet or repeatingcall type beat maybe.
+
+---
+
+grote text: you broke the rule
+of thank you for playing.
