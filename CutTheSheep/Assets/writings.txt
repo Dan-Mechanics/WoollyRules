@@ -5,15 +5,21 @@ importnat: the game doesnt work if the cursor is deleted at the end.
 
 ---
 
-i guess next thing is the planet logic but screw that honestly.
+i guess next thing is the planet logic.
 
 ---
 
-maybe revert so its back to preload ???
+maybe revert so its back to preload ??? --> webcam
 
 timer.cs type compomenet or repeatingcall type beat maybe.
 
 ---
 
 grote text: you broke the rule
-of thank you for playing.
+or "thank you for playing."
+
+---
+
+you can keep on cutting the sheep sometimes but the bear keeps spawning
+while the cam is acitve. its not an end state its a trnasgretnioanl period
+employ andrea to be useful in terms of where you go now.
