@@ -4827,6 +4827,7 @@ GameObject:
   - component: {fileID: 2127664283110895623}
   - component: {fileID: 1492384736}
   - component: {fileID: 4000651752663161429}
+  - component: {fileID: 4669090254976714646}
   m_Layer: 0
   m_Name: Sheep
   m_TagString: Untagged
@@ -5046,6 +5047,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyTime: 0
+--- !u!114 &4669090254976714646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127664283110895676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf25b3d621e796b4c90791f8ca6a6c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2127664284072366854
 GameObject:
   m_ObjectHideFlags: 0
@@ -5061,6 +5074,7 @@ GameObject:
   - component: {fileID: 2127664284072366852}
   - component: {fileID: 1636096230}
   - component: {fileID: 7990597869641478255}
+  - component: {fileID: 2264279166098710274}
   m_Layer: 0
   m_Name: Cut Cube Piece
   m_TagString: Untagged
@@ -5188,6 +5202,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyTime: 15
+--- !u!114 &2264279166098710274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127664284072366854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf25b3d621e796b4c90791f8ca6a6c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2127664284955403436
 GameObject:
   m_ObjectHideFlags: 0
@@ -5203,6 +5229,7 @@ GameObject:
   - component: {fileID: 2127664284955403447}
   - component: {fileID: 786624336}
   - component: {fileID: 2695377969087052693}
+  - component: {fileID: 3162072393872137738}
   m_Layer: 0
   m_Name: Cut Cube Piece
   m_TagString: Untagged
@@ -5330,3 +5357,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyTime: 15
+--- !u!114 &3162072393872137738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127664284955403436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf25b3d621e796b4c90791f8ca6a6c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
