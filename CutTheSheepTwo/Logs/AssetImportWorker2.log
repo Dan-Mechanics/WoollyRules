@@ -1921,3 +1921,22 @@ Memory consumption went from 235.4 MB to 229.4 MB.
 Total: 9.795200 ms (FindLiveObjects: 0.714500 ms CreateObjectMapping: 1.100500 ms MarkObjects: 4.403400 ms  DeleteObjects: 3.575700 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 86.029447 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '58cb90e0f983be636d615c5e569516f2') in 0.0068056 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.714425 seconds.
+  path: Assets/Tim/Sheep.prefab
+  artifactKey: Guid(f678e62e5f5921d4cbee65519f199200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Sheep.prefab using Guid(f678e62e5f5921d4cbee65519f199200) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7cedc9eeeb068b6e29f88aebbb3482bf') in 0.4223223 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 35
+
