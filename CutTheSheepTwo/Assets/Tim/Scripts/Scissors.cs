@@ -19,7 +19,7 @@ namespace CutTheSheep
         [Header("References")]
 
         [SerializeField] private Camera cam = null;
-        [SerializeField] private CutWarning cutWarning = null;
+        [SerializeField] private BlinkingText cutWarning = null;
         [SerializeField] private LayerMask cuttableMask = 0;
         [SerializeField] private ScissorsCursor scissorsCursor = null;
 
@@ -59,15 +59,6 @@ namespace CutTheSheep
 
             return null;
         }
-
-        /*private void PlaceCursor()
-        {
-            cursorPosition = Input.mousePosition;
-            cursorPosition.x -= Screen.width / 2f;
-            cursorPosition.y -= Screen.height / 2f;
-
-            cursorImage.anchoredPosition = cursorPosition;
-        }*/
 
         private void Cut(Cuttable cuttable) 
         {

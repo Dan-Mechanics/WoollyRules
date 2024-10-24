@@ -13,15 +13,8 @@ namespace CutTheSheep
 
         public virtual void Cut() 
         {
-            // idk if this works.
             for (int i = 0; i < rigidbodies.Length; i++)
             {
-                /*rigidbodies[i].AddForce(rb.velocity, ForceMode.VelocityChange);
-                rigidbodies[i].AddTorque(rb.angularVelocity, ForceMode.VelocityChange);*/
-
-                // maybe this works better ?
-                // yep that fixed it V
-
                 Rigidbody childRigidbody = rigidbodies[i];
 
                 childRigidbody.linearVelocity = rb.linearVelocity;

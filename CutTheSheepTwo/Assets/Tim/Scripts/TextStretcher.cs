@@ -5,9 +5,6 @@ using TMPro;
 
 namespace CutTheSheep
 {
-    /// <summary>
-    /// NEXT THING TO ADD: GLOBE !!
-    /// </summary>
     public class TextStretcher : MonoBehaviour
     {
         [SerializeField] private TMP_Text text = null;
