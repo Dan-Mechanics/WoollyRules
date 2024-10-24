@@ -10670,3 +10670,7 @@ Start importing Assets/Tim/Sprites/photoshop_scissors.psd using Guid(534231e8552
  -> (artifact id: '915e19c8df0a2b76f298b8c061db6bed') in 0.0310273 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

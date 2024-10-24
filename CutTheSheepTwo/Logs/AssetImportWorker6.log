@@ -184,3 +184,80 @@ Start importing Assets/Tim/Sprites/open.png using Guid(e0124be2c3582ea4bae28d2a8
  -> (artifact id: '1b7868920c2028a7c060232c2f691ec1') in 0.097921 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
+========================================================================
+Received Import Request.
+  Time since last request: 163.067050 seconds.
+  path: Assets/Tim/Materials/darker_sheep.mat
+  artifactKey: Guid(e1c8dc513e6a71e46b789b466fee3c2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Materials/darker_sheep.mat using Guid(e1c8dc513e6a71e46b789b466fee3c2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c2a7f31d32e4fcefeecf2427be522ef5') in 4.3212875 seconds
+Number of updated asset objects reloaded before import = 13Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Tim/Materials/sheep.mat
+  artifactKey: Guid(b5aae4e5e07ac2c4e9430db95c1c3697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Materials/sheep.mat using Guid(b5aae4e5e07ac2c4e9430db95c1c3697) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '34cb6890eefc5ca68ce7e151cb94e8f6') in 0.0144531 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.414969 seconds.
+  path: Assets/Tim/Scenes/Planet.unity
+  artifactKey: Guid(cea6bdd3a2677ff4698cdda72f855085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Scenes/Planet.unity using Guid(cea6bdd3a2677ff4698cdda72f855085) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e5062ecdb1f8bcd9b20eefb65ba3ab79') in 0.0006182 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.743 seconds
+Refreshing native plugins compatible for Editor in 1.08 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.879 seconds
+Domain Reload Profiling: 1619ms
+	BeginReloadAssembly (220ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (19ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (59ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (432ms)
+		LoadAssemblies (340ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (188ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (167ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (879ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (568ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (76ms)
+			ProcessInitializeOnLoadAttributes (415ms)
+			ProcessInitializeOnLoadMethodAttributes (60ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 1.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5923 unused Assets / (5.1 MB). Loaded Objects now: 6790.
+Memory consumption went from 176.7 MB to 171.6 MB.
+Total: 10.935700 ms (FindLiveObjects: 0.753700 ms CreateObjectMapping: 1.224600 ms MarkObjects: 6.044000 ms  DeleteObjects: 2.912500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
