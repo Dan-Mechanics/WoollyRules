@@ -2268,3 +2268,39 @@ Memory consumption went from 239.4 MB to 233.1 MB.
 Total: 8.907800 ms (FindLiveObjects: 0.748800 ms CreateObjectMapping: 0.959400 ms MarkObjects: 3.919800 ms  DeleteObjects: 3.278900 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 517.179524 seconds.
+  path: Assets/Tim/Scenes/Game.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Scenes/Game.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '314fe3ddb9f2bb358998013ee8dfbf7a') in 0.0696657 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.581096 seconds.
+  path: Assets/Tim/Scenes/Planet.unity
+  artifactKey: Guid(cea6bdd3a2677ff4698cdda72f855085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Scenes/Planet.unity using Guid(cea6bdd3a2677ff4698cdda72f855085) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '14c0f10031a0f888e8a2ac457b8b1df0') in 0.0007525 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.146220 seconds.
+  path: Assets/Tim/Scenes/Settings.lighting
+  artifactKey: Guid(6638e877a89445446837928445c9d714) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Scenes/Settings.lighting using Guid(6638e877a89445446837928445c9d714) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '5f3ee2c266b6caddc0f9f50a8661468d') in 0.0252338 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.365316 seconds.
+  path: Assets/Tim/Scenes/LightingSettings.lighting
+  artifactKey: Guid(6638e877a89445446837928445c9d714) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Scenes/LightingSettings.lighting using Guid(6638e877a89445446837928445c9d714) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '38d48d59bc7f421325268e5524de9b4e') in 0.0011612 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
