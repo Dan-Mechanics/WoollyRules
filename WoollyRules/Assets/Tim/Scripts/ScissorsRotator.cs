@@ -5,6 +5,7 @@ namespace WoollyRules
     public class ScissorsRotator : MonoBehaviour
     {
         [SerializeField] private Scissors scissors = null;
+        [SerializeField] private float shakeStrength = 0f;
 
         private Quaternion startingRotation;
 
@@ -26,6 +27,9 @@ namespace WoollyRules
             }
 
             transform.LookAt(point);
+
+            // I could normalize it ...
+            if (!scissors.IsHoveringSheep) { transform.Rotate(Random.insideUnitSphere * shakeStrength, Space.World); }
         }
     }
 }

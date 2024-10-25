@@ -13,6 +13,7 @@ namespace WoollyRules
     /// </summary>
     public class Scissors : MonoBehaviour
     {
+        public bool IsHoveringSheep => isHoverSheep;
         public event Action<bool, bool> OnHoverFeedback;
         public event Action<bool, Vector3> OnPoint;
         
@@ -32,6 +33,8 @@ namespace WoollyRules
         
         [Tooltip("FUTURE: this is bascialyl onGameEnd so mayne it should be on another script like gamemanager.cs for example ...")]
         [SerializeField] private UnityEvent onRuleBroken = null;
+
+        private bool isHoverSheep;
 
         /// <summary>
         /// Called from ScissorsCursor.cs every update.
@@ -97,10 +100,10 @@ namespace WoollyRules
 
             if (cuttable != null)
             {
-                bool isSheep = cuttable.GetIsSheep();
-                if (!isSheep) { cutWarning.Warn(); }
+                isHoverSheep = cuttable.GetIsSheep();
+                if (!isHoverSheep) { cutWarning.Warn(); }
 
-                OnHoverFeedback?.Invoke(true, isSheep);
+                OnHoverFeedback?.Invoke(true, isHoverSheep);
             }
             else 
             {
