@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace CutTheSheep
+namespace CutTheSheepTwo
 {
     public class PrefabSpawner : MonoBehaviour
     {

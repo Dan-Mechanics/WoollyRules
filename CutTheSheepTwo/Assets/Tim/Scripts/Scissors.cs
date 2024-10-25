@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace CutTheSheep
+namespace CutTheSheepTwo
 {
     /// <summary>
     /// FUTURE: could add layermask for raycast.
@@ -47,7 +47,7 @@ namespace CutTheSheep
 
         private Cuttable CheckCuttable()
         {
-            Ray ray = cam.ScreenPointToRay(scissorsCursor.GetCursorPosition());
+            Ray ray = cam.ScreenPointToRay(scissorsCursor.CursorPosition);
 
             if (Physics.Raycast(ray, out RaycastHit hit, maxCutRange, cuttableMask, QueryTriggerInteraction.Ignore))
             {

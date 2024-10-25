@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace CutTheSheep
+namespace CutTheSheepTwo
 {
     /// <summary>
     /// NOTE: you can either preload the webcam or not ...

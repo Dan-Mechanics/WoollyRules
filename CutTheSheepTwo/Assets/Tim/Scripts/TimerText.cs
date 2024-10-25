@@ -2,7 +2,7 @@
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-namespace CutTheSheep
+namespace CutTheSheepTwo
 {
     public class TimerText : MonoBehaviour
     {

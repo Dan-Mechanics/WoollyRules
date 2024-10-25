@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 
-namespace CutTheSheep
+namespace CutTheSheepTwo
 {
     public class Cuttable : MonoBehaviour
     {

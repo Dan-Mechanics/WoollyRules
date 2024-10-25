@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 
-namespace CutTheSheep
+namespace CutTheSheepTwo
 {
     public class TextStretcher : MonoBehaviour
     {

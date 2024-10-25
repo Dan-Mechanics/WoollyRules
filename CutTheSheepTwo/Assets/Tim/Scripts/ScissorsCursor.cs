@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace CutTheSheep
+namespace CutTheSheepTwo
 {
     public class ScissorsCursor : MonoBehaviour
     {
@@ -11,6 +11,7 @@ namespace CutTheSheep
         [SerializeField] private Sprite closedScissors = null;
         [SerializeField] private Sprite openScissors = null;
 
+        public Vector2 CursorPosition => cursorPosition;
         private Vector2 cursorPosition;
 
         private void Start()
@@ -50,6 +51,6 @@ namespace CutTheSheep
             image.sprite = hoveringOverSomething ? openScissors : closedScissors;
         }
 
-        public Vector2 GetCursorPosition() { return cursorPosition; }
+        //public Vector2 GetCursorPosition() { return cursorPosition; }
     }
 }
