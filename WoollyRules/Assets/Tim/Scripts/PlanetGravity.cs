@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace CutTheSheepTwo
+namespace WoollyRules
 {
     [RequireComponent(typeof(Rigidbody))]
     public class PlanetGravity : MonoBehaviour

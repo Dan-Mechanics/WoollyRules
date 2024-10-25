@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace CutTheSheepTwo 
+namespace WoollyRules 
 {
     public class CameraRotator : MonoBehaviour
     {

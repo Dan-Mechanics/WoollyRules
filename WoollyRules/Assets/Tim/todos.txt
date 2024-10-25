@@ -1,3 +1,5 @@
 rotate planet
 scissors 3d works
 implement shader assets
+
+future thing maybe: namespaces for different people working in project ???

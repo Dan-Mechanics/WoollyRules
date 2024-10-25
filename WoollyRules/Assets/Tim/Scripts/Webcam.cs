@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace CutTheSheepTwo
+namespace WoollyRules
 {
     /// <summary>
     /// NOTE: you can either preload the webcam or not ...

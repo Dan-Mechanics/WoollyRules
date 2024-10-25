@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace CutTheSheepTwo
+namespace WoollyRules
 {
     public class BlinkingText : MonoBehaviour
     {

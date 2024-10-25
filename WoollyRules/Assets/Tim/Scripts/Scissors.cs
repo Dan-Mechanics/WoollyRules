@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace CutTheSheepTwo
+namespace WoollyRules
 {
     /// <summary>
     /// FUTURE: could add layermask for raycast.

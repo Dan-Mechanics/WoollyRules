@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace CutTheSheepTwo
+namespace WoollyRules
 {
     public class ScissorsCursor : MonoBehaviour
     {

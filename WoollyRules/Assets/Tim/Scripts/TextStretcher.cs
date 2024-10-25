@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 
-namespace CutTheSheepTwo
+namespace WoollyRules
 {
     public class TextStretcher : MonoBehaviour
     {
