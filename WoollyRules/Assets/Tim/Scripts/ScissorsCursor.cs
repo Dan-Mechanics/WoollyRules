@@ -5,13 +5,14 @@ namespace WoollyRules
 {
     public class ScissorsCursor : MonoBehaviour
     {
+        public Vector2 CursorPosition => cursorPosition;
+
         [SerializeField] private Scissors scissors = null;
         [SerializeField] private RectTransform rect = null;
         [SerializeField] private Image image = null;
         [SerializeField] private Sprite closedScissors = null;
         [SerializeField] private Sprite openScissors = null;
 
-        public Vector2 CursorPosition => cursorPosition;
         private Vector2 cursorPosition;
 
         private void Start()
@@ -19,7 +20,7 @@ namespace WoollyRules
             Application.targetFrameRate = 300;
             Cursor.visible = false;
 
-            scissors.OnHoverFeedback += ChangeCursorColor;
+            scissors.OnHoverFeedback += ChangeCursorSprite;
         }
 
         private void Update()
@@ -41,16 +42,15 @@ namespace WoollyRules
         }
 
         /// <summary>
-        /// FUTURE: make the scissorcs sprite different / opening closing the scissors,
-        /// and you could also have an indication in the scissors when ur not allowed to cut ( the bear for example ).
+        /// TODO: have an indication in the scissors when ur not allowed to cut ( the bear for example ).
         /// </summary>
-        private void ChangeCursorColor(bool hoveringOverSomething) 
+        private void ChangeCursorSprite(bool isCuttable, bool isSheep) 
         {
+            // if we destroy image when closing game then this might throw an error thats why this is here.
             if (image == null) { return; }
 
-            image.sprite = hoveringOverSomething ? openScissors : closedScissors;
+            image.sprite = isCuttable ? openScissors : closedScissors;
+            image.color = isSheep ? Color.white : Color.red;
         }
-
-        //public Vector2 GetCursorPosition() { return cursorPosition; }
     }
 }

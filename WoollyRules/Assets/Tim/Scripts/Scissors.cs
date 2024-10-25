@@ -13,7 +13,8 @@ namespace WoollyRules
     /// </summary>
     public class Scissors : MonoBehaviour
     {
-        public event Action<bool> OnHoverFeedback;
+        public event Action<bool, bool> OnHoverFeedback;
+        public event Action<bool, Vector3> OnPoint;
         
         [Header("References")]
 
@@ -45,14 +46,23 @@ namespace WoollyRules
             }
         }
 
+        private Cuttable CheckCuttable(out RaycastHit hit, out bool hasHit)
+        {
+            Ray ray = cam.ScreenPointToRay(scissorsCursor.CursorPosition);
+
+            hasHit = Physics.Raycast(ray, out hit, maxCutRange, cuttableMask, QueryTriggerInteraction.Ignore);
+
+            if (hasHit) { return hit.transform.GetComponent<Cuttable>(); }
+
+            return null;
+        }
+
         private Cuttable CheckCuttable()
         {
             Ray ray = cam.ScreenPointToRay(scissorsCursor.CursorPosition);
 
-            if (Physics.Raycast(ray, out RaycastHit hit, maxCutRange, cuttableMask, QueryTriggerInteraction.Ignore))
+            if (Physics.Raycast(ray, out RaycastHit hit, maxCutRange, cuttableMask, QueryTriggerInteraction.Ignore)) 
             {
-                // print($"we hit: {hit.transform.name}.");
-
                 return hit.transform.GetComponent<Cuttable>();
             }
 
@@ -81,11 +91,21 @@ namespace WoollyRules
         /// </summary>
         private void CheckIfHoveringSomething()
         {
-            Cuttable cuttable = CheckCuttable();
+            Cuttable cuttable = CheckCuttable(out RaycastHit hit, out bool hasHit);
 
-            OnHoverFeedback?.Invoke(cuttable != null);
+            OnPoint?.Invoke(hasHit, hit.point);
 
-            if (cuttable != null && !cuttable.GetIsSheep()) { cutWarning.Warn(); }
+            if (cuttable != null)
+            {
+                bool isSheep = cuttable.GetIsSheep();
+                if (!isSheep) { cutWarning.Warn(); }
+
+                OnHoverFeedback?.Invoke(true, isSheep);
+            }
+            else 
+            {
+                OnHoverFeedback?.Invoke(false, true);
+            }
         }
     }
 }

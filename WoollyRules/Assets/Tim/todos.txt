@@ -3,3 +3,11 @@ scissors 3d works
 implement shader assets
 
 future thing maybe: namespaces for different people working in project ???
+
+under description github desktop --> add co-auther might seem useful for what im doing but its public anyway so who cares.
+
+fun idea: add shaker.cs but like random spam when point at bear and blinking scissor curser to give the effect of dont cut the bear.
+
+///
+
+refactor pointer.cs name. VV
