@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 namespace CutTheSheepTwo
 {
+    [RequireComponent(typeof(Rigidbody))]
     public class PlanetGravity : MonoBehaviour
     {
         private Rigidbody rb;
