@@ -23,3 +23,5 @@ camera pivot.pos and the planet pos need to be the same.
 still got to add the animation to the scissor graphic in the world.
 
 fix the planet round surface not blockey.
+
+schaar animatie when cutting
