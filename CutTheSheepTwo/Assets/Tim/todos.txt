@@ -1,0 +1,3 @@
+rotate planet
+scissors 3d works
+implement shader assets

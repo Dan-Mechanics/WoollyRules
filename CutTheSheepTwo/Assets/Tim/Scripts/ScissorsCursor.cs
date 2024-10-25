@@ -45,12 +45,9 @@ namespace CutTheSheep
         /// </summary>
         private void ChangeCursorColor(bool hoveringOverSomething) 
         {
-            // HOTFIX: if we destroy it we cant change the color of course.
             if (image == null) { return; }
 
             image.sprite = hoveringOverSomething ? openScissors : closedScissors;
-            //image.color = hoveringOverSomething ? Color.yellow : Color.black;
-            //image.transform.localScale = Vector3.one * (hoveringOverSomething ? 1f : 1.5f);
         }
 
         public Vector2 GetCursorPosition() { return cursorPosition; }

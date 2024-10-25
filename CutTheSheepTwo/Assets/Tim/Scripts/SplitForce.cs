@@ -2,7 +2,7 @@
 
 namespace CutTheSheep
 {
-    public class SplitImpactEffect : MonoBehaviour
+    public class SplitForce : MonoBehaviour
     {
         [SerializeField] private Rigidbody rb = null;
         [SerializeField] private float speed = 0f;

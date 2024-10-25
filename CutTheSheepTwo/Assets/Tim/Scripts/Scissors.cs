@@ -9,7 +9,6 @@ namespace CutTheSheep
     /// NOTE: cursor is in build settings ez peazy.
     /// ADD: text rule. V
     /// ADD: rule reaction on different class then this script --> and that rule.cs class should be on the rules text maybe ??
-    /// TODO: order scene and make environment etc.
     /// WARNING: NO CURSOR NO CUTTING !!
     /// </summary>
     public class Scissors : MonoBehaviour

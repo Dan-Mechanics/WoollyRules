@@ -5,7 +5,6 @@ using UnityEngine.UI;
 namespace CutTheSheep
 {
     /// <summary>
-    /// TODO: webcam image dimensions?? VVV
     /// NOTE: you can either preload the webcam or not ...
     /// </summary>
     public class Webcam : MonoBehaviour
