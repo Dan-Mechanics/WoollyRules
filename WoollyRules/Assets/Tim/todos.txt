@@ -11,3 +11,5 @@ fun idea: add shaker.cs but like random spam when point at bear and blinking sci
 ///
 
 refactor pointer.cs name. VV
+scene naming could be better
+implement planet shader.
