@@ -76,7 +76,7 @@ namespace WoollyRules
         {
             cuttable.Cut();
 
-            if (!cuttable.GetIsSheep()) 
+            if (!cuttable.IsSheep) 
             {
                 // enable timer and webcam.
 
@@ -100,7 +100,7 @@ namespace WoollyRules
 
             if (cuttable != null)
             {
-                isHoverSheep = cuttable.GetIsSheep();
+                isHoverSheep = cuttable.IsSheep;
                 if (!isHoverSheep) { cutWarning.Warn(); }
 
                 OnHoverFeedback?.Invoke(true, isHoverSheep);
@@ -108,6 +108,7 @@ namespace WoollyRules
             else 
             {
                 OnHoverFeedback?.Invoke(false, true);
+                isHoverSheep = true;
             }
         }
     }

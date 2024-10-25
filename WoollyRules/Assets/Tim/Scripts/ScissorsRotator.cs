@@ -20,16 +20,16 @@ namespace WoollyRules
 
         private void Point(bool isCuttable, Vector3 point) 
         {
-            if (!isCuttable) 
+            if (isCuttable)
+            {
+                transform.LookAt(point);
+            }
+            else 
             {
                 transform.localRotation = startingRotation;
-                return;
             }
 
-            transform.LookAt(point);
-
-            // I could normalize it ...
-            if (!scissors.IsHoveringSheep) { transform.Rotate(Random.insideUnitSphere * shakeStrength, Space.World); }
+            if (isCuttable && !scissors.IsHoveringSheep) { transform.Rotate(Random.insideUnitSphere.normalized * shakeStrength, Space.World); }
         }
     }
 }

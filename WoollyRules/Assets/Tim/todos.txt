@@ -13,3 +13,7 @@ fun idea: add shaker.cs but like random spam when point at bear and blinking sci
 refactor pointer.cs name. VV
 scene naming could be better
 implement planet shader.
+
+Scissors backend different from scissors model.
+
+camera pivot.pos and the planet pos need to be the same.

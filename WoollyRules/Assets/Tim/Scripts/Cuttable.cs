@@ -5,6 +5,8 @@ namespace WoollyRules
 {
     public class Cuttable : MonoBehaviour
     {
+        public bool IsSheep => isSheep;
+        
         [SerializeField] private bool isSheep = false;
         [SerializeField] private UnityEvent onCut = null;
 
@@ -23,8 +25,5 @@ namespace WoollyRules
             
             onCut?.Invoke();
         }
-
-
-        public bool GetIsSheep() { return isSheep; }
     }
 }
