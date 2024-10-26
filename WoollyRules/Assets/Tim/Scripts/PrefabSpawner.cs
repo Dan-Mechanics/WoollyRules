@@ -11,6 +11,12 @@ namespace WoollyRules
 
         private void Start()
         {
+            if (prefab == null) 
+            {
+                Debug.LogError("There is no prefab assigned.");
+                return;
+            }
+            
             InvokeRepeating(nameof(Spawn), 0f, interval);
         }
 
