@@ -25,3 +25,7 @@ still got to add the animation to the scissor graphic in the world.
 fix the planet round surface not blockey.
 
 schaar animatie when cutting
+
+---
+
+implement luuk sheep model

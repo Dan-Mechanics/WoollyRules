@@ -52,5 +52,11 @@ namespace WoollyRules
             image.sprite = isCuttable ? openScissors : closedScissors;
             image.color = isSheep ? Color.white : Color.red;
         }
+
+        public void ShowNormalCursor() 
+        {
+            Cursor.visible = true;
+            Destroy(transform.GetChild(0).gameObject);
+        }
     }
 }
