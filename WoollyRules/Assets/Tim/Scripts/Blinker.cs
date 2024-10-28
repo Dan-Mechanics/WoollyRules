@@ -9,6 +9,8 @@ namespace WoollyRules
     {
         [SerializeField] private float interval = 0f;
 
+        protected bool isBlinking;
+
         protected virtual void Start() 
         {
             Play();
@@ -16,12 +18,17 @@ namespace WoollyRules
 
         public virtual void Play() 
         {
+            isBlinking = true;
+
+
             InvokeRepeating(nameof(Blink), 0f, interval);
         }
 
         public virtual void Stop() 
         {
             CancelInvoke(nameof(Blink));
+
+            isBlinking = false;
         }
 
         public virtual void Blink() 

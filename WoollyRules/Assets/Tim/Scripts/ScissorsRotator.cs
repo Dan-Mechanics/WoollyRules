@@ -9,6 +9,8 @@ namespace WoollyRules
         [SerializeField] private bool aimAtNothingIsStartingRot = false;
 
         private Quaternion startingRotation;
+        private Vector3 lastPoint;
+
 
         /// <summary>
         /// We do it like this because we need the starting rotation in Point().
@@ -19,18 +21,18 @@ namespace WoollyRules
             scissors.OnPoint += Point;
         }
 
-        private void Point(bool isCuttable, Vector3 point) 
+        private void Point(bool hasHit, Vector3 point) 
         {
-            if (isCuttable)
-            {
-                transform.LookAt(point);
-            }
-            else if(aimAtNothingIsStartingRot)
+            if (hasHit) { lastPoint = point; }
+            else if (aimAtNothingIsStartingRot)
             {
                 transform.localRotation = startingRotation;
             }
 
-            if (isCuttable && !scissors.IsHoveringSheep) { transform.Rotate(Random.insideUnitSphere.normalized * shakeStrength, Space.World); }
+            if (!aimAtNothingIsStartingRot) { transform.LookAt(lastPoint); }
+
+            // add shake because the scissors is scared.
+            if (hasHit && !scissors.IsHoveringSheep) { transform.Rotate(Random.insideUnitSphere.normalized * shakeStrength, Space.World); }
         }
     }
 }

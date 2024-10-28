@@ -966,10 +966,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9c4b255b127c8d4e8de5130d9634ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interval: 0.045
   text: {fileID: 413889158}
-  warnInterval: 0.1
-  warnCount: 1
   warnColor: {r: 1, g: 0, b: 0, a: 1}
+  minBlinkingTime: 0.1
 --- !u!114 &413889161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2209,6 +2209,21 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   scissorsCursor: {fileID: 168078301}
+  onWarnRule:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 413889160}
+        m_TargetAssemblyTypeName: WoollyRules.BlinkingText, Assembly-CSharp
+        m_MethodName: Warn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   maxCutRange: 100
   cutKey: 323
   onRuleBroken:

@@ -5,7 +5,7 @@ namespace WoollyRules
     public class Destroyable : MonoBehaviour
     {
         [Tooltip("If this value <= 0f then will not destroy with time.")]
-        [SerializeField] private float destroyTime = 0f;
+        [SerializeField] private float destroyTime = -1f; // was 0f.
 
         private void Start()
         {

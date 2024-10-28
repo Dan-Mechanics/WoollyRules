@@ -23,6 +23,7 @@ namespace WoollyRules
         [SerializeField] private BlinkingText cutWarning = null;
         [SerializeField] private LayerMask cuttableMask = 0;
         [SerializeField] private ScissorsCursor scissorsCursor = null;
+        [SerializeField] private UnityEvent onWarnRule = null;
 
         [Header("Settings")]
 
@@ -101,7 +102,7 @@ namespace WoollyRules
             if (cuttable != null)
             {
                 isHoverSheep = cuttable.IsSheep;
-                if (!isHoverSheep) { cutWarning.Warn(); }
+                if (!isHoverSheep) { onWarnRule?.Invoke(); } // cutWarning.Warn();
 
                 OnHoverFeedback?.Invoke(true, isHoverSheep);
             }

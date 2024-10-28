@@ -4,45 +4,52 @@ using UnityEngine.UI;
 
 namespace WoollyRules
 {
-    public class BlinkingText : MonoBehaviour
+    public class BlinkingText : Blinker
     {
         [SerializeField] private Text text = null;
-        [SerializeField] private float warnInterval = 0f;
-        [SerializeField] private int warnCount = 0;
         [SerializeField] private Color warnColor = Color.clear;
 
-        private bool isWarning;
+        [SerializeField] private float minBlinkingTime = 0f;
+
         private WaitForSeconds delay;
 
-        private void Start()
+        private void Awake()
         {
-            delay = new WaitForSeconds(warnInterval / 2f);
+            delay = new WaitForSeconds(minBlinkingTime);
         }
 
-        [ContextMenu("Warn()")]
+        protected override void Start()
+        {
+            //base.Start();
+        }
+
         public void Warn()
         {
-            if (isWarning) { return; }
+            if (isBlinking) { return; }
 
-            isWarning = true;
+            Play();
 
-            StartCoroutine(WarnDelayed());
+            Invoke(nameof(Stop), minBlinkingTime);
         }
 
-        /// <summary>
-        /// This is a coroutine that makes the text bold and not bold.
-        /// </summary>
-        private IEnumerator WarnDelayed()
+        public override void Stop()
         {
-            for (int i = 0; i < warnCount * 2; i++)
-            {
-                if (text.fontStyle != FontStyle.Bold) { text.fontStyle = FontStyle.Bold; text.color = warnColor; }
-                else { text.fontStyle = FontStyle.Normal; text.color = Color.black; }
+            base.Stop();
 
-                yield return delay;
-            }
+            MakeTextNormal();
+        }
 
-            isWarning = false;
+        public override void Blink()
+        {
+            //base.Blink();
+
+            if (text.fontStyle != FontStyle.Bold) { text.fontStyle = FontStyle.Bold; text.color = warnColor; }
+            else { MakeTextNormal(); }
+        }
+
+        private void MakeTextNormal()
+        {
+            text.fontStyle = FontStyle.Normal; text.color = Color.black;
         }
     }
 }
