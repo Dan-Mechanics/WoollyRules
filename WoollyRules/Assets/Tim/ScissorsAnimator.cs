@@ -19,6 +19,7 @@ namespace WoollyRules
         [SerializeField] private float cutLerpValue = 0f;
         [SerializeField] private float hoverLerpValue = 0f;
 
+        [SerializeField] private float openScissorsAngle = 0f;
         //[SerializeField] private Transform forward_ = null;
 
         public bool open;
@@ -30,6 +31,11 @@ namespace WoollyRules
             {
                 Debug.LogError("if (scissorParts.Length != scissorPartsOpen.Length || scissorParts.Length != scissorPartsClosed.Length) !!");
                 Destroy(gameObject);
+            }
+
+            for (int i = 0; i < scissorPartsOpen.Length; i++)
+            {
+                scissorPartsOpen[i].Rotate(Vector3.forward * openScissorsAngle, Space.Self);
             }
         }
 
