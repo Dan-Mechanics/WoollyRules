@@ -45,6 +45,6 @@ todo for this day ish:
 scissor orientation hotfix VVV
 webcam preload bool and recording icon topright. VVV
 sheep and planet orientation. --> i be needing that sheep model kinda soon tho, espcially for splliting logic.
-scissors actually respond like cursor.
+scissors actually respond like cursor. VVV
 
 blinkingtext and blinking are same thing. VVV

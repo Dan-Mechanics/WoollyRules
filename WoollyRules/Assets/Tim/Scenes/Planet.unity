@@ -3125,25 +3125,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1497449479}
     - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
-      propertyPath: hoverLerpValue
-      value: 0.125
-      objectReference: {fileID: 0}
-    - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
-      propertyPath: scissorsVisual
-      value: 
-      objectReference: {fileID: 712994279}
-    - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
       propertyPath: scissorsForward
       value: 
       objectReference: {fileID: 690337776}
-    - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
-      propertyPath: cutAnimationTime
-      value: 0.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
-      propertyPath: closeAnimationTime
-      value: 0.25
-      objectReference: {fileID: 0}
     - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
       propertyPath: 'scissorPartsOpen.Array.data[0]'
       value: 

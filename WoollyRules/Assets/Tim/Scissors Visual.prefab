@@ -45,7 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d3bb3c5f38a78249accaeab639022b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scissors: {fileID: 349113634334004226}
+  scissors: {fileID: 0}
+  scissorsVisual: {fileID: 349113634334004226}
   scissorsForward: {fileID: 0}
   scissorParts:
   - {fileID: 7050303024154708916}
@@ -58,9 +59,8 @@ MonoBehaviour:
   - {fileID: 0}
   cutLerpValue: 0.1
   hoverLerpValue: 0.1
-  openScissorsAngle: 20
-  open: 0
-  forward: 0
+  openScissorsAngle: 22.5
+  cutAnimationTime: 0.35
 --- !u!1001 &5921295422040241978
 PrefabInstance:
   m_ObjectHideFlags: 0
