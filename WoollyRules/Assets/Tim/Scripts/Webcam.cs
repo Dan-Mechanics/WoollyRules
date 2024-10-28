@@ -6,12 +6,14 @@ namespace WoollyRules
 {
     /// <summary>
     /// NOTE: you can either preload the webcam or not ...
+    /// TODO: refactor, should not a must ...
     /// </summary>
     public class Webcam : MonoBehaviour
     {
         [SerializeField] private Image imageToProjectWebcamOn = null;
         [SerializeField] private float refreshInterval = 0f;
         [SerializeField] private bool matchImageSizeToWebcamSize = false;
+        [SerializeField] private bool preload = false;
 
         private WebCamTexture webCamTexture;
         private Texture2D texture;
@@ -20,11 +22,24 @@ namespace WoollyRules
         private Vector2 pivot = new Vector2(0.5f, 0.5f);
         private Color[] webcamColors;
 
+        private bool showing;
+        private bool setupDone;
+
+        private void Start()
+        {
+            if (preload) 
+            {
+                StartCoroutine(Auhtorize());
+            }
+        }
+
         public void Show() 
         {
-            gameObject.SetActive(true);
-            
-            StartCoroutine(Auhtorize());
+            showing = true;
+
+            //gameObject.SetActive(true);
+
+            if (!preload) { StartCoroutine(Auhtorize()); }
         }
 
         /// <summary>
@@ -32,8 +47,11 @@ namespace WoollyRules
         /// </summary>
         private IEnumerator Auhtorize()
         {
+            if (setupDone) { yield break; }
+            
             LogWebcams();
 
+            // spooky magic code here dont touch !
             yield return Application.RequestUserAuthorization(UserAuthorization.WebCam);
 
             if (Application.HasUserAuthorization(UserAuthorization.WebCam))
@@ -50,6 +68,9 @@ namespace WoollyRules
 
         private void Update()
         {
+            if (!showing) { return; }
+            if (!setupDone) { return; }
+
             if (Time.time >= nextRefresh) 
             {
                 RefreshWebcam();
@@ -82,7 +103,10 @@ namespace WoollyRules
 
             ResizeWebcam();
 
+            //RefreshWebcam();
             //gameObject.SetActive(false);
+
+            setupDone = true;
         }
 
         private void RefreshWebcam()
@@ -103,7 +127,7 @@ namespace WoollyRules
 
             imageToProjectWebcamOn.sprite = Sprite.Create(texture, rect, pivot, 100f);
 
-            imageToProjectWebcamOn.enabled = true;
+            imageToProjectWebcamOn.gameObject.SetActive(true);
         }
 
         private void ResizeWebcam() 

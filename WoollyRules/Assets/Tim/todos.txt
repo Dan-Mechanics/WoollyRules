@@ -39,6 +39,9 @@ and thats basically it.s
 ---
 
 todo for this day ish:
-scissor orientation hotfix
-webcam preload bool and recording icon topright.
-sheep and planet orientation.
+scissor orientation hotfix VVV
+webcam preload bool and recording icon topright. VVV
+sheep and planet orientation. --> i be needing that sheep model kinda soon tho, espcially for splliting logic.
+scissors actually repsond like cursor.
+
+blinkingtext and blinking are same thing.
