@@ -2,6 +2,9 @@
 
 namespace WoollyRules
 {
+    /// <summary>
+    /// FIX: It could maybe make more sense if the position of this object is used as reference.
+    /// </summary>
     public class PrefabSpawner : MonoBehaviour
     {
         [SerializeField] private GameObject prefab = null;
