@@ -30,8 +30,15 @@ schaar animatie when cutting
 
 implement luuk sheep model
 
----s
+---
 
 i dont have the power cable i cant really do much atm
 what i would like to do is make it so that the forward works better
 and thats basically it.s
+
+---
+
+todo for this day ish:
+scissor orientation hotfix
+webcam preload bool and recording icon topright.
+sheep and planet orientation.
