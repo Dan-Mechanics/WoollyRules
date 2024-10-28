@@ -46,5 +46,6 @@ scissor orientation hotfix VVV
 webcam preload bool and recording icon topright. VVV
 sheep and planet orientation. --> i be needing that sheep model kinda soon tho, espcially for splliting logic.
 scissors actually respond like cursor. VVV
+dont make ICuttable its too much hastle because you have inheritance anyway VVV
 
 blinkingtext and blinking are same thing. VVV
