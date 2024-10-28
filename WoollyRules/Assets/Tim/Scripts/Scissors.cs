@@ -20,7 +20,7 @@ namespace WoollyRules
         [Header("References")]
 
         [SerializeField] private Camera cam = null;
-        [SerializeField] private BlinkingText cutWarning = null;
+        //[SerializeField] private BlinkingText cutWarning = null;
         [SerializeField] private LayerMask cuttableMask = 0;
         [SerializeField] private ScissorsCursor scissorsCursor = null;
         //[SerializeField] private ScissorsAnimator animator = null;
@@ -46,42 +46,43 @@ namespace WoollyRules
         {
             if (Input.GetKeyDown(cutKey))
             {
-                Cuttable cuttable = CheckCuttable();
+                ICuttable cuttable = CheckCuttableCut();
 
                 if (cuttable != null) { Cut(cuttable); }
             }
         }
 
-        private Cuttable CheckCuttable(out RaycastHit hit, out bool hasHit)
+        private ICuttable CheckCuttableHover(out RaycastHit hit, out bool hasHit)
         {
             Ray ray = cam.ScreenPointToRay(scissorsCursor.CursorPosition);
 
             hasHit = Physics.Raycast(ray, out hit, maxCutRange, cuttableMask, QueryTriggerInteraction.Ignore);
 
-            if (hasHit) { return hit.transform.GetComponent<Cuttable>(); }
+            if (hasHit) { return hit.transform.GetComponent<ICuttable>(); }
 
             return null;
         }
 
-        private Cuttable CheckCuttable()
+        private ICuttable CheckCuttableCut()
         {
             Ray ray = cam.ScreenPointToRay(scissorsCursor.CursorPosition);
 
             if (Physics.Raycast(ray, out RaycastHit hit, maxCutRange, cuttableMask, QueryTriggerInteraction.Ignore)) 
             {
-                return hit.transform.GetComponent<Cuttable>();
+                return hit.transform.GetComponent<ICuttable>();
             }
 
             return null;
         }
 
-        private void Cut(Cuttable cuttable) 
+        private void Cut(ICuttable cuttable) 
         {
             onCut?.Invoke();
 
             cuttable.Cut();
 
-            if (!cuttable.IsSheep) 
+            // does this work ??
+            if (!((Cuttable)cuttable).IsSheep) 
             {
                 // enable timer and webcam etc etc.
 
@@ -99,13 +100,14 @@ namespace WoollyRules
         /// </summary>
         private void CheckIfHoveringSomething()
         {
-            Cuttable cuttable = CheckCuttable(out RaycastHit hit, out bool hasHit);
+            ICuttable cuttable = CheckCuttableHover(out RaycastHit hit, out bool hasHit);
 
             OnPoint?.Invoke(hasHit, hit.point);
 
             if (cuttable != null)
             {
-                isHoveringOverSheep = cuttable.IsSheep;
+                // does this work ?
+                isHoveringOverSheep = ((Cuttable)cuttable).IsSheep;
 
                 if (!isHoveringOverSheep) { onWarnRule?.Invoke(); } // cutWarning.Warn();
 

@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 namespace WoollyRules
 {
-    public class Cuttable : MonoBehaviour
+    public class Cuttable : MonoBehaviour, ICuttable
     {
         public bool IsSheep => isSheep;
         
