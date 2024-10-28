@@ -38,10 +38,13 @@ and thats basically it.s
 
 ---
 
+to ask : i need better scissor cursor thing. --> ask #art channel and then send ur cursor file with dimensions so they can make it a little bit better.
+wont have that DIY indie feel anymore tho but whatever.
+
 todo for this day ish:
 scissor orientation hotfix VVV
 webcam preload bool and recording icon topright. VVV
 sheep and planet orientation. --> i be needing that sheep model kinda soon tho, espcially for splliting logic.
-scissors actually repsond like cursor.
+scissors actually respond like cursor.
 
-blinkingtext and blinking are same thing.
+blinkingtext and blinking are same thing. VVV

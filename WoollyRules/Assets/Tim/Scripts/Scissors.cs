@@ -13,7 +13,7 @@ namespace WoollyRules
     /// </summary>
     public class Scissors : MonoBehaviour
     {
-        public bool IsHoveringSheep => isHoverSheep;
+        public bool IsHoveringSheep => isHoveringOverSheep;
         public event Action<bool, bool> OnHoverFeedback;
         public event Action<bool, Vector3> OnPoint;
         
@@ -23,7 +23,9 @@ namespace WoollyRules
         [SerializeField] private BlinkingText cutWarning = null;
         [SerializeField] private LayerMask cuttableMask = 0;
         [SerializeField] private ScissorsCursor scissorsCursor = null;
+        //[SerializeField] private ScissorsAnimator animator = null;
         [SerializeField] private UnityEvent onWarnRule = null;
+        [SerializeField] private UnityEvent onCut = null;
 
         [Header("Settings")]
 
@@ -35,7 +37,7 @@ namespace WoollyRules
         [Tooltip("FUTURE: this is bascialyl onGameEnd so mayne it should be on another script like gamemanager.cs for example ...")]
         [SerializeField] private UnityEvent onRuleBroken = null;
 
-        private bool isHoverSheep;
+        private bool isHoveringOverSheep;
 
         /// <summary>
         /// Called from ScissorsCursor.cs every update.
@@ -75,11 +77,13 @@ namespace WoollyRules
 
         private void Cut(Cuttable cuttable) 
         {
+            onCut?.Invoke();
+
             cuttable.Cut();
 
             if (!cuttable.IsSheep) 
             {
-                // enable timer and webcam.
+                // enable timer and webcam etc etc.
 
                 onRuleBroken?.Invoke();
             }
@@ -101,15 +105,16 @@ namespace WoollyRules
 
             if (cuttable != null)
             {
-                isHoverSheep = cuttable.IsSheep;
-                if (!isHoverSheep) { onWarnRule?.Invoke(); } // cutWarning.Warn();
+                isHoveringOverSheep = cuttable.IsSheep;
 
-                OnHoverFeedback?.Invoke(true, isHoverSheep);
+                if (!isHoveringOverSheep) { onWarnRule?.Invoke(); } // cutWarning.Warn();
+
+                OnHoverFeedback?.Invoke(true, isHoveringOverSheep);
             }
             else 
             {
+                isHoveringOverSheep = true;
                 OnHoverFeedback?.Invoke(false, true);
-                isHoverSheep = true;
             }
         }
     }

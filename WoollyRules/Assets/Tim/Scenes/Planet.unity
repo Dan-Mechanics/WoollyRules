@@ -1415,6 +1415,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 349113634334004226, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
   m_PrefabInstance: {fileID: 486829475132601413}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &712994280 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
+  m_PrefabInstance: {fileID: 486829475132601413}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d3bb3c5f38a78249accaeab639022b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &831339346
 GameObject:
   m_ObjectHideFlags: 0
@@ -2215,6 +2226,21 @@ MonoBehaviour:
       - m_Target: {fileID: 413889160}
         m_TargetAssemblyTypeName: WoollyRules.BlinkingText, Assembly-CSharp
         m_MethodName: Warn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onCut:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 712994280}
+        m_TargetAssemblyTypeName: WoollyRules.ScissorsAnimator, Assembly-CSharp
+        m_MethodName: Cut
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3095,9 +3121,29 @@ PrefabInstance:
       value: Scissors Visual
       objectReference: {fileID: 0}
     - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
+      propertyPath: scissors
+      value: 
+      objectReference: {fileID: 1497449479}
+    - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
+      propertyPath: hoverLerpValue
+      value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
+      propertyPath: scissorsVisual
+      value: 
+      objectReference: {fileID: 712994279}
+    - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
       propertyPath: scissorsForward
       value: 
       objectReference: {fileID: 690337776}
+    - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
+      propertyPath: cutAnimationTime
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
+      propertyPath: closeAnimationTime
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
       propertyPath: 'scissorPartsOpen.Array.data[0]'
       value: 

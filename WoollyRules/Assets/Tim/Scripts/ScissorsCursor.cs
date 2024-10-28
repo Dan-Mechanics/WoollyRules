@@ -42,7 +42,7 @@ namespace WoollyRules
         }
 
         /// <summary>
-        /// TODO: have an indication in the scissors when ur not allowed to cut ( the bear for example ).
+        /// TODO: have an indication in the scissors when ur not allowed to cut ( the bear for example ). VVV
         /// </summary>
         private void ChangeCursorSprite(bool isCuttable, bool isSheep) 
         {
