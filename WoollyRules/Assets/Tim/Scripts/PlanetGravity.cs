@@ -8,12 +8,12 @@ namespace WoollyRules
     [RequireComponent(typeof(Rigidbody))]
     public class PlanetGravity : MonoBehaviour
     {
-        [SerializeField] private bool orientSelfAgainstGravity = false;
-        [SerializeField] private Transform graphic = null;
-        [SerializeField] private float graphicRotation = 0f;
+        //[SerializeField] private bool orientSelfAgainstGravity = false;
+        //[SerializeField] private Transform graphic = null;
+        //[SerializeField] private float graphicRotation = 0f;
 
-        [SerializeField] private bool selfCenter = false;   
-        [SerializeField] private float selfCenterTorque = 0f;
+        //[SerializeField] private bool standUpRight = false;   
+        [SerializeField] private float standUprightTorque = 0f;
 
         private Rigidbody rb;
         private Transform planet;
@@ -26,7 +26,7 @@ namespace WoollyRules
             rb.useGravity = false;
             planet = GameObject.FindWithTag("Planet").transform;
 
-            graphicRotation = Random.Range(0f, 360f);
+            //graphicRotation = Random.Range(0f, 360f);
 
             //if (graphic == null) { Debug.LogError("if (graphic == null) !!"); Destroy(gameObject); }
         }
@@ -36,27 +36,29 @@ namespace WoollyRules
         /// </summary>
         private void FixedUpdate()
         {
-            Vector3 accel = (planet.position - transform.position).normalized * Physics.gravity.magnitude;
+            Vector3 gravity = (planet.position - transform.position).normalized * Physics.gravity.magnitude;
 
-
-            rb.AddForce(accel, ForceMode.Acceleration);
+            rb.AddForce(gravity, ForceMode.Acceleration);
 
             // hope this works ...
-            if (orientSelfAgainstGravity)
+            /*if (orientSelfAgainstGravity)
             {
                 graphic.up = -accel.normalized;
                 graphic.Rotate(Vector3.up * graphicRotation, Space.Self);
-            }
+            }*/
 
-            if (selfCenter) 
-            {
-                Vector3 ideal = accel.normalized;
+            // yippie performnance !!!
+            if (standUprightTorque > 0f) { StandUpright(gravity); }
+        }
 
-                Vector3 current = transform.up;
-
-                Vector3 torque = Vector3.Cross(ideal, current);
-                rb.AddTorque(torque * selfCenterTorque, ForceMode.Acceleration);
-            }
+        /// <summary>
+        /// https://discussions.unity.com/t/rotate-rigidbody-with-addtorque-towards-a-specific-location/792692/3
+        /// 
+        /// Don't ask it just works. (tm)
+        /// </summary>
+        private void StandUpright(Vector3 gravity) 
+        {
+            rb.AddTorque(Vector3.Cross(gravity.normalized, transform.up) * standUprightTorque, ForceMode.Acceleration);
         }
     }
 }

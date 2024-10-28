@@ -228,11 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf25b3d621e796b4c90791f8ca6a6c3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orientSelfAgainstGravity: 0
-  graphic: {fileID: 6077336220672943406}
-  graphicRotation: 0
-  selfCenter: 1
-  selfCenterTorque: 100
+  standUprightTorque: 100
 --- !u!1 &8773053612986012478
 GameObject:
   m_ObjectHideFlags: 0
@@ -5134,14 +5130,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4939797792374030956, guid: 414cddbd9b0cdc44ca3dbdf544263a20, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: fd851ebd963111944973c3aca9955729, type: 2}
-    - target: {fileID: 7854772966126188972, guid: 414cddbd9b0cdc44ca3dbdf544263a20, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: fd851ebd963111944973c3aca9955729, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5326,14 +5314,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4939797792374030956, guid: 414cddbd9b0cdc44ca3dbdf544263a20, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: fd851ebd963111944973c3aca9955729, type: 2}
-    - target: {fileID: 7854772966126188972, guid: 414cddbd9b0cdc44ca3dbdf544263a20, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: fd851ebd963111944973c3aca9955729, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -5073,11 +5073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf25b3d621e796b4c90791f8ca6a6c3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orientSelfAgainstGravity: 0
-  graphic: {fileID: 5672868330285266884}
-  graphicRotation: 0
-  selfCenter: 1
-  selfCenterTorque: 100
+  standUprightTorque: 100
 --- !u!1001 &1113673689788199579
 PrefabInstance:
   m_ObjectHideFlags: 0

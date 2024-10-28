@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.25, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5271391331434916193}
@@ -124,11 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf25b3d621e796b4c90791f8ca6a6c3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orientSelfAgainstGravity: 0
-  graphic: {fileID: 0}
-  graphicRotation: 0
-  selfCenter: 0
-  selfCenterTorque: 0
+  standUprightTorque: 0
 --- !u!1001 &6747835840490614641
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -189,6 +185,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1812856189829066013, guid: 066b5f262c262d246a07c6188b5c607b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8a293d8ac1843d4419c015422ee9f91f, type: 2}
     - target: {fileID: 2290447794502605994, guid: 066b5f262c262d246a07c6188b5c607b, type: 3}
       propertyPath: m_Name
       value: Graphic
@@ -197,6 +197,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3505175550154856157, guid: 066b5f262c262d246a07c6188b5c607b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8a293d8ac1843d4419c015422ee9f91f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
