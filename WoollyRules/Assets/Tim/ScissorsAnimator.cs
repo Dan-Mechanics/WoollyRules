@@ -19,6 +19,8 @@ namespace WoollyRules
         [SerializeField] private float cutLerpValue = 0f;
         [SerializeField] private float hoverLerpValue = 0f;
 
+        [SerializeField] private Transform forward_ = null;
+
         public bool open;
         public bool forward;
 
@@ -33,8 +35,8 @@ namespace WoollyRules
 
         private void FixedUpdate()
         {
-            /*open = Input.GetKey(KeyCode.Space);
-            forward = Input.GetKey(KeyCode.W);*/
+            open = Input.GetKey(KeyCode.Mouse1);
+            forward = Input.GetKey(KeyCode.Mouse0);
 
             scissorsForward.forward = scissors.forward;
             scissorsForward.localPosition = scissorsBackward.localPosition + scissorsForward.forward * forwardScissorsForwardAmount;

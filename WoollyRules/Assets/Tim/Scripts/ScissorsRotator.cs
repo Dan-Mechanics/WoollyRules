@@ -6,7 +6,7 @@ namespace WoollyRules
     {
         [SerializeField] private Scissors scissors = null;
         [SerializeField] private float shakeStrength = 0f;
-        [SerializeField] private bool aimAtNothingStartingRot = false;
+        [SerializeField] private bool aimAtNothingIsStartingRot = false;
 
         private Quaternion startingRotation;
 
@@ -25,7 +25,7 @@ namespace WoollyRules
             {
                 transform.LookAt(point);
             }
-            else if(aimAtNothingStartingRot)
+            else if(aimAtNothingIsStartingRot)
             {
                 transform.localRotation = startingRotation;
             }

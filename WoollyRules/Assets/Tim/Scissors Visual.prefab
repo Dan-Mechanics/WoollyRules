@@ -48,7 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scissors: {fileID: 0}
   shakeStrength: 1.25
-  aimAtNothingStartingRot: 0
+  aimAtNothingIsStartingRot: 0
 --- !u!114 &8467359373721739467
 MonoBehaviour:
   m_ObjectHideFlags: 0

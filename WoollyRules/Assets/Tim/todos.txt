@@ -29,3 +29,9 @@ schaar animatie when cutting
 ---
 
 implement luuk sheep model
+
+---s
+
+i dont have the power cable i cant really do much atm
+what i would like to do is make it so that the forward works better
+and thats basically it.s

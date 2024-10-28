@@ -1161,7 +1161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1801927529696930614, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7409272554457651354, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
       propertyPath: scissors

@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|c:\\users\\dan-mechanics\\development\\github\\woollyrules\\woollyrules\\assets\\tim\\scissorsanimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|solutionrelative:assets\\tim\\scissorsanimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|c:\\users\\dan-mechanics\\development\\github\\woollyrules\\woollyrules\\assets\\tim\\todos.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|solutionrelative:assets\\tim\\todos.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|c:\\users\\dan-mechanics\\development\\github\\woollyrules\\woollyrules\\assets\\tim\\scripts\\scissorsrotator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|solutionrelative:assets\\tim\\scripts\\scissorsrotator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "todos.txt",
+              "DocumentMoniker": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\todos.txt",
+              "RelativeDocumentMoniker": "Assets\\Tim\\todos.txt",
+              "ToolTip": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\todos.txt",
+              "RelativeToolTip": "Assets\\Tim\\todos.txt",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-10-28T12:54:00.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ScissorsRotator.cs",
+              "DocumentMoniker": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\Scripts\\ScissorsRotator.cs",
+              "RelativeDocumentMoniker": "Assets\\Tim\\Scripts\\ScissorsRotator.cs",
+              "ToolTip": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\Scripts\\ScissorsRotator.cs",
+              "RelativeToolTip": "Assets\\Tim\\Scripts\\ScissorsRotator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T12:48:51.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ScissorsAnimator.cs",
+              "DocumentMoniker": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\ScissorsAnimator.cs",
+              "RelativeDocumentMoniker": "Assets\\Tim\\ScissorsAnimator.cs",
+              "ToolTip": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\ScissorsAnimator.cs",
+              "RelativeToolTip": "Assets\\Tim\\ScissorsAnimator.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T12:43:40.424Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
