@@ -9,6 +9,7 @@ namespace WoollyRules
     {
         [SerializeField] private bool orientSelfAgainstGravity = false;
         [SerializeField] private Transform graphic = null;
+        [SerializeField] private float graphicRotation = 0f;
 
         private Rigidbody rb;
         private Transform planet;
@@ -21,6 +22,8 @@ namespace WoollyRules
             rb.useGravity = false;
             planet = GameObject.FindWithTag("Planet").transform;
 
+            graphicRotation = Random.Range(0f, 360f);
+
             //if (graphic == null) { Debug.LogError("if (graphic == null) !!"); Destroy(gameObject); }
         }
 
@@ -32,7 +35,11 @@ namespace WoollyRules
             rb.AddForce(accel, ForceMode.Acceleration);
 
             // hope this works ...
-            if (orientSelfAgainstGravity) { graphic.up = -accel.normalized; }
+            if (orientSelfAgainstGravity) 
+            { 
+                graphic.up = -accel.normalized;
+                graphic.Rotate(Vector3.up * graphicRotation, Space.Self);
+            }
         }
     }
 }

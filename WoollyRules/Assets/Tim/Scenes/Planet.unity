@@ -605,7 +605,6 @@ GameObject:
   - component: {fileID: 67143631}
   - component: {fileID: 67143633}
   - component: {fileID: 67143632}
-  - component: {fileID: 67143634}
   m_Layer: 5
   m_Name: End Screen
   m_TagString: Untagged
@@ -672,19 +671,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 67143630}
   m_CullTransparentMesh: 0
---- !u!114 &67143634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 67143630}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd6699576c2c83c47b82743c9886b715, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyTime: 10
 --- !u!1 &168078297
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,7 +968,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd6699576c2c83c47b82743c9886b715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTime: 0
 --- !u!1 &447342345
 GameObject:
   m_ObjectHideFlags: 0
@@ -1013,7 +998,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd6699576c2c83c47b82743c9886b715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTime: 15
 --- !u!114 &447342347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1192,7 +1176,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd6699576c2c83c47b82743c9886b715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTime: 15
 --- !u!1001 &690337775
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1882,7 +1865,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd6699576c2c83c47b82743c9886b715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTime: 0
 --- !u!1 &1152212321
 GameObject:
   m_ObjectHideFlags: 0
