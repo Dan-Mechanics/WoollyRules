@@ -11,6 +11,9 @@ namespace WoollyRules
         [SerializeField] private Transform graphic = null;
         [SerializeField] private float graphicRotation = 0f;
 
+        [SerializeField] private bool selfCenter = false;   
+        [SerializeField] private float selfCenterTorque = 0f;
+
         private Rigidbody rb;
         private Transform planet;
 
@@ -38,10 +41,20 @@ namespace WoollyRules
             rb.AddForce(accel, ForceMode.Acceleration);
 
             // hope this works ...
-            if (orientSelfAgainstGravity) 
-            { 
+            if (orientSelfAgainstGravity)
+            {
                 graphic.up = -accel.normalized;
                 graphic.Rotate(Vector3.up * graphicRotation, Space.Self);
+            }
+
+            if (selfCenter) 
+            {
+                Vector3 ideal = accel.normalized;
+
+                Vector3 current = transform.up;
+
+                Vector3 torque = Vector3.Cross(ideal, current);
+                rb.AddTorque(torque * selfCenterTorque, ForceMode.Acceleration);
             }
         }
     }
