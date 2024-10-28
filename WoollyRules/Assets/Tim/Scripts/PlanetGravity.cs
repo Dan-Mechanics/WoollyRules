@@ -27,6 +27,9 @@ namespace WoollyRules
             //if (graphic == null) { Debug.LogError("if (graphic == null) !!"); Destroy(gameObject); }
         }
 
+        /// <summary>
+        /// This is totally fine ...
+        /// </summary>
         private void FixedUpdate()
         {
             Vector3 accel = (planet.position - transform.position).normalized * Physics.gravity.magnitude;
