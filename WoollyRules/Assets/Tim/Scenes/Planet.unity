@@ -2215,7 +2215,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 963194227}
-  cutWarning: {fileID: 413889160}
   cuttableMask:
     serializedVersion: 2
     m_Bits: 1
@@ -2225,7 +2224,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 413889160}
         m_TargetAssemblyTypeName: WoollyRules.BlinkingText, Assembly-CSharp
-        m_MethodName: Warn
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

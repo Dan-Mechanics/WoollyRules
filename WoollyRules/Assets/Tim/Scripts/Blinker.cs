@@ -20,7 +20,6 @@ namespace WoollyRules
         {
             isBlinking = true;
 
-
             InvokeRepeating(nameof(Blink), 0f, interval);
         }
 

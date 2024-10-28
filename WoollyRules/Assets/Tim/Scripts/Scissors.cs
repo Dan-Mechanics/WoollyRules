@@ -39,6 +39,11 @@ namespace WoollyRules
 
         private bool isHoveringOverSheep;
 
+        private void FixedUpdate()
+        {
+            CheckIfHoveringSomething();
+        }
+
         /// <summary>
         /// Called from ScissorsCursor.cs every update.
         /// </summary>
@@ -46,43 +51,42 @@ namespace WoollyRules
         {
             if (Input.GetKeyDown(cutKey))
             {
-                ICuttable cuttable = CheckCuttableCut();
+                Cuttable cuttable = CheckCuttableAfterInput();
 
                 if (cuttable != null) { Cut(cuttable); }
             }
         }
 
-        private ICuttable CheckCuttableHover(out RaycastHit hit, out bool hasHit)
+        private Cuttable CheckCuttableHovering(out RaycastHit hit, out bool hasHit)
         {
             Ray ray = cam.ScreenPointToRay(scissorsCursor.CursorPosition);
 
             hasHit = Physics.Raycast(ray, out hit, maxCutRange, cuttableMask, QueryTriggerInteraction.Ignore);
 
-            if (hasHit) { return hit.transform.GetComponent<ICuttable>(); }
+            if (hasHit) { return hit.transform.GetComponent<Cuttable>(); }
 
             return null;
         }
 
-        private ICuttable CheckCuttableCut()
+        private Cuttable CheckCuttableAfterInput()
         {
             Ray ray = cam.ScreenPointToRay(scissorsCursor.CursorPosition);
 
             if (Physics.Raycast(ray, out RaycastHit hit, maxCutRange, cuttableMask, QueryTriggerInteraction.Ignore)) 
             {
-                return hit.transform.GetComponent<ICuttable>();
+                return hit.transform.GetComponent<Cuttable>();
             }
 
             return null;
         }
 
-        private void Cut(ICuttable cuttable) 
+        private void Cut(Cuttable cuttable) 
         {
             onCut?.Invoke();
 
             cuttable.Cut();
 
-            // does this work ??
-            if (!((Cuttable)cuttable).IsSheep) 
+            if (!cuttable.IsSheep) 
             {
                 // enable timer and webcam etc etc.
 
@@ -90,24 +94,18 @@ namespace WoollyRules
             }
         }
 
-        private void FixedUpdate()
-        {
-            CheckIfHoveringSomething();
-        }
-
         /// <summary>
         /// FUTURE: make a single-time event for when you mouseOver something basically because this spams it.
         /// </summary>
         private void CheckIfHoveringSomething()
         {
-            ICuttable cuttable = CheckCuttableHover(out RaycastHit hit, out bool hasHit);
+            Cuttable cuttable = CheckCuttableHovering(out RaycastHit hit, out bool hasHit);
 
             OnPoint?.Invoke(hasHit, hit.point);
 
             if (cuttable != null)
             {
-                // does this work ?
-                isHoveringOverSheep = ((Cuttable)cuttable).IsSheep;
+                isHoveringOverSheep = cuttable.IsSheep;
 
                 if (!isHoveringOverSheep) { onWarnRule?.Invoke(); } // cutWarning.Warn();
 

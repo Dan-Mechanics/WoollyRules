@@ -23,11 +23,11 @@ namespace WoollyRules
             //base.Start();
         }
 
-        public void Warn()
+        public override void Play()
         {
             if (isBlinking) { return; }
 
-            Play();
+            base.Play();
 
             Invoke(nameof(Stop), minBlinkingTime);
         }

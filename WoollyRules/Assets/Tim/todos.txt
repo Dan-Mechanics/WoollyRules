@@ -48,5 +48,3 @@ sheep and planet orientation. --> i be needing that sheep model kinda soon tho, 
 scissors actually respond like cursor. VVV
 
 blinkingtext and blinking are same thing. VVV
-
-make interfaces for cuttable ?
