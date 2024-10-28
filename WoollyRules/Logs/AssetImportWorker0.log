@@ -1866,3 +1866,567 @@ Start importing Assets/Tim/todos.txt using Guid(cdb871407f52a3f4aabbb4ba3386818c
  -> (artifact id: '9825f24c0e501293dadc243b067df428') in 0.0010467 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.707 seconds
+Refreshing native plugins compatible for Editor in 0.98 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.896 seconds
+Domain Reload Profiling: 1601ms
+	BeginReloadAssembly (200ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (19ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (49ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (427ms)
+		LoadAssemblies (318ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (197ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (174ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (896ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (595ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (80ms)
+			ProcessInitializeOnLoadAttributes (434ms)
+			ProcessInitializeOnLoadMethodAttributes (63ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 1.36 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5928 unused Assets / (4.6 MB). Loaded Objects now: 7179.
+Memory consumption went from 255.9 MB to 251.3 MB.
+Total: 9.088100 ms (FindLiveObjects: 0.817800 ms CreateObjectMapping: 1.080700 ms MarkObjects: 4.735100 ms  DeleteObjects: 2.453800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 252.684000 seconds.
+  path: Assets/Tim/Prefabs/Sheep.prefab
+  artifactKey: Guid(f678e62e5f5921d4cbee65519f199200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Sheep.prefab using Guid(f678e62e5f5921d4cbee65519f199200) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7b4c77cfcebf0c8419ae2bd86f06df9a') in 0.4315089 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 407
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.044935 seconds.
+  path: Assets/Tim/Prefabs/Sheep 1.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Sheep 1.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8889f9c6c30256d4af7c7dcc6148a089') in 0.0157489 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 407
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.653187 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b3cdf13af2edecee235437697a897f35') in 0.017919 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 407
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.150574 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3b12d99ad91cc4cac16db9b9064b5b17') in 0.0260674 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 407
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.017295 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '23e85ccd5764a1f9cfb2f09c4fc28d3b') in 0.0178347 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 407
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.779222 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3faab8781369b3c02121053ba64908e3') in 0.0180696 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 407
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.971867 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '88453bd19b9d2b5c33a97b932833a86b') in 0.017229 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 407
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.176271 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8f80cce6796cf421a2dc020d8dc7c755') in 0.0180306 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 407
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.200163 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'aa59055fff145283ffa141262561dff5') in 0.0175192 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 407
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.802168 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'be4ed7002878262b3cc88ace07c3181a') in 0.0208607 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 407
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.666942 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e20a224a772ae1e3e8af72c2bccddfc0') in 0.0188235 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 407
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.569560 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '92764a29597c3d608eb5ef31c5ee65f2') in 0.0178952 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 407
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.970235 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7dc269ffd7051d9d375536a32066a436') in 0.0188109 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 407
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.578663 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1f167f2aaf46e3b662130840badb3f68') in 0.0188266 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 407
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.629434 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '63ba8a5b1d835ae41377b0d333f610df') in 0.0226501 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 407
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.759438 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '9d0b996f1bc0e82d725823c5eb6094dd') in 0.0214853 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 407
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.958953 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '993105f2f288d9ba8559e68550b96791') in 0.0198185 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 407
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.251824 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ba2eb0ef8fd4af548918424656cacabd') in 0.0175162 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 407
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.333998 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7bdd26a3c685a94c3f2af0cdff2920e8') in 0.0170792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 407
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.668728 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1db81013e85e4e821db91d8894119231') in 0.0168579 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 407
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.476507 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '4d45751b879b46667d4b70678157f929') in 0.0203467 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 407
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.205205 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd409d251ccd13b2931e12cd4ba4b98f8') in 0.0185214 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 407
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.205660 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b53f960e00011d335f7480e8b1144791') in 0.0233924 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 407
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Tim/Prefabs/Sheep Graphic Tim.prefab
+  artifactKey: Guid(066b5f262c262d246a07c6188b5c607b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Sheep Graphic Tim.prefab using Guid(066b5f262c262d246a07c6188b5c607b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '9a4cd076715b9a4a1a9e70e7d27e9e13') in 0.0273247 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 174
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.674675 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '55f089a1a1eb59638f4d4a95ed1f6e5c') in 0.0234829 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 407
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.296955 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7eebe05002bdcdcc57b296391b3f5d8f') in 0.0178969 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 407
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.773543 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2207bad42250c2e1b019e8511575e6e1') in 0.017635 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 407
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.676301 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2621c3b698456efcef8af3e47ba9d2f5') in 0.0171488 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 403
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.295570 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '733f21266308d4c0655fd5c8fdc309c4') in 0.0210559 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 403
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.357511 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c225b06bdb9ec7806cb9e5739d4ef41f') in 0.0196581 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 337
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.142734 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '143297baa83b6e5e728b09940680b2a8') in 0.0196811 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 328
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.376471 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7d78f198c6f89f4cbdfb07128b092148') in 0.0168307 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 328
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.036523 seconds.
+  path: Assets/Tim/Prefabs/Piece.prefab
+  artifactKey: Guid(414cddbd9b0cdc44ca3dbdf544263a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Piece.prefab using Guid(414cddbd9b0cdc44ca3dbdf544263a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8a3684ca4fe866018b94ee0298e66d1f') in 0.0141253 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 251
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.158047 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ee715946a236a6b7370821c0dc1da538') in 0.016879 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 404
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.383189 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '69ff656efadfaab03b5fe650b6f72f8d') in 0.0173801 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 479
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.589378 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6ddbe09d5d063e629cc341c2f855b999') in 0.017855 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 479
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.052721 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'bd36dabb8fc10856dc157b13992dec47') in 0.0189735 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 479
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.236972 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b655bfd08784560ca940c5785f13375c') in 0.0165687 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 479
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.760 seconds
+Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.896 seconds
+Domain Reload Profiling: 1654ms
+	BeginReloadAssembly (211ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (19ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (467ms)
+		LoadAssemblies (353ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (210ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (187ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (896ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (594ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (81ms)
+			ProcessInitializeOnLoadAttributes (436ms)
+			ProcessInitializeOnLoadMethodAttributes (61ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (20ms)
+Refreshing native plugins compatible for Editor in 1.28 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5929 unused Assets / (4.7 MB). Loaded Objects now: 7202.
+Memory consumption went from 260.6 MB to 255.9 MB.
+Total: 10.338700 ms (FindLiveObjects: 0.903000 ms CreateObjectMapping: 1.207200 ms MarkObjects: 5.856600 ms  DeleteObjects: 2.370700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 103.795619 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '302fe06bb54f39f9d50b05fd1916ce72') in 0.4078361 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 479
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.980973 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ba495378232545eccd51b03ab2c740df') in 0.0258015 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 479
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.940343 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f7b7e4107592f5482dbc7e2d85495bb7') in 0.0203901 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 479
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.736 seconds
+Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.892 seconds
+Domain Reload Profiling: 1624ms
+	BeginReloadAssembly (207ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (19ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (58ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (450ms)
+		LoadAssemblies (324ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (213ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (190ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (893ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (580ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (79ms)
+			ProcessInitializeOnLoadAttributes (425ms)
+			ProcessInitializeOnLoadMethodAttributes (59ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (22ms)
+Refreshing native plugins compatible for Editor in 1.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5928 unused Assets / (4.9 MB). Loaded Objects now: 7225.
+Memory consumption went from 264.8 MB to 259.9 MB.
+Total: 9.124500 ms (FindLiveObjects: 0.807100 ms CreateObjectMapping: 1.110800 ms MarkObjects: 4.573300 ms  DeleteObjects: 2.632600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 31.541408 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '385ee3b793f38af4f42beba6c6558483') in 0.4465696 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 479
+
