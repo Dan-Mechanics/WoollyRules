@@ -24,8 +24,9 @@ namespace WoollyRules
             {
                 startingNumber = 0f;
                 onTimerDone?.Invoke();
+                text.text = startingNumber.ToString();
                 done = true;
-                Destroy(this);
+                //Destroy(this);
             }
 
             text.text = startingNumber.ToString();

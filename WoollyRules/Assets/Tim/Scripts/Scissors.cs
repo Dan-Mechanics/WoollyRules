@@ -89,7 +89,6 @@ namespace WoollyRules
             if (!cuttable.IsSheep) 
             {
                 // enable timer and webcam etc etc.
-
                 onRuleBroken?.Invoke();
             }
         }

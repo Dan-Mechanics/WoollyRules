@@ -44,12 +44,12 @@ wont have that DIY indie feel anymore tho but whatever.
 todo for this day ish:
 scissor orientation hotfix VVV
 webcam preload bool and recording icon topright. VVV
-sheep and planet orientation. --> i be needing that sheep model kinda soon tho, espcially for splliting logic.
+sheep and planet orientation. --> i be needing that sheep model kinda soon tho, espcially for splliting logic. VVV
 scissors actually respond like cursor. VVV
 dont make ICuttable its too much hastle because you have inheritance anyway VVV
 
 blinkingtext and blinking are same thing. VVV
 
-add prefabs folder
+add prefabs folder VVV
 
- FIX: It could maybe make more sense if the position of this object is used as reference.
+FIX: It could maybe make more sense if the position of this object is used as reference. --> prefabspawner.cs
