@@ -52,4 +52,9 @@ blinkingtext and blinking are same thing. VVV
 
 add prefabs folder VVV
 
-FIX: It could maybe make more sense if the position of this object is used as reference. --> prefabspawner.cs
+FIX: It could maybe make more sense if the position of this object is used as reference. --> prefabspawner.cs VVV
+
+---
+
+now i need lukes sheep model and then implement that and see from there with regard to split object orientation and all that ...
+befoer that i could use sophie sheep model to get mvp
