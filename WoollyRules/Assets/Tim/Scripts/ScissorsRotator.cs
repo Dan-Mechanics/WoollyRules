@@ -6,33 +6,24 @@ namespace WoollyRules
     {
         [SerializeField] private Scissors scissors = null;
         [SerializeField] private float shakeStrength = 0f;
-        [SerializeField] private bool aimAtNothingIsStartingRot = false;
-
-        private Quaternion startingRotation;
-        private Vector3 lastPoint;
-
 
         /// <summary>
         /// We do it like this because we need the starting rotation in Point().
         /// </summary>
-        private void Start()
+        private void Awake()
         {
-            startingRotation = transform.localRotation;
             scissors.OnPoint += Point;
         }
 
         private void Point(bool hasHit, Vector3 point) 
         {
-            if (hasHit) { lastPoint = point; }
-            else if (aimAtNothingIsStartingRot)
-            {
-                transform.localRotation = startingRotation;
-            }
+            if (!hasHit) { return; }
 
-            if (!aimAtNothingIsStartingRot) { transform.LookAt(lastPoint); }
+            transform.LookAt(point);
 
             // add shake because the scissors is scared.
-            if (hasHit && !scissors.IsHoveringSheep) { transform.Rotate(Random.insideUnitSphere.normalized * shakeStrength, Space.World); }
+            // if we aint hitting shit then we cant be quivering. like a bithc. 
+            if (!scissors.IsHoveringSheep) { transform.Rotate(Random.insideUnitSphere.normalized * shakeStrength, Space.World); }
         }
     }
 }

@@ -829,14 +829,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382657941}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.01745245, y: 0, z: 0, w: 0.99984777}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 963194228}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 2, y: 0, z: 0}
 --- !u!114 &382657943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1099,7 +1099,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 349113634334004226, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.25
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 349113634334004226, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2787,7 +2787,7 @@ Transform:
   m_GameObject: {fileID: 2051059823}
   serializedVersion: 2
   m_LocalRotation: {x: -0.31426898, y: -0, z: -0, w: 0.949334}
-  m_LocalPosition: {x: 1.82, y: -0.68, z: 6.2}
+  m_LocalPosition: {x: 1.82, y: -0.85, z: 5.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2811,7 +2811,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scissors: {fileID: 1497449479}
   shakeStrength: 1
-  aimAtNothingIsStartingRot: 0
 --- !u!1001 &2127521790
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2951,9 +2950,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1497449479}
     - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
+      propertyPath: cutLerpValue
+      value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
       propertyPath: scissorsForward
       value: 
       objectReference: {fileID: 690337776}
+    - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
+      propertyPath: cutAnimationTime
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
       propertyPath: 'scissorPartsOpen.Array.data[0]'
       value: 
