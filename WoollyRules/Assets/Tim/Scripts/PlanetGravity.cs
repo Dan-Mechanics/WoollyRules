@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
 
 namespace WoollyRules
 {
+    /// <summary>
+    /// TODO: refactor.
+    /// </summary>
     [RequireComponent(typeof(Rigidbody))]
     public class PlanetGravity : MonoBehaviour
     {

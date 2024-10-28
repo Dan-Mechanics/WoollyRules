@@ -2430,3 +2430,159 @@ Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549
  -> (artifact id: '385ee3b793f38af4f42beba6c6558483') in 0.4465696 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 479
 
+========================================================================
+Received Import Request.
+  Time since last request: 11.092946 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6b90dde0132404d1a816763f2aaa70a1') in 0.0209707 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 475
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.975776 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '66304d4546d10fddf67301bac9729e75') in 0.018476 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 472
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.13 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5921 unused Assets / (5.3 MB). Loaded Objects now: 7365.
+Memory consumption went from 273.3 MB to 268.1 MB.
+Total: 11.234000 ms (FindLiveObjects: 0.800400 ms CreateObjectMapping: 0.978600 ms MarkObjects: 6.538300 ms  DeleteObjects: 2.915600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.723 seconds
+Refreshing native plugins compatible for Editor in 1.09 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.799 seconds
+Domain Reload Profiling: 1520ms
+	BeginReloadAssembly (211ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (20ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (49ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (436ms)
+		LoadAssemblies (338ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (194ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (170ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (800ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (510ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (78ms)
+			ProcessInitializeOnLoadAttributes (365ms)
+			ProcessInitializeOnLoadMethodAttributes (51ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 1.05 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5926 unused Assets / (4.3 MB). Loaded Objects now: 7248.
+Memory consumption went from 269.0 MB to 264.7 MB.
+Total: 7.843800 ms (FindLiveObjects: 0.749400 ms CreateObjectMapping: 0.935900 ms MarkObjects: 4.204500 ms  DeleteObjects: 1.953400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.706 seconds
+Refreshing native plugins compatible for Editor in 1.03 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.807 seconds
+Domain Reload Profiling: 1511ms
+	BeginReloadAssembly (181ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (40ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (433ms)
+		LoadAssemblies (322ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (200ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (171ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (808ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (515ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (74ms)
+			ProcessInitializeOnLoadAttributes (370ms)
+			ProcessInitializeOnLoadMethodAttributes (54ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (20ms)
+Refreshing native plugins compatible for Editor in 1.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5926 unused Assets / (4.6 MB). Loaded Objects now: 7250.
+Memory consumption went from 268.8 MB to 264.3 MB.
+Total: 7.831800 ms (FindLiveObjects: 0.740300 ms CreateObjectMapping: 0.950600 ms MarkObjects: 4.100200 ms  DeleteObjects: 2.040300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 85.384168 seconds.
+  path: Assets/Tim/Prefabs/New_sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New_sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '14a1f8f5fba1313ff3f6f1c77fc7e841') in 0.4618269 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 472
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.377162 seconds.
+  path: Assets/Tim/Prefabs/New Bear.prefab
+  artifactKey: Guid(503b7468d6b979b42877bd0ff8a49026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New Bear.prefab using Guid(503b7468d6b979b42877bd0ff8a49026) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '646810ccebeb7c7daee7d35ad81b6fde') in 0.0190023 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 473
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.826257 seconds.
+  path: Assets/Tim/Prefabs/New Sheep.prefab
+  artifactKey: Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/New Sheep.prefab using Guid(e691935a5bfde3549a3118d11047fbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd1612de083985e2685db83bece27197f') in 0.0172768 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 472
+

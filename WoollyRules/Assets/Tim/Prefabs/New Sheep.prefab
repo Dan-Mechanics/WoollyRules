@@ -4860,7 +4860,7 @@ GameObject:
   - component: {fileID: 4000651752663161429}
   - component: {fileID: 4669090254976714646}
   m_Layer: 0
-  m_Name: New_sheep
+  m_Name: New Sheep
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
