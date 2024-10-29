@@ -73,6 +73,7 @@ tomorrow: hopefully have sheep model and ask for artists to make better cursor
 today i would like to implement luke sheep V
 
 todo:
-remove cursor ish
-better cut animation
-i need button
+remove cursor ish --> dynamic solution whereby i can remove and add custom cursor at will. VVV
+better cut animation VVV
+i need button from beau
+check writings.txt commits for this project ?? --> did i lose something ?

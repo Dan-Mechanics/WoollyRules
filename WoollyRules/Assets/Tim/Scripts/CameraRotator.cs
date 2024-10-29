@@ -14,12 +14,12 @@ namespace WoollyRules
             // ??
             if (Input.GetKey(KeyCode.Mouse1)) { return; }
 
-            if (cursor.CursorPosition.x <= movementMargin) 
+            if (Input.mousePosition.x <= movementMargin) 
             {
                 transform.Rotate(rotationSpeed * Time.deltaTime * Vector3.forward, Space.World);
             }
 
-            if (cursor.CursorPosition.x >= Screen.width - movementMargin)
+            if (Input.mousePosition.x >= Screen.width - movementMargin)
             {
                 transform.Rotate(-rotationSpeed * Time.deltaTime * Vector3.forward, Space.World);
             }

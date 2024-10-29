@@ -3,9 +3,12 @@ using UnityEngine.UI;
 
 namespace WoollyRules
 {
+    /// <summary>
+    /// Make sure to add the scussors cursor back into the yeet.
+    /// </summary>
     public class ScissorsCursor : MonoBehaviour
     {
-        public Vector2 CursorPosition => cursorPosition;
+        //public Vector2 CursorPosition => cursorPosition;
 
         [SerializeField] private Scissors scissors = null;
         [SerializeField] private RectTransform rect = null;
@@ -13,32 +16,25 @@ namespace WoollyRules
         [SerializeField] private Sprite closedScissors = null;
         [SerializeField] private Sprite openScissors = null;
 
-        private Vector2 cursorPosition;
+        //private Vector2 cursorPosition;
 
         private void Start()
         {
-            Application.targetFrameRate = 300;
+            //Application.targetFrameRate = 300;
             Cursor.visible = false;
 
             scissors.OnHoverFeedback += ChangeCursorSprite;
         }
 
-        private void Update()
-        {
-            PlaceCursor();
-
-            scissors.CheckInput();
-        }
+        private void Update() => PlaceCursor();
 
         private void PlaceCursor()
         {
-            cursorPosition = Input.mousePosition;
+            Vector2 cursorPosition = Input.mousePosition;
             cursorPosition.x -= Screen.width / 2f;
             cursorPosition.y -= Screen.height / 2f;
 
             rect.anchoredPosition = cursorPosition;
-
-            cursorPosition = Input.mousePosition;
         }
 
         /// <summary>

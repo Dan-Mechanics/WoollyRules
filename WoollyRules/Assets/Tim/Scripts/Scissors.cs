@@ -22,7 +22,7 @@ namespace WoollyRules
         [SerializeField] private Camera cam = null;
         //[SerializeField] private BlinkingText cutWarning = null;
         [SerializeField] private LayerMask cuttableMask = 0;
-        [SerializeField] private ScissorsCursor scissorsCursor = null;
+        //[SerializeField] private ScissorsCursor scissorsCursor = null;
         //[SerializeField] private ScissorsAnimator animator = null;
         [SerializeField] private UnityEvent onWarnRule = null;
         [SerializeField] private UnityEvent onCut = null;
@@ -39,6 +39,16 @@ namespace WoollyRules
 
         private bool isHoveringRuleBrokenOnCut;
 
+        private void Start()
+        {
+            Application.targetFrameRate = 300;
+        }
+
+        private void Update()
+        {
+            CheckInput();
+        }
+
         private void FixedUpdate()
         {
             CheckIfHoveringSomething();
@@ -47,11 +57,11 @@ namespace WoollyRules
         /// <summary>
         /// Called from ScissorsCursor.cs every update.
         /// </summary>
-        public void CheckInput()
+        private void CheckInput()
         {
             if (Input.GetKeyDown(cutKey))
             {
-                Cuttable cuttable = CheckCuttableAfterInput();
+                Cuttable cuttable = CheckCuttable();
 
                 if (cuttable != null) { Cut(cuttable); }
             }
@@ -59,7 +69,7 @@ namespace WoollyRules
 
         private Cuttable CheckCuttableHovering(out RaycastHit hit, out bool hasHit)
         {
-            Ray ray = cam.ScreenPointToRay(scissorsCursor.CursorPosition);
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
 
             hasHit = Physics.Raycast(ray, out hit, maxCutRange, cuttableMask, QueryTriggerInteraction.Ignore);
 
@@ -68,9 +78,9 @@ namespace WoollyRules
             return null;
         }
 
-        private Cuttable CheckCuttableAfterInput()
+        private Cuttable CheckCuttable()
         {
-            Ray ray = cam.ScreenPointToRay(scissorsCursor.CursorPosition);
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
 
             if (Physics.Raycast(ray, out RaycastHit hit, maxCutRange, cuttableMask, QueryTriggerInteraction.Ignore)) 
             {
