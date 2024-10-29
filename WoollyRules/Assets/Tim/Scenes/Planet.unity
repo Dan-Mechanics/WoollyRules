@@ -801,7 +801,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eebf143449f422b47a8509e923a9dfad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursor: {fileID: 168078301}
   rotationSpeed: 8
   movementMargin: 200
 --- !u!1 &413889156
@@ -1619,7 +1618,7 @@ MonoBehaviour:
   imageToProjectWebcamOn: {fileID: 184644353}
   refreshInterval: 0.25
   matchImageSizeToWebcamSize: 0
-  preload: 1
+  preload: 0
 --- !u!222 &1098676780
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2800,7 +2799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scissors: {fileID: 1497449479}
-  shakeStrength: 1
+  shakeStrength: 0.8
 --- !u!1001 &2127521790
 PrefabInstance:
   m_ObjectHideFlags: 0

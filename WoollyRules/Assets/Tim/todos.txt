@@ -70,12 +70,13 @@ tomorrow: hopefully have sheep model and ask for artists to make better cursor
 
 ---
 
-today i would like to implement luke sheep V
+today i would like to implement luke sheep VVV
 
 todo:
 remove cursor ish --> dynamic solution whereby i can remove and add custom cursor at will. VVV
 better cut animation VVV
+check writings.txt commits for this project ?? --> did i lose something ? --> no VVV
+
 i need button from beau
 i need scissors cursor from flynn
 i need better performance and colloration on globe from sophie.
-check writings.txt commits for this project ?? --> did i lose something ?

@@ -4,13 +4,13 @@ namespace WoollyRules
 {
     public class CameraRotator : MonoBehaviour
     {
-        [SerializeField] private ScissorsCursor cursor = null;
+        // [SerializeField] private ScissorsCursor cursor = null;
         [SerializeField] [Min(0f)] private float rotationSpeed = 0f;
         [SerializeField] private float movementMargin = 0f;
 
         private void Update()
         {
-            //if (!Application.isFocused) { return; }
+            if (!Application.isFocused) { return; }
             // ??
             if (Input.GetKey(KeyCode.Mouse1)) { return; }
 
