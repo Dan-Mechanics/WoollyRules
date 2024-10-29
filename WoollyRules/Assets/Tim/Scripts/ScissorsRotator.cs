@@ -23,7 +23,7 @@ namespace WoollyRules
 
             // add shake because the scissors is scared.
             // if we aint hitting shit then we cant be quivering. like a bithc. 
-            if (!scissors.IsHoveringSheep) { transform.Rotate(Random.insideUnitSphere.normalized * shakeStrength, Space.World); }
+            if (scissors.IsHoveringRuleBrokenOnCut) { transform.Rotate(Random.insideUnitSphere.normalized * shakeStrength, Space.World); }
         }
     }
 }

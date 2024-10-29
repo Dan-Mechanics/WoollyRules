@@ -3,16 +3,19 @@ using UnityEngine.Events;
 
 namespace WoollyRules
 {
+    /// <summary>
+    /// Perhaps should be called scissor interactable.
+    /// </summary>
     public class Cuttable : MonoBehaviour
     {
-        public bool IsSheep => isSheep;
+        public bool RuleBrokenOnCut => ruleBrokenOnCut;
         public bool BlockHover => blockHover;
         public bool BlockCut => blockCut;
 
         [SerializeField] private bool blockHover = false;
         [SerializeField] private bool blockCut = false;
 
-        [SerializeField] private bool isSheep = false; // this should be something like ruleBrokenOnCut
+        [SerializeField] private bool ruleBrokenOnCut = false; // this should be something like ruleBrokenOnCut
         [SerializeField] private UnityEvent onCut = null;
 
         [SerializeField] private Rigidbody rb = null;

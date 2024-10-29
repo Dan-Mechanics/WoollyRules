@@ -67,3 +67,7 @@ now just kinda waiting in more assets i guess.
 i also would like more people to collaborate on this with me on the github.
 
 tomorrow: hopefully have sheep model and ask for artists to make better cursor
+
+---
+
+today i would like to implement luke sheep

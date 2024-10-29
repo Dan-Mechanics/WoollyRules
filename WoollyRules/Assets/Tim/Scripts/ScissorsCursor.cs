@@ -44,13 +44,13 @@ namespace WoollyRules
         /// <summary>
         /// TODO: have an indication in the scissors when ur not allowed to cut ( the bear for example ). VVV
         /// </summary>
-        private void ChangeCursorSprite(bool isCuttable, bool isSheep) 
+        private void ChangeCursorSprite(bool isCuttable, bool ruleBrokenOnCut) 
         {
             // if we destroy image when closing game then this might throw an error thats why this is here.
             if (image == null) { return; }
 
             image.sprite = isCuttable ? openScissors : closedScissors;
-            image.color = isSheep ? Color.white : Color.red;
+            image.color = ruleBrokenOnCut ? Color.red : Color.white;
         }
 
         public void ShowNormalCursor() 

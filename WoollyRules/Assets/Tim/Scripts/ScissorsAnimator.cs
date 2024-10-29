@@ -46,10 +46,10 @@ namespace WoollyRules
                 scissorPartsOpen[i].Rotate(Vector3.forward * openScissorsAngle, Space.Self);
             }
 
-            scissors.OnHoverFeedback += CheckIfShouldOpen; ;
+            scissors.OnHoverFeedback += CheckIfShouldOpen;
         }
 
-        private void CheckIfShouldOpen(bool isCuttable, bool isSheep)
+        private void CheckIfShouldOpen(bool isCuttable, bool ruleBrokenOnCut)
         {
             isOpen = isCuttable;
         }

@@ -13,7 +13,7 @@ namespace WoollyRules
     /// </summary>
     public class Scissors : MonoBehaviour
     {
-        public bool IsHoveringSheep => isHoveringOverSheep;
+        public bool IsHoveringRuleBrokenOnCut => isHoveringRuleBrokenOnCut;
         public event Action<bool, bool> OnHoverFeedback;
         public event Action<bool, Vector3> OnPoint;
         
@@ -37,7 +37,7 @@ namespace WoollyRules
         [Tooltip("FUTURE: this is bascialyl onGameEnd so mayne it should be on another script like gamemanager.cs for example ...")]
         [SerializeField] private UnityEvent onRuleBroken = null;
 
-        private bool isHoveringOverSheep;
+        private bool isHoveringRuleBrokenOnCut;
 
         private void FixedUpdate()
         {
@@ -86,11 +86,7 @@ namespace WoollyRules
 
             cuttable.Cut();
 
-            if (!cuttable.IsSheep) 
-            {
-                // enable timer and webcam etc etc.
-                onRuleBroken?.Invoke();
-            }
+            if (cuttable.RuleBrokenOnCut) { onRuleBroken?.Invoke(); }
         }
 
         /// <summary>
@@ -104,16 +100,16 @@ namespace WoollyRules
 
             if (cuttable != null)
             {
-                isHoveringOverSheep = cuttable.IsSheep;
+                isHoveringRuleBrokenOnCut = cuttable.RuleBrokenOnCut;
 
-                if (!isHoveringOverSheep) { onWarnRule?.Invoke(); } // cutWarning.Warn();
+                if (isHoveringRuleBrokenOnCut) { onWarnRule?.Invoke(); } // cutWarning.Warn();
 
-                OnHoverFeedback?.Invoke(!cuttable.BlockHover, isHoveringOverSheep);
+                OnHoverFeedback?.Invoke(!cuttable.BlockHover, isHoveringRuleBrokenOnCut);
             }
             else 
             {
-                isHoveringOverSheep = true;
-                OnHoverFeedback?.Invoke(false, true);
+                isHoveringRuleBrokenOnCut = false;
+                OnHoverFeedback?.Invoke(false, false);
             }
         }
     }

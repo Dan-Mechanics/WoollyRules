@@ -2227,7 +2227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blockHover: 1
   blockCut: 0
-  isSheep: 1
+  ruleBrokenOnCut: 0
   onCut:
     m_PersistentCalls:
       m_Calls:
@@ -3222,6 +3222,10 @@ PrefabInstance:
     - target: {fileID: 6964351787905620217, guid: 503b7468d6b979b42877bd0ff8a49026, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9118929426059857892, guid: 503b7468d6b979b42877bd0ff8a49026, type: 3}
+      propertyPath: ruleBrokenOnCut
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
