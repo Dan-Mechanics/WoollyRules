@@ -29,6 +29,8 @@ namespace WoollyRules
         {
             if (preload) 
             {
+                Application.targetFrameRate = 300;
+                
                 StartCoroutine(Auhtorize());
             }
         }
@@ -144,6 +146,8 @@ namespace WoollyRules
 
         private void OnDestroy()
         {
+            if (webCamTexture == null) { return; }
+
             webCamTexture.Stop();
         }
     }
