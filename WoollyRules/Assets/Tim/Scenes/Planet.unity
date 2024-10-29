@@ -1097,11 +1097,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 349113634334004226, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 349113634334004226, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.5
+      value: 1.28
       objectReference: {fileID: 0}
     - target: {fileID: 349113634334004226, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3148,7 +3148,7 @@ PrefabInstance:
       objectReference: {fileID: 690337776}
     - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
       propertyPath: cutAnimationTime
-      value: 0.25
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
       propertyPath: 'scissorPartsOpen.Array.data[0]'
