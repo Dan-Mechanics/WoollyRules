@@ -63,7 +63,15 @@ namespace WoollyRules
             
             for (int i = 0; i < scissorParts.Length; i++)
             {
-                scissorParts[i].localRotation = Quaternion.Lerp(scissorParts[i].localRotation, isOpen && !isCutting ? scissorPartsOpen[i].localRotation : scissorPartsClosed[i].localRotation, hoverLerpValue);
+                //scissorParts[i].localRotation = Quaternion.Lerp(scissorParts[i].localRotation, isOpen && !isCutting ? scissorPartsOpen[i].localRotation : scissorPartsClosed[i].localRotation, hoverLerpValue);
+                if (!isCutting)
+                {
+                    scissorParts[i].localRotation = Quaternion.Lerp(scissorParts[i].localRotation, isOpen ? scissorPartsOpen[i].localRotation : scissorPartsClosed[i].localRotation, hoverLerpValue);
+                }
+                else 
+                {
+                    scissorParts[i].localRotation = scissorPartsClosed[i].localRotation;
+                }
             }
         }
 

@@ -3140,7 +3140,7 @@ PrefabInstance:
       objectReference: {fileID: 1497449479}
     - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
       propertyPath: cutLerpValue
-      value: 0.15
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
       propertyPath: scissorsForward
