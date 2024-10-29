@@ -5009,6 +5009,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2695377969087052693}
+        m_TargetAssemblyTypeName: WoollyRules.Destroyable, Assembly-CSharp
+        m_MethodName: DestroyAfterTime
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 15
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6485670356859916733}
+        m_TargetAssemblyTypeName: WoollyRules.Destroyable, Assembly-CSharp
+        m_MethodName: DestroyAfterTime
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 15
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 8934709786714070546}
         m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
         m_MethodName: Play
@@ -5161,6 +5185,17 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 1365271520771528236, guid: 414cddbd9b0cdc44ca3dbdf544263a20, type: 3}
   m_PrefabInstance: {fileID: 1113673689788199579}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2695377969087052693 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3031898543718582542, guid: 414cddbd9b0cdc44ca3dbdf544263a20, type: 3}
+  m_PrefabInstance: {fileID: 1113673689788199579}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127664284955403436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd6699576c2c83c47b82743c9886b715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6501101359828349396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5311,6 +5346,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 414cddbd9b0cdc44ca3dbdf544263a20, type: 3}
+--- !u!114 &6485670356859916733 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3031898543718582542, guid: 414cddbd9b0cdc44ca3dbdf544263a20, type: 3}
+  m_PrefabInstance: {fileID: 8075743009384454323}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7124877456556625540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd6699576c2c83c47b82743c9886b715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7124877456556625540 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1365271520771528247, guid: 414cddbd9b0cdc44ca3dbdf544263a20, type: 3}

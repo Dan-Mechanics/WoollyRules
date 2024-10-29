@@ -6,8 +6,13 @@ namespace WoollyRules
     public class Cuttable : MonoBehaviour
     {
         public bool IsSheep => isSheep;
-        
-        [SerializeField] private bool isSheep = false;
+        public bool BlockHover => blockHover;
+        public bool BlockCut => blockCut;
+
+        [SerializeField] private bool blockHover = false;
+        [SerializeField] private bool blockCut = false;
+
+        [SerializeField] private bool isSheep = false; // this should be something like ruleBrokenOnCut
         [SerializeField] private UnityEvent onCut = null;
 
         [SerializeField] private Rigidbody rb = null;

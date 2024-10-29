@@ -10,6 +10,10 @@ namespace WoollyRules
 
         private void Update()
         {
+            //if (!Application.isFocused) { return; }
+            // ??
+            if (Input.GetKey(KeyCode.Mouse1)) { return; }
+
             if (cursor.CursorPosition.x <= movementMargin) 
             {
                 transform.Rotate(rotationSpeed * Time.deltaTime * Vector3.forward, Space.World);

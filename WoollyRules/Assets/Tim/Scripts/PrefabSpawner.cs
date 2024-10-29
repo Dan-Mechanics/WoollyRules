@@ -8,6 +8,7 @@ namespace WoollyRules
     public class PrefabSpawner : MonoBehaviour
     {
         [SerializeField] private GameObject prefab = null;
+        [SerializeField] private CuttableHolder cuttableHolder = null;
         //[SerializeField] private Transform spawnExample = null;
         [SerializeField] [Min(0.1f)] private float interval = 0f;
         [SerializeField] private bool spawnWithRandomRotation = false;
@@ -28,6 +29,8 @@ namespace WoollyRules
             // very demure code here:
             GameObject newlySpawned = Instantiate(prefab, transform.position, spawnWithRandomRotation ? Random.rotationUniform : transform.rotation);
             newlySpawned.name = prefab.name;
+
+            if (cuttableHolder != null) { cuttableHolder.Add(newlySpawned.GetComponent<Cuttable>()); }
         }
     }
 }

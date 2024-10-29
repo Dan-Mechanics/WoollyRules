@@ -82,7 +82,7 @@ namespace WoollyRules
 
         private void Cut(Cuttable cuttable) 
         {
-            onCut?.Invoke();
+            if (!cuttable.BlockCut) { onCut?.Invoke(); }
 
             cuttable.Cut();
 
@@ -108,7 +108,7 @@ namespace WoollyRules
 
                 if (!isHoveringOverSheep) { onWarnRule?.Invoke(); } // cutWarning.Warn();
 
-                OnHoverFeedback?.Invoke(true, isHoveringOverSheep);
+                OnHoverFeedback?.Invoke(!cuttable.BlockHover, isHoveringOverSheep);
             }
             else 
             {
