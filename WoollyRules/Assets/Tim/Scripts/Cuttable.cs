@@ -16,6 +16,10 @@ namespace WoollyRules
         [SerializeField] private bool blockCut = false;
 
         [SerializeField] private bool ruleBrokenOnCut = false; // this should be something like ruleBrokenOnCut
+
+        /// <summary>
+        /// NOTE: we have to do the same things to the cut piece twice. this is not ideal.
+        /// </summary>
         [SerializeField] private UnityEvent onCut = null;
 
         [SerializeField] private Rigidbody rb = null;
