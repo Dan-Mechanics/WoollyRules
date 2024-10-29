@@ -113,6 +113,8 @@ namespace WoollyRules
         {
             if (webCamTexture == null) { return; }
 
+            print("RefreshWebcam()");
+
             // just in case.
             if (texture.width != webCamTexture.width || texture.height != webCamTexture.height)
             {

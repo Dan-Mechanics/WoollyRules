@@ -76,4 +76,6 @@ todo:
 remove cursor ish --> dynamic solution whereby i can remove and add custom cursor at will. VVV
 better cut animation VVV
 i need button from beau
+i need scissors cursor from flynn
+i need better performance and colloration on globe from sophie.
 check writings.txt commits for this project ?? --> did i lose something ?

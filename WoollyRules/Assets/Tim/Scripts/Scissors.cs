@@ -41,7 +41,7 @@ namespace WoollyRules
 
         private void Start()
         {
-            Application.targetFrameRate = 300;
+            //Application.targetFrameRate = 300;
         }
 
         private void Update()
