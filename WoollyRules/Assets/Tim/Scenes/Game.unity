@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &18068968
 RectTransform:
   m_ObjectHideFlags: 0
@@ -605,7 +605,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: YOU CAN ONLY CUT WHITE SHEEP.
+  m_Text: You can only cut white sheep.
 --- !u!222 &413889159
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -688,7 +688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 2127664283110895676, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
   cuttableHolder: {fileID: 1976796249}
-  interval: 1.5
+  interval: 3
   spawnWithRandomRotation: 1
 --- !u!114 &676326826 stripped
 MonoBehaviour:
@@ -1409,7 +1409,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1716485865}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
@@ -1880,6 +1880,10 @@ PrefabInstance:
       propertyPath: scissors
       value: 
       objectReference: {fileID: 1497449479}
+    - target: {fileID: 8041410369033268743, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
+      propertyPath: interval
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8041410369033268743, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
       propertyPath: cuttableHolder
       value: 
