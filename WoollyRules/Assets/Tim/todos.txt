@@ -133,3 +133,27 @@ unity event paradigm --> heavy disaster component based.
 9:15 hier dus 8:45 weg.
 
 make sure to disable not destrpy webcam/
+
+---
+
+read discord messages
+disable after time not destroy after time
+make is so that the only way that the game stop is throug the timer
+all other rule breakers just show the wabcam which is then hidden and shown again perhaps via preload or not whatever
+improve prefabspawner.cs
+i still need the open scissors cursor
+clean scene a little bit
+implemetn globe model
+can we fix the skybox? no. --> maybe ??? --> should we lock the sun to the cam ? --> maybe use like a render texture or an overlay image
+or something like that we might be able to fix it --> i really dont want to have to rotate the globe since i dont think that would work
+easily with the sheep.
+
+i think i cna find a way to do not preload and still enable and disable it. perhaps i should make a webcam methods for
+enalbe and disable in the actual webcam script
+
+and i just need to impleemnt everyone's art basically, at least sophie can use github a little but it doesnt matter as long as it works.
+
+also i would maybe just keep the scissor cursor ?? nah i feel like you only have the scissor cursor when you can cut things.
+fix timer texts
+
+also make sure to keep ur discord open for people sending in art.
