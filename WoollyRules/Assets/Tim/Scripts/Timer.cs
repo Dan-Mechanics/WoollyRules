@@ -5,7 +5,7 @@ namespace WoollyRules
 {
     public class Timer : MonoBehaviour
     {
-        public float TimeValues => timeValue;
+        public float TimeValue => timeValue;
         public bool TimerCompleted => TimerCompleted;
 
         [SerializeField] private float timeValue = 0f;

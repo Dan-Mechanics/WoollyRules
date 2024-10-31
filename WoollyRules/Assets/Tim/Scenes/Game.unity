@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &18068968
 RectTransform:
   m_ObjectHideFlags: 0
@@ -169,23 +169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9af394d3cb957fc4b843b9dd0a99197c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onTimerDone:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 18068967}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   text: {fileID: 18068970}
-  startingNumber: 10
+  timer: {fileID: 0}
 --- !u!114 &18068970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -455,17 +440,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3513114392891874938, guid: e7b65c8f3df58cb48bef1ee716d92621, type: 3}
   m_PrefabInstance: {fileID: 507640329037270482}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &168078301 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2552611403150391954, guid: e7b65c8f3df58cb48bef1ee716d92621, type: 3}
-  m_PrefabInstance: {fileID: 507640329037270482}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ab8b359ba755974898f134c36889efa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &184644351
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,7 +588,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: YOU CAN ONLY CUT SHEEP.
+  m_Text: YOU CAN ONLY CUT *WHITE SHEEP.
 --- !u!222 &413889159
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1370,7 +1344,7 @@ GameObject:
   - component: {fileID: 1716485870}
   - component: {fileID: 1716485869}
   - component: {fileID: 1716485868}
-  - component: {fileID: 1716485867}
+  - component: {fileID: 1716485871}
   m_Layer: 5
   m_Name: Main Timer
   m_TagString: Untagged
@@ -1397,18 +1371,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 15}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0}
---- !u!114 &1716485867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1716485865}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd6699576c2c83c47b82743c9886b715, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1716485868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1421,47 +1383,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9af394d3cb957fc4b843b9dd0a99197c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onTimerDone:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 67143630}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 168078301}
-        m_TargetAssemblyTypeName: WoollyRules.ScissorsCursor, Assembly-CSharp
-        m_MethodName: ShowNormalCursor
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1716485867}
-        m_TargetAssemblyTypeName: WoollyRules.Destroyable, Assembly-CSharp
-        m_MethodName: Destroy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
   text: {fileID: 1716485869}
-  startingNumber: 300
+  timer: {fileID: 1716485871}
 --- !u!114 &1716485869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1504,6 +1427,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1716485865}
   m_CullTransparentMesh: 0
+--- !u!114 &1716485871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716485865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78384027613c033459fb4b16667c06c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeValue: 300
+  onTimerComplete:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1895376569
 GameObject:
   m_ObjectHideFlags: 0
@@ -1868,6 +1807,10 @@ PrefabInstance:
       propertyPath: onCut.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 676326826}
+    - target: {fileID: 1088670346498798704, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1766823186201215785, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
       propertyPath: scissors
       value: 
