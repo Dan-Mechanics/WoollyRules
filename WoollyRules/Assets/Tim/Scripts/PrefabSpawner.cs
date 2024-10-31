@@ -6,6 +6,7 @@ namespace WoollyRules
     /// FIX: It could maybe make more sense if the position of this object is used as reference.
     /// 
     /// ADD: SPAWN COUNT
+    /// ADD: RANDOM POS
     /// </summary>
     public class PrefabSpawner : MonoBehaviour
     {
