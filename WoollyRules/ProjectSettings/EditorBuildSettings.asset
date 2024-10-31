@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Tim/Scenes/Planet.unity
+    path: Assets/Tim/Scenes/Menu.unity
+    guid: 1742c6433bf2ad247ac588d3e36aff04
+  - enabled: 1
+    path: Assets/Tim/Scenes/Game.unity
     guid: 78dbf5982f8d0e145bb5794dcf76a3fc
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

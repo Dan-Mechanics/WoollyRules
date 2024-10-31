@@ -23,7 +23,12 @@ namespace WoollyRules
             //Application.targetFrameRate = 300;
             Cursor.visible = false;
 
-            scissors.OnHoverFeedback += ChangeCursorSprite;
+            if (scissors != null)
+            {
+                scissors.OnHoverFeedback += ChangeCursorSprite;
+            }
+
+            ChangeCursorSprite(false, false);
         }
 
         private void Update() => PlaceCursor();

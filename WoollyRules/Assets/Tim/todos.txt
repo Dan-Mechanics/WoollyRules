@@ -92,3 +92,8 @@ move script back into the folder, but prolyl something else
 ---
 
 must do spawning amount of sheep.
+
+ik moet een TIMER.cs scritp maken
+en dan een timer display script voor de txt.
+
+timer display script needs to be better.
