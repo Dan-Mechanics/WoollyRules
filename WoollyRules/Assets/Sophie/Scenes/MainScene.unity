@@ -9,7 +9,7 @@ OcclusionCullingSettings:
     smallestHole: 0.05
     backfaceThreshold: 100
   m_SceneGUID: 99c9720ab356a0642a771bea13969a05
-  m_OcclusionCullingData: {fileID: 36300000, guid: b1e3bd33b34e5b74682c9a219995e19b, type: 2}
+  m_OcclusionCullingData: {fileID: 36300000, guid: 886011d3f58336f47a4c6d0b0af46c1c, type: 2}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -694,6 +694,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3242288729808345610, guid: 7edaae3378cdc97438bb2231e91041c6, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242288729808345610, guid: 7edaae3378cdc97438bb2231e91041c6, type: 3}
       propertyPath: InitialModule.startSize.minScalar
       value: 0.05
       objectReference: {fileID: 0}
@@ -732,6 +736,10 @@ PrefabInstance:
     - target: {fileID: 7406305520822284939, guid: 7edaae3378cdc97438bb2231e91041c6, type: 3}
       propertyPath: ColorModule.enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7406305520822284939, guid: 7edaae3378cdc97438bb2231e91041c6, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
       objectReference: {fileID: 0}
     - target: {fileID: 7406305520822284939, guid: 7edaae3378cdc97438bb2231e91041c6, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
