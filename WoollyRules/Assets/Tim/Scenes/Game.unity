@@ -734,7 +734,6 @@ GameObject:
   - component: {fileID: 1071686037}
   - component: {fileID: 1071686036}
   - component: {fileID: 1071686038}
-  - component: {fileID: 1071686039}
   m_Layer: 5
   m_Name: Rule
   m_TagString: Untagged
@@ -876,18 +875,6 @@ MonoBehaviour:
   text: {fileID: 1071686036}
   warnColor: {r: 1, g: 0, b: 0, a: 1}
   minBlinkingTime: 0.1
---- !u!114 &1071686039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1071686034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd6699576c2c83c47b82743c9886b715, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1098676776
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,7 +929,7 @@ MonoBehaviour:
   imageToProjectWebcamOn: {fileID: 184644353}
   refreshInterval: 0.25
   matchImageSizeToWebcamSize: 0
-  preload: 0
+  preload: 1
 --- !u!222 &1098676780
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1161,9 +1148,9 @@ MonoBehaviour:
   onWarnRule:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: WoollyRules.BlinkingText, Assembly-CSharp
-        m_MethodName: Play
+      - m_Target: {fileID: 1071686038}
+        m_TargetAssemblyTypeName: WoollyRules.Blinker, Assembly-CSharp
+        m_MethodName: Blink
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1504,7 +1491,19 @@ MonoBehaviour:
   timeValue: 300
   onTimerComplete:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1895376569
 GameObject:
   m_ObjectHideFlags: 0
@@ -2042,6 +2041,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: ee4af945f28b3f346ae8946ae7750a12, type: 3}
+    - target: {fileID: 6666657290197720803, guid: e7b65c8f3df58cb48bef1ee716d92621, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6666657290197720803, guid: e7b65c8f3df58cb48bef1ee716d92621, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6666657290197720803, guid: e7b65c8f3df58cb48bef1ee716d92621, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6927055975945275721, guid: e7b65c8f3df58cb48bef1ee716d92621, type: 3}
       propertyPath: m_SizeDelta.x
       value: 1000
