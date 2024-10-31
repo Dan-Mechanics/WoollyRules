@@ -4,6 +4,8 @@ namespace WoollyRules
 {
     /// <summary>
     /// FIX: It could maybe make more sense if the position of this object is used as reference.
+    /// 
+    /// ADD: SPAWN COUNT
     /// </summary>
     public class PrefabSpawner : MonoBehaviour
     {

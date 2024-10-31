@@ -91,7 +91,7 @@ namespace WoollyRules
 
             cuttable.Cut();
 
-            if (cuttable.RuleBrokenOnCut) { onRuleBroken?.Invoke(); }
+            //if (cuttable.RuleBrokenOnCut) { onRuleBroken?.Invoke(); }
         }
 
         /// <summary>
@@ -116,6 +116,11 @@ namespace WoollyRules
                 isHoveringRuleBrokenOnCut = false;
                 OnHoverFeedback?.Invoke(false, false);
             }
+        }
+
+        public void BreakRule()
+        {
+            onRuleBroken?.Invoke();
         }
     }
 }

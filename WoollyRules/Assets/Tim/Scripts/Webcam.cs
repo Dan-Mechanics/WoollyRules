@@ -27,9 +27,11 @@ namespace WoollyRules
 
         private void Start()
         {
+            Application.targetFrameRate = 300;
+
             if (preload) 
             {
-                Application.targetFrameRate = 300;
+                //Application.targetFrameRate = 300;
                 
                 StartCoroutine(Auhtorize());
             }
@@ -115,7 +117,7 @@ namespace WoollyRules
         {
             if (webCamTexture == null) { return; }
 
-            print("RefreshWebcam()");
+            //print("RefreshWebcam()");
 
             // just in case.
             if (texture.width != webCamTexture.width || texture.height != webCamTexture.height)

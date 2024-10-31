@@ -88,3 +88,7 @@ whatever i forgot sometinhg agian because my head is full
 the thigns at the top here are the most important so do that.
 
 move script back into the folder, but prolyl something else
+
+---
+
+must do spawning amount of sheep.
