@@ -106,3 +106,21 @@ if (conditional )
 
 rider commercial free and also free for students nice.
 
+todo: make game end script with the yeeet  attached scripts.
+
+the game doesn't end when the rule is broken ???
+if so i cant use that destroy yeet. 
+the game doesn't end when rule broken
+decrease timer value when onscreen.
+de timer is alleen zichtbaar als je de regel breekt.
+tijd wordt niet recuded yeet.
+
+maybe add button.cs
+
+basically lots of stuff to do because
+
+fix timers
+fix rule text.
+hij wordt gewoon rood
+
+debatale: pos of webcam.

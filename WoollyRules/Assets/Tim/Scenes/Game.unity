@@ -334,7 +334,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Planet
+          m_StringArgument: Menu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &33701025
@@ -350,7 +350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -427,15 +427,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -533,115 +533,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184644351}
   m_CullTransparentMesh: 1
---- !u!1 &413889156
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 413889157}
-  - component: {fileID: 413889159}
-  - component: {fileID: 413889158}
-  - component: {fileID: 413889160}
-  - component: {fileID: 413889161}
-  m_Layer: 5
-  m_Name: Rule
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &413889157
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 413889156}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 862688088}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 1080}
-  m_Pivot: {x: 0.5, y: 1}
---- !u!114 &413889158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 413889156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 80
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 100
-    m_Alignment: 1
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: You can only cut white sheep.
---- !u!222 &413889159
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 413889156}
-  m_CullTransparentMesh: 0
---- !u!114 &413889160
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 413889156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9c4b255b127c8d4e8de5130d9634ea1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interval: 0.045
-  text: {fileID: 413889158}
-  warnColor: {r: 1, g: 0, b: 0, a: 1}
-  minBlinkingTime: 0.1
---- !u!114 &413889161
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 413889156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd6699576c2c83c47b82743c9886b715, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &593987567
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,12 +705,11 @@ RectTransform:
   - {fileID: 1678405785}
   - {fileID: 1534106520}
   - {fileID: 1098676777}
-  - {fileID: 413889157}
   - {fileID: 18068968}
   - {fileID: 1716485866}
+  - {fileID: 1071686035}
   - {fileID: 67143631}
   - {fileID: 168078298}
-  - {fileID: 1071686035}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -891,7 +781,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You can only cut white sheep.
+  m_text: Only cut sheep.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -983,7 +873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 0.045
-  text: {fileID: 413889158}
+  text: {fileID: 1071686036}
   warnColor: {r: 1, g: 0, b: 0, a: 1}
   minBlinkingTime: 0.1
 --- !u!114 &1071686039
@@ -1032,11 +922,11 @@ RectTransform:
   - {fileID: 184644352}
   m_Father: {fileID: 862688088}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 793.8436, y: 423.3186}
-  m_Pivot: {x: 1, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1098676778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1142,7 +1032,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: thank you for playing ...
+  m_text: thank you for playing.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1151,8 +1041,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1271,7 +1161,7 @@ MonoBehaviour:
   onWarnRule:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 413889160}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: WoollyRules.BlinkingText, Assembly-CSharp
         m_MethodName: Play
         m_Mode: 1
@@ -1306,18 +1196,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1098676778}
         m_TargetAssemblyTypeName: CutTheSheep.Webcam, Assembly-CSharp
         m_MethodName: Show
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 413889161}
-        m_TargetAssemblyTypeName: CutTheSheep.Destroyable, Assembly-CSharp
-        m_MethodName: Destroy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1693,8 +1571,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2072,6 +1950,14 @@ PrefabInstance:
       propertyPath: scissors
       value: 
       objectReference: {fileID: 1497449479}
+    - target: {fileID: 2552611403150391954, guid: e7b65c8f3df58cb48bef1ee716d92621, type: 3}
+      propertyPath: openScissors
+      value: 
+      objectReference: {fileID: 21300000, guid: ee4af945f28b3f346ae8946ae7750a12, type: 3}
+    - target: {fileID: 2552611403150391954, guid: e7b65c8f3df58cb48bef1ee716d92621, type: 3}
+      propertyPath: closedScissors
+      value: 
+      objectReference: {fileID: 21300000, guid: ee4af945f28b3f346ae8946ae7750a12, type: 3}
     - target: {fileID: 3513114392891874938, guid: e7b65c8f3df58cb48bef1ee716d92621, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2151,6 +2037,18 @@ PrefabInstance:
     - target: {fileID: 3513114392891874938, guid: e7b65c8f3df58cb48bef1ee716d92621, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6666657290197720803, guid: e7b65c8f3df58cb48bef1ee716d92621, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ee4af945f28b3f346ae8946ae7750a12, type: 3}
+    - target: {fileID: 6927055975945275721, guid: e7b65c8f3df58cb48bef1ee716d92621, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927055975945275721, guid: e7b65c8f3df58cb48bef1ee716d92621, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 7681216816446706111, guid: e7b65c8f3df58cb48bef1ee716d92621, type: 3}
       propertyPath: m_Name
@@ -2370,10 +2268,10 @@ SceneRoots:
   m_Roots:
   - {fileID: 1497449480}
   - {fileID: 154497742615200425}
-  - {fileID: 862688088}
-  - {fileID: 2050606988}
   - {fileID: 593987568}
   - {fileID: 8992003769869682197}
   - {fileID: 1976796248}
   - {fileID: 3837714745521160426}
   - {fileID: 6160339257942011832}
+  - {fileID: 862688088}
+  - {fileID: 2050606988}
