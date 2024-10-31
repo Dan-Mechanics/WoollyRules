@@ -19,10 +19,10 @@ namespace WoollyRules
         {
             if (!hasHit) { return; }
 
+            transform.LookAt(point);
+
             // https://docs.unity3d.com/ScriptReference/Transform.LookAt.html
             // transform.LookAt(target, Vector3.left);
-
-            transform.LookAt(point);
 
             // add shake because the scissors is scared.
             // if we aint hitting shit then we cant be quivering. like a bithc. 
