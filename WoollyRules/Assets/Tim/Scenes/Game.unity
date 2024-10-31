@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 18068970}
   - component: {fileID: 18068969}
   - component: {fileID: 18068972}
+  - component: {fileID: 18068973}
   m_Layer: 5
   m_Name: Webcam Timer
   m_TagString: Untagged
@@ -170,7 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 18068970}
-  timer: {fileID: 0}
+  timer: {fileID: 18068972}
 --- !u!114 &18068970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,6 +215,22 @@ CanvasRenderer:
   m_GameObject: {fileID: 18068967}
   m_CullTransparentMesh: 0
 --- !u!114 &18068972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18068967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78384027613c033459fb4b16667c06c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeValue: 12
+  onTimerComplete:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &18068973
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -588,7 +605,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: YOU CAN ONLY CUT *WHITE SHEEP.
+  m_Text: YOU CAN ONLY CUT WHITE SHEEP.
 --- !u!222 &413889159
 CanvasRenderer:
   m_ObjectHideFlags: 0

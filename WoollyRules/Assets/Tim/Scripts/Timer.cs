@@ -6,7 +6,7 @@ namespace WoollyRules
     public class Timer : MonoBehaviour
     {
         public float TimeValue => timeValue;
-        public bool TimerCompleted => TimerCompleted;
+        public bool TimerCompleted => timerCompleted;
 
         [SerializeField] private float timeValue = 0f;
         [SerializeField] private UnityEvent onTimerComplete = null;
@@ -15,7 +15,8 @@ namespace WoollyRules
 
         private void FixedUpdate()
         {
-            if (timerCompleted) { return; }
+            if (timerCompleted)
+                return;
             
             timeValue -= Time.fixedDeltaTime;
 

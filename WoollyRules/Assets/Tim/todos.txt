@@ -99,3 +99,10 @@ en dan een timer display script voor de txt.
 timer display script needs to be better.
 
 make it so that stuff aint getting destroy because now the game ends without having broken the rule with good timer text.
+
+coding convention:
+if (conditional )
+	return;
+
+rider commercial free and also free for students nice.
+
