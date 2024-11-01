@@ -544,7 +544,7 @@ GameObject:
   - component: {fileID: 593987568}
   - component: {fileID: 593987569}
   m_Layer: 0
-  m_Name: Cube Spawner South
+  m_Name: South Sheep Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1860,6 +1860,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 89331905607769537, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
+      propertyPath: m_Name
+      value: Sheep Spawner North
+      objectReference: {fileID: 0}
     - target: {fileID: 690818052603756747, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
       propertyPath: onCut.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
