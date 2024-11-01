@@ -236,10 +236,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e227aae9b51a8724b806563a836158ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 0
-  movementMargin: 0
-  wasd: 0
-  movementMarginsUI: []
+  rotationSpeed: 8
+  movementMargin: 200
+  wasd: 1
+  movementMarginsUI:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &7136231519433440291
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,8 +432,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scissors: {fileID: 0}
-  shakeStrength: 0
-  cameraRotator: {fileID: 0}
+  shakeStrength: 0.1
+  cameraRotator: {fileID: 4878178884178112396}
 --- !u!1 &7724925913899249864
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,12 +860,40 @@ PrefabInstance:
       value: 0.125
       objectReference: {fileID: 0}
     - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
+      propertyPath: hoverLerpValue
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
       propertyPath: scissorsForward
       value: 
       objectReference: {fileID: 1795487523930388121}
     - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
       propertyPath: cutAnimationTime
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
+      propertyPath: openScissorsAngle
+      value: 22.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
+      propertyPath: scissorParts.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
+      propertyPath: 'scissorParts.Array.data[0]'
+      value: 
+      objectReference: {fileID: 923426016128018518}
+    - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
+      propertyPath: 'scissorParts.Array.data[1]'
+      value: 
+      objectReference: {fileID: 540491705534778741}
+    - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
+      propertyPath: scissorPartsOpen.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
+      propertyPath: scissorPartsClosed.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8467359373721739467, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
       propertyPath: 'scissorPartsOpen.Array.data[0]'
@@ -886,6 +916,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
+--- !u!4 &540491705534778741 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7676148590338813591, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
+  m_PrefabInstance: {fileID: 7856281260609545186}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &923426016128018518 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7050303024154708916, guid: f74bef246fdb5054bac5318848726fd8, type: 3}
+  m_PrefabInstance: {fileID: 7856281260609545186}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7628907753281026016 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 349113634334004226, guid: f74bef246fdb5054bac5318848726fd8, type: 3}

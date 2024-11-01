@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12d74671ead159448b9284422a02279d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTime: 3
+  destroyTime: 5
 --- !u!114 &7368989483537769068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 154544c0d8961ef459446fee569eb619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  standUprightTorque: 0
+  standUprightTorque: 100
 --- !u!1001 &7597113164513133071
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -219,8 +219,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 2127664283110895623}
   graphic: {fileID: 4737771539907358173}
-  period: 0.2
-  verticalMult: 0.1
+  period: 0.3
+  verticalMult: 0.08
   verticalOffset: 1
   minSpeedToAnimate: 1.5
 --- !u!1001 &1445731186829602915
