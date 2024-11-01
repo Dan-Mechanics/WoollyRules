@@ -137,16 +137,17 @@ make sure to disable not destrpy webcam/
 ---
 
 read discord messages
-disable after time not destroy after time
-make is so that the only way that the game stop is throug the timer
-all other rule breakers just show the wabcam which is then hidden and shown again perhaps via preload or not whatever
-improve prefabspawner.cs
+disable after time not destroy after time --> we use timer.cs for that V
+make is so that the only way that the game stop is throug the timer V
+all other rule breakers just show the webcam which is then hidden and shown again perhaps via preload or not whatever V
+improve prefabspawner.cs V
 i still need the open scissors cursor
-clean scene a little bit
+clean scene a little bit V
 implemetn globe model
+
 can we fix the skybox? no. --> maybe ??? --> should we lock the sun to the cam ? --> maybe use like a render texture or an overlay image
-or something like that we might be able to fix it --> i really dont want to have to rotate the globe since i dont think that would work
-easily with the sheep.
+or something like that we might be able to fix it --> i really dont want to have to rotate the globe since i dont think that would work 
+easily with the sheep. VVV
 
 i think i cna find a way to do not preload and still enable and disable it. perhaps i should make a webcam methods for
 enalbe and disable in the actual webcam script
@@ -163,3 +164,5 @@ also make sure to keep ur discord open for people sending in art.
     /// </summary>
 
 the text should just become red ez peasy. V
+
+for next time: only have post processing on the last camera overlay.
