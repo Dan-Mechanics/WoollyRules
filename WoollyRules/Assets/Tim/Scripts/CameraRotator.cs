@@ -23,8 +23,10 @@ namespace WoollyRules
         {
             if (wasd)
             {
-                transform.Rotate(-Input.GetAxisRaw("Horizontal") * rotationSpeed * Time.deltaTime * Vector3.forward, Space.World);
-                transform.Rotate(Input.GetAxisRaw("Vertical") * rotationSpeed * Time.deltaTime * Vector3.right, Space.World);
+                Vector2 mov = new Vector2(-Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+                
+                transform.Rotate(mov.x * rotationSpeed * Time.deltaTime * Vector3.forward, Space.World);
+                transform.Rotate(mov.y * rotationSpeed * Time.deltaTime * Vector3.right, Space.World);
             }
             else 
             {

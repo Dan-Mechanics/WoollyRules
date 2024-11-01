@@ -167,3 +167,5 @@ also make sure to keep ur discord open for people sending in art.
 the text should just become red ez peasy. V
 
 for next time: only have post processing on the last camera overlay.
+
+NAMESPACES AND ASSEMBLIES NOWW !!!!!!!!!!!!!!
