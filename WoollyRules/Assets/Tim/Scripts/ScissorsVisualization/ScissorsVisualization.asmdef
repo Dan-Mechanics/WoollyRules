@@ -1,0 +1,16 @@
+{
+    "name": "ScissorsVisualization",
+    "rootNamespace": "",
+    "references": [
+        "GUID:18f3a2ec5cb019645999461f93e72dfe"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
