@@ -822,3 +822,28 @@ Memory consumption went from 182.0 MB to 178.1 MB.
 Total: 7.165100 ms (FindLiveObjects: 0.543000 ms CreateObjectMapping: 0.605100 ms MarkObjects: 4.039400 ms  DeleteObjects: 1.976800 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 327.099901 seconds.
+  path: Assets/Cow/CowFront.fbx
+  artifactKey: Guid(6854a85e6f0d5ea4e82903ee010c8c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cow/CowFront.fbx using Guid(6854a85e6f0d5ea4e82903ee010c8c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '9489c51767488005f6b813ead308c70e') in 5.261034 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Cow/COWHELP_CowMaterial_AlbedoTransparency.png
+  artifactKey: Guid(1469956dbd0fd9545b09dbfa27e570e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cow/COWHELP_CowMaterial_AlbedoTransparency.png using Guid(1469956dbd0fd9545b09dbfa27e570e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ef6610a31168a724da64088a01156e82') in 0.0235347 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
