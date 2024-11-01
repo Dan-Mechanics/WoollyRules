@@ -9,6 +9,7 @@ namespace WoollyRules.Sheep
         [SerializeField] private float maxSpeed = 0f;
         [SerializeField] private float maxRotationSpeed = 0f;
         [SerializeField] private float rotationDirectionChangeInterval = 0f;
+        [SerializeField] private Transform forceApplyPoint = null;
 
         private float rotationDirection;
 
@@ -27,7 +28,7 @@ namespace WoollyRules.Sheep
 
             transform.Rotate(rotationDirection * Time.fixedDeltaTime * Vector3.up, Space.Self);
 
-            rb.AddForce(transform.forward * forwardAccel, ForceMode.Acceleration);
+            rb.AddForceAtPosition(transform.forward * forwardAccel, forceApplyPoint.position, ForceMode.Acceleration);
 
             vel = Vector3.ClampMagnitude(vel, maxSpeed);
             vel = transform.TransformDirection(vel);
