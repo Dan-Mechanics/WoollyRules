@@ -1737,23 +1737,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6933228493867487473, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
-      propertyPath: cowPrefab
-      value: 
-      objectReference: {fileID: 2892492694044777937, guid: 1971ba566d6387d4a82a4f125b1ee380, type: 3}
-    - target: {fileID: 6933228493867487473, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
-      propertyPath: spawnAmount
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6933228493867487473, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
       propertyPath: cutAllButton
-      value: 
-      objectReference: {fileID: 1976796249}
-    - target: {fileID: 6933228493867487473, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
-      propertyPath: cowPercantage
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6933228493867487473, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
-      propertyPath: cuttableHolder
       value: 
       objectReference: {fileID: 1976796249}
     m_RemovedComponents: []
@@ -19259,23 +19243,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1497449479}
     - target: {fileID: 8041410369033268743, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
-      propertyPath: cowPrefab
-      value: 
-      objectReference: {fileID: 2892492694044777937, guid: 1971ba566d6387d4a82a4f125b1ee380, type: 3}
-    - target: {fileID: 8041410369033268743, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
-      propertyPath: spawnAmount
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8041410369033268743, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
       propertyPath: cutAllButton
-      value: 
-      objectReference: {fileID: 1976796249}
-    - target: {fileID: 8041410369033268743, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
-      propertyPath: cowPercantage
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8041410369033268743, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
-      propertyPath: cuttableHolder
       value: 
       objectReference: {fileID: 1976796249}
     - target: {fileID: 8098423474776796109, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}

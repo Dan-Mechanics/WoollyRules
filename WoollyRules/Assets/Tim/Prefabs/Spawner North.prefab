@@ -45,8 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sheepPrefab: {fileID: 2127664283110895676, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
-  cuttableHolder: {fileID: 0}
+  cowPrefab: {fileID: 2892492694044777937, guid: 1971ba566d6387d4a82a4f125b1ee380, type: 3}
+  cowPercantage: 0.1
+  cutAllButton: {fileID: 0}
   interval: 3
-  amountOfSheepToSpawn: 8
+  spawnAmount: 10
   spawnWithRandomRotation: 1
   randomPositionMagnitude: 5
