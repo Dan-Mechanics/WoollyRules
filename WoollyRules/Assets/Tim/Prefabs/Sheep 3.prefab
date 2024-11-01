@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1492384736}
   - component: {fileID: 4000651752663161429}
   - component: {fileID: 4669090254976714646}
+  - component: {fileID: -6486451734984886598}
   m_Layer: 0
   m_Name: Sheep 3
   m_TagString: Untagged
@@ -185,6 +186,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standUprightTorque: 100
+--- !u!114 &-6486451734984886598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127664283110895676}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78fd897638b0d8546b530d5e6981341b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 2127664283110895623}
+  graphic: {fileID: 7344914961979667525}
+  bouncePeriod: 1
+  forwardAccel: 10
 --- !u!1001 &3694449869782205028
 PrefabInstance:
   m_ObjectHideFlags: 0
