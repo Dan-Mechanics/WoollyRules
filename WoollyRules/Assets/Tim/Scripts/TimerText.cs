@@ -19,18 +19,26 @@ namespace WoollyRules
             if (text != null)
             {
                 text.enabled = !timer.TimerCompleted;
-
-                // make like 05:50
-                text.text = timer.TimeValue.ToString();
+                text.text = GetTimerString();
             }
 
             if (tmp != null) 
             {
                 tmp.enabled = !timer.TimerCompleted;
-
-                // make like 05:50
-                tmp.text = timer.TimeValue.ToString();
+                tmp.text = GetTimerString();
             }
+        }
+
+        private string GetTimerString()
+        {
+            float seconds = timer.TimeValue;
+            float minutes = seconds % 60;
+            seconds -= minutes * 60f;
+
+            //seconds = Mathf.Ceil(seconds);
+            //minutes = Mathf.Ceil(minutes);
+
+            return $"{minutes}:{seconds}";
         }
     }
 }

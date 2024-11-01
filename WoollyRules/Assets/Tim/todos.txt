@@ -140,6 +140,7 @@ read discord messages
 disable after time not destroy after time --> we use timer.cs for that V
 make is so that the only way that the game stop is throug the timer V
 all other rule breakers just show the webcam which is then hidden and shown again perhaps via preload or not whatever V
+cow model importn.
 improve prefabspawner.cs V
 i still need the open scissors cursor
 clean scene a little bit V

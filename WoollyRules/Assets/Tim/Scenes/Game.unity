@@ -534,6 +534,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184644351}
   m_CullTransparentMesh: 1
+--- !u!114 &214275362 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8098423474776796109, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
+  m_PrefabInstance: {fileID: 154497742615200425}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eebf143449f422b47a8509e923a9dfad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &593987567
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,7 +594,7 @@ MonoBehaviour:
   interval: 3
   amountOfSheepToSpawn: 8
   spawnWithRandomRotation: 1
-  randomPositionMagnitude: 5
+  randomPositionMagnitude: 10
 --- !u!114 &676326826 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3864873133951161869, guid: 88a5dd8104811c343889bebb90d85921, type: 3}
@@ -1703,7 +1714,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 25, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1716485865
 GameObject:
   m_ObjectHideFlags: 0
@@ -1812,7 +1823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78384027613c033459fb4b16667c06c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeValue: 40
+  timeValue: 300
   onTimerComplete:
     m_PersistentCalls:
       m_Calls:
@@ -2360,6 +2371,10 @@ PrefabInstance:
       propertyPath: scissors
       value: 
       objectReference: {fileID: 1497449479}
+    - target: {fileID: 7638153695043444267, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
+      propertyPath: cameraRotator
+      value: 
+      objectReference: {fileID: 214275362}
     - target: {fileID: 8041410369033268743, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
       propertyPath: interval
       value: 3
@@ -2378,7 +2393,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8041410369033268743, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
       propertyPath: randomPositionMagnitude
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

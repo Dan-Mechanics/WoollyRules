@@ -6,6 +6,7 @@ namespace WoollyRules
     {
         [SerializeField] private Scissors scissors = null;
         [SerializeField] private float shakeStrength = 0f;
+        [SerializeField] private CameraRotator cameraRotator = null;
 
         /// <summary>
         /// We do it like this because we need the starting rotation in Point().
@@ -19,7 +20,7 @@ namespace WoollyRules
         {
             if (!hasHit) { return; }
 
-            transform.LookAt(point);
+            transform.LookAt(point, cameraRotator.transform.up);
 
             // https://docs.unity3d.com/ScriptReference/Transform.LookAt.html
             // transform.LookAt(target, Vector3.left);
