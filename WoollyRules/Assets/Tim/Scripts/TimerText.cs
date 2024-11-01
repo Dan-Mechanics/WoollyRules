@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 namespace WoollyRules
 {
@@ -9,14 +10,27 @@ namespace WoollyRules
     public class TimerText : MonoBehaviour
     {
         [SerializeField] private Text text = null;
+        [SerializeField] private TMP_Text tmp = null;
+
         [SerializeField] private Timer timer = null;
 
         private void FixedUpdate()
         {
-            text.enabled = !timer.TimerCompleted;
+            if (text != null)
+            {
+                text.enabled = !timer.TimerCompleted;
 
-            // make like 05:50
-            text.text = timer.TimeValue.ToString();
+                // make like 05:50
+                text.text = timer.TimeValue.ToString();
+            }
+
+            if (tmp != null) 
+            {
+                tmp.enabled = !timer.TimerCompleted;
+
+                // make like 05:50
+                tmp.text = timer.TimeValue.ToString();
+            }
         }
     }
 }

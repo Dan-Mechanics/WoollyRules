@@ -27,8 +27,6 @@ namespace WoollyRules
 
         private void Start()
         {
-            Application.targetFrameRate = 300;
-
             if (preload) 
             {
                 //Application.targetFrameRate = 300;
@@ -46,12 +44,25 @@ namespace WoollyRules
             if (!preload) { StartCoroutine(Auhtorize()); }
         }
 
+        public void Hide() 
+        {
+            showing = false;
+
+            imageToProjectWebcamOn.gameObject.SetActive(false);
+
+            if (!preload && webCamTexture != null) 
+            {
+                webCamTexture.Stop();
+                webCamTexture = null;
+            }
+        }
+
         /// <summary>
         /// This is a coroutine.
         /// </summary>
         private IEnumerator Auhtorize()
         {
-            if (setupDone) { yield break; }
+            //if (setupDone) { yield break; }
             
             LogWebcams();
 

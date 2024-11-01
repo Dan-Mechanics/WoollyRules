@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,7 +6,7 @@ namespace WoollyRules
 {
     public class BlinkingText : Blinker
     {
-        [SerializeField] private TMP_Text text = null;
+        [SerializeField] private Text text = null;
         [SerializeField] private Color warnColor = Color.clear;
 
         [SerializeField] private float minBlinkingTime = 0f;
@@ -37,10 +36,10 @@ namespace WoollyRules
         {
             base.Stop();
 
-            //MakeTextNormal();
+            MakeTextNormal();
         }
 
-        /*public override void Blink()
+        public override void Blink()
         {
             //base.Blink();
 
@@ -51,6 +50,6 @@ namespace WoollyRules
         private void MakeTextNormal()
         {
             text.fontStyle = FontStyle.Normal; text.color = Color.black;
-        }*/
+        }
     }
 }

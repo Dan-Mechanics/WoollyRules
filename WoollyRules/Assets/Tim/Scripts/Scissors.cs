@@ -24,8 +24,7 @@ namespace WoollyRules
         [SerializeField] private LayerMask cuttableMask = 0;
         //[SerializeField] private ScissorsCursor scissorsCursor = null;
         //[SerializeField] private ScissorsAnimator animator = null;
-        [SerializeField] private UnityEvent onWarnRule = null;
-        [SerializeField] private UnityEvent onCut = null;
+
 
         [Header("Settings")]
 
@@ -34,8 +33,10 @@ namespace WoollyRules
 
         [Header("Unity Events")]
         
-        [Tooltip("FUTURE: this is bascialyl onGameEnd so mayne it should be on another script like gamemanager.cs for example ...")]
+        //[Tooltip("FUTURE: this is bascialyl onGameEnd so mayne it should be on another script like gamemanager.cs for example ...")]
         [SerializeField] private UnityEvent onRuleBroken = null;
+        [SerializeField] private UnityEvent onWarnRule = null;
+        [SerializeField] private UnityEvent onCut = null;
 
         private bool isHoveringRuleBrokenOnCut;
 

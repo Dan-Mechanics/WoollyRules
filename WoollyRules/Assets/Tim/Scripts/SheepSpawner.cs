@@ -2,14 +2,10 @@
 
 namespace WoollyRules
 {
-    /// <summary>
-    /// ADD: SPAWN COUNT
-    /// ADD: RANDOM POS
-    /// </summary>
     public class SheepSpawner : MonoBehaviour
     {
         [SerializeField] private GameObject sheepPrefab = null;
-        [SerializeField] private CuttableHolder cuttableHolder = null;
+        [SerializeField] private CutAllButton cuttableHolder = null;
         [SerializeField] [Min(0.1f)] private float interval = 0f;
         [SerializeField] [Min(0)] private int amountOfSheepToSpawn = 0;
 
@@ -36,14 +32,7 @@ namespace WoollyRules
         }
 
         private void Spawn() 
-        {
-            if (spawnCount >= amountOfSheepToSpawn) 
-            {
-                print($"Spawned all the sheep for {gameObject.name}.");
-                CancelInvoke(nameof(Spawn));
-                return;
-            }
-            
+        {   
             Vector3 pos = transform.position + Random.insideUnitSphere * randomPositionMagnitude;
             Quaternion rot = spawnWithRandomRotation ? Random.rotationUniform : transform.rotation;
 
@@ -57,6 +46,12 @@ namespace WoollyRules
             }
 
             spawnCount++;
+
+            if (spawnCount >= amountOfSheepToSpawn)
+            {
+                print($"Spawned all the sheep for {gameObject.name}.");
+                CancelInvoke(nameof(Spawn));
+            }
         }
     }
 }

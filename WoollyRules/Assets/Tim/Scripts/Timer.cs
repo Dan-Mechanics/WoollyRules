@@ -32,6 +32,7 @@ namespace WoollyRules
         {
             this.timeValue = timeValue;
             timerCompleted = false;
+            gameObject.SetActive(true);
         }
     }
 }

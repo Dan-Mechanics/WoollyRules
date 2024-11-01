@@ -154,6 +154,12 @@ enalbe and disable in the actual webcam script
 and i just need to impleemnt everyone's art basically, at least sophie can use github a little but it doesnt matter as long as it works.
 
 also i would maybe just keep the scissor cursor ?? nah i feel like you only have the scissor cursor when you can cut things.
-fix timer texts
+fix timer texts ...
 
 also make sure to keep ur discord open for people sending in art.
+
+/// <summary>
+    /// You always need to ask yourself: how does this contribute to the intention ??
+    /// </summary>
+
+the text should just become red ez peasy. V
