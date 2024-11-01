@@ -14,6 +14,7 @@ namespace WoollyRules
         [SerializeField] private float refreshInterval = 0f;
         [SerializeField] private bool matchImageSizeToWebcamSize = false;
         [SerializeField] private bool preload = false;
+        [SerializeField] private RectTransform rectTransform = null;
 
         private WebCamTexture webCamTexture;
         private Texture2D texture;
@@ -37,6 +38,7 @@ namespace WoollyRules
 
         public void Show() 
         {
+            if (showing) { return; }
             showing = true;
 
             //gameObject.SetActive(true);
@@ -46,6 +48,7 @@ namespace WoollyRules
 
         public void Hide() 
         {
+            if (!showing) { return; }
             showing = false;
 
             imageToProjectWebcamOn.gameObject.SetActive(false);
@@ -126,7 +129,7 @@ namespace WoollyRules
 
         private void RefreshWebcam()
         {
-            if (webCamTexture == null) { return; }
+            if (webCamTexture == null || !webCamTexture.isPlaying) { return; }
 
             //print("RefreshWebcam()");
 
@@ -151,7 +154,7 @@ namespace WoollyRules
         {
             print($"webcam dimensions: ({webCamTexture.width}x{webCamTexture.height}).");
 
-            if (matchImageSizeToWebcamSize) { imageToProjectWebcamOn.rectTransform.sizeDelta = new Vector2(webCamTexture.width, webCamTexture.height); }
+            if (matchImageSizeToWebcamSize) { rectTransform.sizeDelta = new Vector2(webCamTexture.width, webCamTexture.height); }
 
             texture = new Texture2D(webCamTexture.width, webCamTexture.height, TextureFormat.RGB24, false);
             rect = new Rect(0f, 0f, texture.width, texture.height);

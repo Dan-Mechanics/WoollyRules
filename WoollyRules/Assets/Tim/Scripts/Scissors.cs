@@ -4,13 +4,6 @@ using UnityEngine.Events;
 
 namespace WoollyRules
 {
-    /// <summary>
-    /// FUTURE: could add layermask for raycast.
-    /// NOTE: cursor is in build settings ez peazy.
-    /// ADD: text rule. V
-    /// ADD: rule reaction on different class then this script --> and that rule.cs class should be on the rules text maybe ??
-    /// WARNING: NO CURSOR NO CUTTING !!
-    /// </summary>
     public class Scissors : MonoBehaviour
     {
         public bool IsHoveringRuleBrokenOnCut => isHoveringRuleBrokenOnCut;
@@ -20,25 +13,22 @@ namespace WoollyRules
         [Header("References")]
 
         [SerializeField] private Camera cam = null;
-        //[SerializeField] private BlinkingText cutWarning = null;
         [SerializeField] private LayerMask cuttableMask = 0;
-        //[SerializeField] private ScissorsCursor scissorsCursor = null;
-        //[SerializeField] private ScissorsAnimator animator = null;
-
 
         [Header("Settings")]
 
         [SerializeField] private float maxCutRange = 0f;
         [SerializeField] private KeyCode cutKey = KeyCode.None;
+        [SerializeField] private float ruleBrokenCooldown = 0f;
 
         [Header("Unity Events")]
         
-        //[Tooltip("FUTURE: this is bascialyl onGameEnd so mayne it should be on another script like gamemanager.cs for example ...")]
         [SerializeField] private UnityEvent onRuleBroken = null;
         [SerializeField] private UnityEvent onWarnRule = null;
         [SerializeField] private UnityEvent onCut = null;
 
         private bool isHoveringRuleBrokenOnCut;
+        private float nextCanBreakRuleTime;
 
         private void Update()
         {
@@ -50,9 +40,6 @@ namespace WoollyRules
             CheckIfHoveringSomething();
         }
 
-        /// <summary>
-        /// Called from ScissorsCursor.cs every update.
-        /// </summary>
         private void CheckInput()
         {
             if (Input.GetKeyDown(cutKey))
@@ -92,11 +79,11 @@ namespace WoollyRules
 
             cuttable.Cut();
 
-            //if (cuttable.RuleBrokenOnCut) { onRuleBroken?.Invoke(); }
+            if (cuttable.RuleBrokenOnCut) { BreakRule(); }
         }
 
         /// <summary>
-        /// FUTURE: make a single-time event for when you mouseOver something basically because this spams it.
+        /// IDEA: could make a single-time event for when you mouseOver something basically because this spams it.
         /// </summary>
         private void CheckIfHoveringSomething()
         {
@@ -121,7 +108,11 @@ namespace WoollyRules
 
         public void BreakRule()
         {
+            if (Time.time < nextCanBreakRuleTime) { return; }
+            
             onRuleBroken?.Invoke();
+
+            nextCanBreakRuleTime = Time.time + ruleBrokenCooldown;
         }
     }
 }

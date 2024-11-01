@@ -1,12 +1,10 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 namespace WoollyRules
 {
-    /// <summary>
-    /// 05:50 time meme.
-    /// </summary>
     public class TimerText : MonoBehaviour
     {
         [SerializeField] private Text text = null;
@@ -19,26 +17,28 @@ namespace WoollyRules
             if (text != null)
             {
                 text.enabled = !timer.TimerCompleted;
-                text.text = GetTimerString();
+                text.text = GetTimerString(timer.TimeValue);
             }
 
             if (tmp != null) 
             {
                 tmp.enabled = !timer.TimerCompleted;
-                tmp.text = GetTimerString();
+                tmp.text = GetTimerString(timer.TimeValue);
             }
         }
 
-        private string GetTimerString()
+        /// <summary>
+        /// https://stackoverflow.com/questions/463642/how-can-i-convert-seconds-into-hourminutessecondsmilliseconds-time
+        /// </summary>
+        private string GetTimerString(double seconds)
         {
-            float seconds = timer.TimeValue;
-            float minutes = seconds % 60;
-            seconds -= minutes * 60f;
+            if (seconds > TimeSpan.MaxValue.TotalSeconds) { seconds = TimeSpan.MaxValue.TotalSeconds; }
+            
+            TimeSpan time = TimeSpan.FromSeconds(seconds);
 
-            //seconds = Mathf.Ceil(seconds);
-            //minutes = Mathf.Ceil(minutes);
+            return time.ToString(@"mm\:ss\:ff");
 
-            return $"{minutes}:{seconds}";
+            //return time.ToString(@"hh\:mm\:ss\:fff");
         }
     }
 }

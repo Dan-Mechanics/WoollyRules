@@ -152,10 +152,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 184644352}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: -68.89}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: -100}
+  m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &18068969
 MonoBehaviour:
@@ -199,7 +199,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 7
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1151,7 +1151,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 793.8436, y: 423.3186}
+  m_SizeDelta: {x: 700, y: 490}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1098676778
 MonoBehaviour:
@@ -1168,7 +1168,8 @@ MonoBehaviour:
   imageToProjectWebcamOn: {fileID: 184644353}
   refreshInterval: 0.25
   matchImageSizeToWebcamSize: 0
-  preload: 1
+  preload: 0
+  rectTransform: {fileID: 1098676777}
 --- !u!222 &1098676780
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1376,6 +1377,7 @@ MonoBehaviour:
     m_Bits: 1
   maxCutRange: 100
   cutKey: 323
+  ruleBrokenCooldown: 1.5
   onRuleBroken:
     m_PersistentCalls:
       m_Calls:
@@ -1729,7 +1731,7 @@ GameObject:
   - component: {fileID: 1716485868}
   - component: {fileID: 1716485871}
   m_Layer: 5
-  m_Name: Main Game Ending Timer
+  m_Name: Main Timer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1749,10 +1751,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 862688088}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 15}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1716485868
 MonoBehaviour:
@@ -2232,6 +2234,10 @@ PrefabInstance:
       value: Sheep Spawner North
       objectReference: {fileID: 0}
     - target: {fileID: 690818052603756747, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
+      propertyPath: ruleBrokenOnCut
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 690818052603756747, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
       propertyPath: onCut.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -2675,10 +2681,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4193961970286866912, guid: bb4e144bc3c70c64bb40b557d5669b38, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8409848134352709031, guid: bb4e144bc3c70c64bb40b557d5669b38, type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
