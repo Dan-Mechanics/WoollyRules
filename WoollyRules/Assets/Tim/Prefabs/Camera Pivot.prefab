@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3407866600231626788}
   - component: {fileID: 8041410369033268743}
   m_Layer: 0
-  m_Name: Cube Spawner North
+  m_Name: Sheep Spawner North
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 89331905607769537}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.254602, y: -0, z: -0, w: 0.96704596}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 12.642845, z: 3.9247766}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -44,10 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8149c4aeb505f2b4fa6fbb1de9d3c34d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 2127664283110895676, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
+  sheepPrefab: {fileID: 2127664283110895676, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
   cuttableHolder: {fileID: 0}
-  interval: 1.5
+  interval: 3
+  amountOfSheepToSpawn: 8
   spawnWithRandomRotation: 1
+  randomPositionMagnitude: 10
 --- !u!1 &1088670346498798704
 GameObject:
   m_ObjectHideFlags: 0
@@ -62,7 +64,7 @@ GameObject:
   - component: {fileID: 7523133604219131828}
   - component: {fileID: 690818052603756747}
   m_Layer: 0
-  m_Name: Button
+  m_Name: Physical Game Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -171,25 +173,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blockHover: 1
   blockCut: 0
-  ruleBrokenOnCut: 0
+  ruleBrokenOnCut: 1
   onCut:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: WoollyRules.CuttableHolder, Assembly-CSharp
         m_MethodName: CutAll
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: WoollyRules.Cuttable, Assembly-CSharp
-        m_MethodName: Cut
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -283,6 +273,7 @@ Transform:
   - {fileID: 3261970549959842753}
   - {fileID: 4433610883134017240}
   - {fileID: 3407866600231626788}
+  - {fileID: 2290359488753325828}
   m_Father: {fileID: 4878178884178112396}
   m_LocalEulerAnglesHint: {x: 25, y: 0, z: 0}
 --- !u!20 &2067111664193587977
@@ -294,7 +285,7 @@ Camera:
   m_GameObject: {fileID: 7136231519433440291}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 4
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -359,7 +350,7 @@ MonoBehaviour:
   m_RenderShadows: 1
   m_RequiresDepthTextureOption: 2
   m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
+  m_CameraType: 1
   m_Cameras: []
   m_RendererIndex: -1
   m_VolumeLayerMask:
@@ -414,8 +405,8 @@ Transform:
   m_GameObject: {fileID: 7230129258001284973}
   serializedVersion: 2
   m_LocalRotation: {x: -0.31426898, y: -0, z: -0, w: 0.949334}
-  m_LocalPosition: {x: 1.82, y: -0.85, z: 5.98}
-  m_LocalScale: {x: 0.68694, y: 0.68694, z: 0.68694}
+  m_LocalPosition: {x: 1.822, y: -0.87543, z: 5.9367}
+  m_LocalScale: {x: 0.77802825, y: 0.77802825, z: 0.77802825}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7628907753281026016}
@@ -438,6 +429,128 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scissors: {fileID: 0}
   shakeStrength: 0.8
+  cameraRotator: {fileID: 8098423474776796109}
+--- !u!1 &7724925913899249864
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2290359488753325828}
+  - component: {fileID: 4572023498352511731}
+  - component: {fileID: 3779651308493982507}
+  m_Layer: 0
+  m_Name: Sun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2290359488753325828
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7724925913899249864}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.17188029, y: -0.19899091, z: 0.16549902, w: 0.9505104}
+  m_LocalPosition: {x: 0, y: -43.93027, z: 35.932312}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 416400810472494626}
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!108 &4572023498352511731
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7724925913899249864}
+  m_Enabled: 1
+  serializedVersion: 11
+  m_Type: 1
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
+--- !u!114 &3779651308493982507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7724925913899249864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &801740035058742245
 PrefabInstance:
   m_ObjectHideFlags: 0

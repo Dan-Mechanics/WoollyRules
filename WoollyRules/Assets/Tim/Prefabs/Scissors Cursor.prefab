@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 25, y: -25}
-  m_SizeDelta: {x: 64, y: 64}
+  m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7690371188241873919
 CanvasRenderer:
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 22ab5e29111d9b64281bf94a83c8e383, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 406db9cb33c1d3947b9e29dece0acc18, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -212,5 +212,5 @@ MonoBehaviour:
   scissors: {fileID: 0}
   rect: {fileID: 3513114392891874938}
   image: {fileID: 6666657290197720803}
-  closedScissors: {fileID: 21300000, guid: 22ab5e29111d9b64281bf94a83c8e383, type: 3}
-  openScissors: {fileID: 21300000, guid: e0124be2c3582ea4bae28d2a808f904d, type: 3}
+  closedScissors: {fileID: 21300000, guid: 406db9cb33c1d3947b9e29dece0acc18, type: 3}
+  openScissors: {fileID: 21300000, guid: 75e702a7e136e1849afb13e03a3064cb, type: 3}
