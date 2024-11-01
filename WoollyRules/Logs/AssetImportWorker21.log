@@ -316,3 +316,47 @@ Memory consumption went from 161.1 MB to 157.3 MB.
 Total: 7.046400 ms (FindLiveObjects: 0.520400 ms CreateObjectMapping: 0.577900 ms MarkObjects: 4.181700 ms  DeleteObjects: 1.765100 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 313.520758 seconds.
+  path: Assets/Luuk
+  artifactKey: Guid(3c20bc4d2a36e4c47ba110cf4eb35006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Luuk using Guid(3c20bc4d2a36e4c47ba110cf4eb35006) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '52a57a10986700120070813ada8fa9aa') in 0.0166989 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.672319 seconds.
+  path: Assets/Cow/CowBack.fbx
+  artifactKey: Guid(c865c77f5f61b1d4290fd2445bce81d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cow/CowBack.fbx using Guid(c865c77f5f61b1d4290fd2445bce81d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'bcd705e80f0416eecc17ab626c24f4b0') in 5.2995875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Cow/COWHELP_CowMaterial_MetallicSmoothness.png
+  artifactKey: Guid(6481d959c1e9235458c103b4ad99a5d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cow/COWHELP_CowMaterial_MetallicSmoothness.png using Guid(6481d959c1e9235458c103b4ad99a5d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '632660baee3cc43d2bd7eb75ac06cc4a') in 0.0220396 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.845076 seconds.
+  path: Assets/Tim/Prefabs/Camera Pivot.prefab
+  artifactKey: Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Camera Pivot.prefab using Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1c9d744071308fec2cb098083e14dbc4') in 0.0508645 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 282
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

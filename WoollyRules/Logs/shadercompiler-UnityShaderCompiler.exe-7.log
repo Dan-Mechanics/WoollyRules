@@ -15,3 +15,5 @@ Cmd: compileSnippet
 
 
 
+Cmd: initializeCompiler
+

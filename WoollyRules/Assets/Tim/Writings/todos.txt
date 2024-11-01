@@ -169,3 +169,9 @@ the text should just become red ez peasy. V
 for next time: only have post processing on the last camera overlay.
 
 NAMESPACES AND ASSEMBLIES NOWW !!!!!!!!!!!!!!
+
+make it so that the cow spawns based on the sheep sapwner i think
+or we add a cow spawner type thing.
+
+
+if sophie could make the flowers unlit that would be great.

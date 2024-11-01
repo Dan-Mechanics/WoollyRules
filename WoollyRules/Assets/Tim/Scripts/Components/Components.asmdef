@@ -1,6 +1,6 @@
 {
     "name": "Components",
-    "rootNamespace": "",
+    "rootNamespace": "WoollyRules",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

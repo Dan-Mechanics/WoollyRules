@@ -2,12 +2,14 @@
 
 namespace WoollyRules.Core
 {
-    public class SheepSpawner : MonoBehaviour
+    public class Spawner : MonoBehaviour
     {
         [SerializeField] private GameObject sheepPrefab = null;
-        [SerializeField] private CutAllButton cuttableHolder = null;
+        [SerializeField] private GameObject cowPrefab = null;
+        [SerializeField] private float cowPercantage = 0f;
+        [SerializeField] private CutAllButton cutAllButton = null;
         [SerializeField] [Min(0.1f)] private float interval = 0f;
-        [SerializeField] [Min(0)] private int amountOfSheepToSpawn = 0;
+        [SerializeField] [Min(0)] private int spawnAmount = 0;
 
         [SerializeField] private bool spawnWithRandomRotation = false;
         [SerializeField] [Min(0f)] private float randomPositionMagnitude = 0f;
@@ -22,9 +24,9 @@ namespace WoollyRules.Core
                 return;
             }
 
-            if (amountOfSheepToSpawn <= 0)
+            if (spawnAmount <= 0)
             {
-                Debug.LogWarning("amountOfSheepToSpawn <= 0.");
+                Debug.LogWarning("spawnAmount <= 0.");
                 return;
             }
 
@@ -36,18 +38,19 @@ namespace WoollyRules.Core
             Vector3 pos = transform.position + Random.insideUnitSphere * randomPositionMagnitude;
             Quaternion rot = spawnWithRandomRotation ? Random.rotationUniform : transform.rotation;
 
-            GameObject newSheep = Instantiate(sheepPrefab, pos, rot);
-            newSheep.name = sheepPrefab.name;
+            // ish ...
+            GameObject newlySpawned = Instantiate(Random.value < cowPercantage ? cowPrefab : sheepPrefab, pos, rot);
+            newlySpawned.name = sheepPrefab.name;
 
-            Cuttable cuttable = newSheep.GetComponent<Cuttable>();
-            if (cuttableHolder != null && cuttable != null) 
+            Cuttable cuttable = newlySpawned.GetComponent<Cuttable>();
+            if (cutAllButton != null && cuttable != null) 
             {
-                cuttableHolder.Add(cuttable);
+                cutAllButton.Add(cuttable);
             }
 
             spawnCount++;
 
-            if (spawnCount >= amountOfSheepToSpawn)
+            if (spawnCount >= spawnAmount)
             {
                 print($"Spawned all the sheep for {gameObject.name}.");
                 CancelInvoke(nameof(Spawn));
