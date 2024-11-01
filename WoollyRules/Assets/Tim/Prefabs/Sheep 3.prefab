@@ -172,7 +172,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2127664283110895676}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd6699576c2c83c47b82743c9886b715, type: 3}
+  m_Script: {fileID: 11500000, guid: 25f08b93e41dc54489baff8ae4d8b11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &4669090254976714646
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2127664283110895676}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf25b3d621e796b4c90791f8ca6a6c3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 154544c0d8961ef459446fee569eb619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   standUprightTorque: 100
@@ -428,7 +428,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1846758153391842853}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd6699576c2c83c47b82743c9886b715, type: 3}
+  m_Script: {fileID: 11500000, guid: 25f08b93e41dc54489baff8ae4d8b11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &4737771539907358173 stripped

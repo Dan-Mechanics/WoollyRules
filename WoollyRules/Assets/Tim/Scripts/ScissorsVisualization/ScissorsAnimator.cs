@@ -11,7 +11,7 @@ namespace WoollyRules.ScissorsVisualization
     {
         [SerializeField] private Scissors scissors = null;
         
-        [SerializeField] private Transform scissorsVisual = null;
+        //[SerializeField] private Transform scissorsVisual = null;
         [SerializeField] private Transform scissorsForward = null;
 
         [SerializeField] private Transform[] scissorParts = null;
@@ -60,7 +60,7 @@ namespace WoollyRules.ScissorsVisualization
             //areScissorsOpen = Input.GetKey(KeyCode.Mouse1);
             //isDoingCutAnimation = Input.GetKey(KeyCode.Mouse0);
 
-            scissorsVisual.localPosition = Vector3.Lerp(scissorsVisual.localPosition, isCutting ? scissorsForward.localPosition : Vector3.zero, cutLerpValue);
+            transform.localPosition = Vector3.Lerp(transform.localPosition, isCutting ? scissorsForward.localPosition : Vector3.zero, cutLerpValue);
             
             for (int i = 0; i < scissorParts.Length; i++)
             {

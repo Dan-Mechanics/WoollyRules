@@ -233,11 +233,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6866619643828901919}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eebf143449f422b47a8509e923a9dfad, type: 3}
+  m_Script: {fileID: 11500000, guid: e227aae9b51a8724b806563a836158ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 8
-  movementMargin: 200
+  rotationSpeed: 0
+  movementMargin: 0
+  wasd: 0
+  movementMarginsUI: []
 --- !u!1 &7136231519433440291
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,12 +426,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7230129258001284973}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93df5c8292a1d054694577db23e7183a, type: 3}
+  m_Script: {fileID: 11500000, guid: e72abd19517ab8e4aaad670482a5ca3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scissors: {fileID: 0}
-  shakeStrength: 0.8
-  cameraRotator: {fileID: 8098423474776796109}
+  shakeStrength: 0
+  cameraRotator: {fileID: 0}
 --- !u!1 &7724925913899249864
 GameObject:
   m_ObjectHideFlags: 0
