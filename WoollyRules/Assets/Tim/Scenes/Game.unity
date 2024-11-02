@@ -1125,7 +1125,7 @@ MonoBehaviour:
   imageToProjectWebcamOn: {fileID: 184644353}
   refreshInterval: 0.25
   matchImageSizeToWebcamSize: 0
-  preload: 0
+  preload: 1
   rectTransform: {fileID: 1098676777}
   backgroundMusic: {fileID: 1460701401}
   musicStopsWhenShowingWebcam: 1
