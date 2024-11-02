@@ -130,7 +130,7 @@ Material:
     - _ClearCoatSmoothness: 0
     - _Cull: 2
     - _Cutoff: 0.5
-    - _Darken_ViewLength: 1
+    - _Darken_ViewLength: 0
     - _Darker_on_View: 0
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
@@ -157,7 +157,7 @@ Material:
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
-    - _Sway_Intensity: 4.66
+    - _Sway_Intensity: 2.38
     - _Test: 0.005
     - _View_Length: 150
     - _WindHeight: 0.62
@@ -168,17 +168,17 @@ Material:
     m_Colors:
     - _BaseColor: {r: 0.032367468, g: 1, b: 0, a: 1}
     - _Color: {r: 0.032367468, g: 1, b: 0, a: 1}
-    - _ColorA: {r: 0.44296297, g: 0.78113204, b: 0.19896752, a: 0}
-    - _ColorB: {r: 0.23761545, g: 0.6981132, b: 0.067176916, a: 0}
+    - _ColorA: {r: 0.36994922, g: 0.78039217, b: 0.19999997, a: 0}
+    - _ColorB: {r: 0.18952483, g: 0.4528302, b: 0.1260235, a: 0}
     - _ColorC: {r: 1, g: 0, b: 0.76475954, a: 0}
     - _Control_View_Smoothing: {r: -1.58, g: 3.14, b: 0, a: 0}
     - _DistantColor_Multiplier: {r: 1.4907554, g: 2.270603, b: 0.69831735, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EntityPosition1: {r: 149.97148, g: 143.64627, b: 154.413, a: 1}
-    - _EntityPosition2: {r: 131.06725, g: 141.83897, b: 179.32716, a: 1}
-    - _EntityPosition3: {r: 130.06352, g: 144.85658, b: 155.17902, a: 1}
-    - _EntityPosition4: {r: 137.8542, g: 145.29239, b: 165.27484, a: 1}
-    - _EntityShadowColor: {r: 0.59478086, g: 0.735849, b: 0.24852253, a: 0}
+    - _EntityPosition1: {r: 149.63568, g: 143.75394, b: 155.2446, a: 1}
+    - _EntityPosition2: {r: 131.72867, g: 142.90575, b: 177.14632, a: 1}
+    - _EntityPosition3: {r: 130.46779, g: 145.05402, b: 155.65677, a: 1}
+    - _EntityPosition4: {r: 137.24101, g: 145.77098, b: 166.23094, a: 1}
+    - _EntityShadowColor: {r: 0.74647206, g: 0.8962264, b: 0.37624598, a: 1}
     - _EntityShadowDistance: {r: 5.12, g: 3, b: 0, a: 0}
     - _EntityShadows: {r: 0.5643931, g: 0.7207546, b: 0.27606258, a: 0}
     - _EntityStep: {r: 6, g: 5.1, b: 0, a: 0}
