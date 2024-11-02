@@ -1362,3 +1362,23 @@ Start importing Assets/Tim/Prefabs/Camera Pivot.prefab using Guid(12d5a4b206f859
  -> (artifact id: '05110bc24e91477ba315c20633dca1eb') in 0.0805147 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 474
 
+========================================================================
+Received Import Request.
+  Time since last request: 22.616467 seconds.
+  path: Assets/Tim/Materials/chrome.mat
+  artifactKey: Guid(f2d52517a24659e4eb9479ede7a3be67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Materials/chrome.mat using Guid(f2d52517a24659e4eb9479ede7a3be67) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0e02237784c4f9fae598c5aae47d2ccb') in 0.0142112 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.858699 seconds.
+  path: Assets/Tim/Materials/chrome.mat
+  artifactKey: Guid(f2d52517a24659e4eb9479ede7a3be67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Materials/chrome.mat using Guid(f2d52517a24659e4eb9479ede7a3be67) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '338fa3857c93a6627942a16d414533cc') in 0.0116008 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
