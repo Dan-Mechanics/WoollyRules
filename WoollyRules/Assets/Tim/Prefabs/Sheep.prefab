@@ -216,7 +216,7 @@ MonoBehaviour:
   forwardAccel: 7
   maxSpeed: 3
   maxRotationSpeed: 15
-  rotationDirectionChangeInterval: 3
+  maxChangeDirInterval: 6
   forceApplyPoint: {fileID: 8138694653642865259}
 --- !u!114 &7415113377439332812
 MonoBehaviour:
@@ -232,6 +232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 2127664283110895623}
   graphic: {fileID: 7344914961979667525}
+  sheepMovement: {fileID: -6486451734984886598}
   period: 0.2
   verticalMult: 0.08
   verticalOffset: 1
