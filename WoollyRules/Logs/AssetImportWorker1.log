@@ -485,3 +485,7 @@ Start importing Assets/Beau/Textures/Button/lambert1_Roughness.png using Guid(14
  -> (artifact id: '5994df94dbe705ef6fab09fddf8843ec') in 0.0167807 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

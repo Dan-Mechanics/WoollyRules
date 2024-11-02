@@ -188,3 +188,9 @@ luuk sheep anim
 add button.
 
 lees appjes
+
+wool amteials slippery and that works because of good max speed.
+i also think the falling speed is kidna bugged.
+
+button doesnt work
+button color.

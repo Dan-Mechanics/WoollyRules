@@ -249,3 +249,23 @@ Start importing Assets/Beau/Textures/Button/lambert1_Normal_OpenGL.png using Gui
  -> (artifact id: '697400b65629830c25ca51104634ee6a') in 0.024701 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
+========================================================================
+Received Import Request.
+  Time since last request: 107.219207 seconds.
+  path: Assets/Beau/Materials/Button 1.mat
+  artifactKey: Guid(be12f4fa2fe124c4d9caa21f8f4ee06c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Beau/Materials/Button 1.mat using Guid(be12f4fa2fe124c4d9caa21f8f4ee06c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'edb87d5ea7a2ec794a252c95f1a4c8c1') in 0.0138226 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 94.461123 seconds.
+  path: Assets/Beau/Materials/Button 1.mat
+  artifactKey: Guid(be12f4fa2fe124c4d9caa21f8f4ee06c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Beau/Materials/Button 1.mat using Guid(be12f4fa2fe124c4d9caa21f8f4ee06c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0039afb7023b4b53877f2b80114e3143') in 0.0178363 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
