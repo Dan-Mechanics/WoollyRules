@@ -1466,3 +1466,12 @@ Start importing Assets/Tim/Prefabs/Grass Globe.prefab using Guid(068858b736007fa
  -> (artifact id: '3fac71c0f7c01677170ab21cde89b875') in 2.4146542 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 130028
 
+========================================================================
+Received Import Request.
+  Time since last request: 1064.628715 seconds.
+  path: Assets/Settings/PC_RPAsset.asset
+  artifactKey: Guid(4b83569d67af61e458304325a23e5dfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/PC_RPAsset.asset using Guid(4b83569d67af61e458304325a23e5dfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0c5f165a8b80217098d8d8c9effbf915') in 0.0725604 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 0
+
