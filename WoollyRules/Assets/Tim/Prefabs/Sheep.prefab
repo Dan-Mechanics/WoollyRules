@@ -84,6 +84,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blockHover: 0
   blockCut: 0
+  isButton: 0
   ruleBrokenOnCut: 0
   onCut:
     m_PersistentCalls:
@@ -408,7 +409,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5406530527330157742}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: af5374dc6bd598e4d9a1e1496e1deccf, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

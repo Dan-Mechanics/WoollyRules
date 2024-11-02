@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 795976145199467297}
   - component: {fileID: 7523133604219131828}
   - component: {fileID: 690818052603756747}
-  - component: {fileID: 5821340146487312782}
+  - component: {fileID: 1018028254669654786}
   m_Layer: 6
   m_Name: Physical Game Button
   m_TagString: Untagged
@@ -107,7 +107,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -144,7 +144,7 @@ MonoBehaviour:
         m_CallState: 2
   rb: {fileID: 0}
   rigidbodies: []
---- !u!135 &5821340146487312782
+--- !u!135 &1018028254669654786
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,7 +161,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.49999997
   m_Center: {x: 0, y: 0, z: 0}
