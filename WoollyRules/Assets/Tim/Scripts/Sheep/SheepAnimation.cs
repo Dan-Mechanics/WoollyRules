@@ -10,7 +10,7 @@ namespace WoollyRules.Sheep
         [SerializeField] private float period = 0f;
         [SerializeField] private float verticalMult = 0f;
         [SerializeField] private float verticalOffset = 0f;
-        [SerializeField] private float minSpeedToAnimate = 0f;
+        //[SerializeField] private float minSpeedToAnimate = 0f;
 
         private Vector3 startingScale;
         private float startingRandomOffset;
@@ -25,7 +25,10 @@ namespace WoollyRules.Sheep
           
         private void FixedUpdate()
         {
-            if (sheepMovement.FlatSpeed >= minSpeedToAnimate)
+            float scale = (Mathf.Sin((Time.time + startingRandomOffset) / period) + 1f) / 2f * verticalMult + verticalOffset;
+            graphic.localScale = scale * startingScale;
+
+            /*if (sheepMovement.FlatSpeed >= minSpeedToAnimate)
             {
                 float scale = (Mathf.Sin((Time.time + startingRandomOffset) / period) + 1f) / 2f * verticalMult + verticalOffset;
                 graphic.localScale = scale * startingScale;
@@ -33,7 +36,7 @@ namespace WoollyRules.Sheep
             else 
             {
                 graphic.localScale = startingScale;
-            }
+            }*/
         }
     }
 }

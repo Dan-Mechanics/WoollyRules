@@ -148,8 +148,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1752736633888282092}
-        m_TargetAssemblyTypeName: CutTheSheep.Destroyable, Assembly-CSharp
+      - m_Target: {fileID: 549398949396267660}
+        m_TargetAssemblyTypeName: WoollyRules.Piece.Destroyable, Piece
         m_MethodName: Destroy
         m_Mode: 1
         m_Arguments:
@@ -226,10 +226,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2127664283110895623}
-  forwardAccel: 6
-  maxSpeed: 3
-  maxRotationSpeed: 45
-  maxChangeDirInterval: 5
+  forwardAccel: 7
+  maxSpeed: 1
+  maxRotationSpeed: 35
+  maxChangeDirInterval: 6
   forceApplyPoint: {fileID: 8138694653642865259}
 --- !u!114 &7415113377439332812
 MonoBehaviour:
@@ -455,7 +455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6245142118061618721, guid: 219420982f5c97b46a85a19f3f7e153d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.108
       objectReference: {fileID: 0}
     - target: {fileID: 6245142118061618721, guid: 219420982f5c97b46a85a19f3f7e153d, type: 3}
       propertyPath: m_LocalPosition.z

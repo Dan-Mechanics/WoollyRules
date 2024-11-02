@@ -1739,3 +1739,619 @@ Memory consumption went from 184.5 MB to 180.9 MB.
 Total: 6.051600 ms (FindLiveObjects: 0.506000 ms CreateObjectMapping: 0.488700 ms MarkObjects: 3.701500 ms  DeleteObjects: 1.354700 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 271.955940 seconds.
+  path: Assets/Tim/Prefabs/Camera Pivot.prefab
+  artifactKey: Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Camera Pivot.prefab using Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f211678ab0297199e8d4a7c07598ff3f') in 0.4684878 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 384
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.413596 seconds.
+  path: Assets/Tim/Prefabs/Camera Pivot.prefab
+  artifactKey: Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Camera Pivot.prefab using Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ee19f7ace06e4d65f7a74756e8c908c6') in 0.0445371 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 384
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '04a0c5f6ae3de947894d41324b2b6d41') in 0.0503215 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 246
+
+========================================================================
+Received Import Request.
+  Time since last request: 128.962470 seconds.
+  path: Assets/Tim/Prefabs/Camera Pivot.prefab
+  artifactKey: Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Camera Pivot.prefab using Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'cf4e980431c0b8c91954f9231f9f653b') in 0.0476451 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 401
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '96841530e3448f6fac12a1747055a011') in 0.0523864 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 263
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.876699 seconds.
+  path: Assets/Tim/Prefabs/Camera Pivot.prefab
+  artifactKey: Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Camera Pivot.prefab using Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'bf5812a5d62fae02d240ba6444d47ab4') in 0.047969 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 401
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0d1313948bc85c361660a91a90bf5dab') in 0.0502302 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 263
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.574832 seconds.
+  path: Assets/Tim/Prefabs/Camera Pivot.prefab
+  artifactKey: Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Camera Pivot.prefab using Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '684ecf986ac21a150cbecd9ef4d55a74') in 0.0447286 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 400
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '02fcd9e504b34489af69c3cbff4baeeb') in 0.0500959 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 262
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.323461 seconds.
+  path: Assets/Tim/Prefabs/Camera Pivot.prefab
+  artifactKey: Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Camera Pivot.prefab using Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'befb11e6e2fc3b654f40753dfe3e9416') in 0.0482811 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 398
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '73b0660026f8e954a6fa578b51360327') in 0.0405037 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 260
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.003510 seconds.
+  path: Assets/Tim/Prefabs/Camera Pivot.prefab
+  artifactKey: Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Camera Pivot.prefab using Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f8b6b2f80900b1724b8d0e3b990c345c') in 0.0463296 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 396
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '212a19ffaef73f62f14fe51a6f199e9b') in 0.0449626 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 258
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.294096 seconds.
+  path: Assets/Tim/Prefabs/Camera Pivot.prefab
+  artifactKey: Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Camera Pivot.prefab using Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f01c3286d2bcfc379774ee5ba25a9d8a') in 0.0457954 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 396
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ca5108d7ac4939920217766c2ef2dafa') in 0.043503 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 258
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.876820 seconds.
+  path: Assets/Tim/Prefabs/Camera Pivot.prefab
+  artifactKey: Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Camera Pivot.prefab using Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7e343fb2e809220744c922461ba14382') in 0.0453204 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 396
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '13b48e4dd5ff26aa3575cf51c6d4124c') in 0.0396297 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 258
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.265463 seconds.
+  path: Assets/Tim/Prefabs/Camera Pivot.prefab
+  artifactKey: Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Camera Pivot.prefab using Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2a4dd1691fdeac89c7c4e87c3c61efbe') in 0.0502677 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 396
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '04c8c8be22011b26e9548971f58c1b59') in 0.043271 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 258
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.117847 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ab3673e2170be85932c19d1c8177b473') in 0.046993 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 265
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.765100 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '87c26658f3c9b74449685cd55b15ebc7') in 0.0474174 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 265
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.631542 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'bf678f0602eae87f080b102cb488366e') in 0.0484119 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 264
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.124097 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'eda9512d72417011b5851ea0a84f3900') in 0.0475092 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 263
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.695686 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8ea66731801fcc9695bc9b0b8f108e12') in 0.0470583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 262
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.777697 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e21b1cae8bb62e95caa5b19aeab00a37') in 0.0477475 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 262
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.815432 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'efbde1007b37e0f97f80c95711434154') in 0.0503955 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 262
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.158302 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1df45e223b6391f1fec991b2df02dab6') in 0.0472156 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 262
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.727448 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '714a996d0b2b6f664df12d05695388dd') in 0.0454413 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 262
+
+========================================================================
+Received Import Request.
+  Time since last request: 84.697323 seconds.
+  path: Assets/Tim/Prefabs/Camera Pivot.prefab
+  artifactKey: Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Camera Pivot.prefab using Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6b813da3f2217610800ac9b48f0d3c3e') in 0.0484747 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 400
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0e07d8b07f5be5d68195565ef728fccc') in 0.0435175 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 262
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.039042 seconds.
+  path: Assets/Tim/Prefabs/Camera Pivot.prefab
+  artifactKey: Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Camera Pivot.prefab using Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '90276c8a42ab493b6135de8e98fb3b4d') in 0.0454574 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 400
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd3cc3b06ebd816b1a554e991ca0d20c1') in 0.0451215 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 262
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.491610 seconds.
+  path: Assets/Tim/Prefabs/Camera Pivot.prefab
+  artifactKey: Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Camera Pivot.prefab using Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '91f426ba5875b5e23346f33cb75df955') in 0.0467103 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 400
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '228c8d710db543659170f6353e94c827') in 0.0477026 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 262
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.077522 seconds.
+  path: Assets/Tim/Prefabs/Camera Pivot.prefab
+  artifactKey: Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Camera Pivot.prefab using Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8f1204e1a0c961c5b70e58509bce4325') in 0.0470469 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 400
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3ff3d4f8f466be9a57db199a63d0d249') in 0.0446152 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 262
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.093022 seconds.
+  path: Assets/Tim/Prefabs/Camera Pivot.prefab
+  artifactKey: Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Camera Pivot.prefab using Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'eb1229a0fbc70b45345eeea4cbca20a2') in 0.0458314 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 400
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '284f87f9c3ef42017266fc11341d2ab4') in 0.044105 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 262
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.450696 seconds.
+  path: Assets/Tim/Prefabs/Camera Pivot.prefab
+  artifactKey: Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Camera Pivot.prefab using Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'cf2357725b9262d63538386390e32b79') in 0.0494094 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 400
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8c30f12fdc33c22b3f5451dfdc3ba74c') in 0.0426482 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 262
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.681611 seconds.
+  path: Assets/Tim/Prefabs/Camera Pivot.prefab
+  artifactKey: Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Camera Pivot.prefab using Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'aff3466891185c628ea1356a243c330c') in 0.0454017 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 400
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7c31aa195821b4672df7930ee5ed59ff') in 0.0444368 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 262
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.704441 seconds.
+  path: Assets/Tim/Prefabs/Camera Pivot.prefab
+  artifactKey: Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Camera Pivot.prefab using Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f7b799a430bae2e55f18fa35afdd567e') in 0.0488476 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 400
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'aa389f2b18d92497b284f19d05824192') in 0.0514891 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 262
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.684770 seconds.
+  path: Assets/Tim/Prefabs/Camera Pivot.prefab
+  artifactKey: Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Camera Pivot.prefab using Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'add75ec33056ef70a84b5361646a2e58') in 0.0472127 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 400
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '9a7a319b8b70feba77e8469f990ed6e2') in 0.0489839 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 262
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.896331 seconds.
+  path: Assets/Tim/Prefabs/Camera Pivot.prefab
+  artifactKey: Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Camera Pivot.prefab using Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3761dc8439cf54994533caf46fd6a673') in 0.0461902 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 400
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b8cf5f13a8bbe2ccbacbf22a25a7a083') in 0.0459 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 262
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4032 unused Assets / (3.8 MB). Loaded Objects now: 5179.
+Memory consumption went from 193.3 MB to 189.4 MB.
+Total: 10.911300 ms (FindLiveObjects: 0.732400 ms CreateObjectMapping: 0.703500 ms MarkObjects: 7.795300 ms  DeleteObjects: 1.678900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.583 seconds
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.651 seconds
+Domain Reload Profiling: 1230ms
+	BeginReloadAssembly (201ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (300ms)
+		LoadAssemblies (277ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (117ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (99ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (651ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (369ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (58ms)
+			ProcessInitializeOnLoadAttributes (237ms)
+			ProcessInitializeOnLoadMethodAttributes (58ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4032 unused Assets / (3.8 MB). Loaded Objects now: 5062.
+Memory consumption went from 188.7 MB to 184.9 MB.
+Total: 6.702900 ms (FindLiveObjects: 0.531400 ms CreateObjectMapping: 0.582800 ms MarkObjects: 4.040500 ms  DeleteObjects: 1.547400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4030 unused Assets / (3.7 MB). Loaded Objects now: 5062.
+Memory consumption went from 188.8 MB to 185.1 MB.
+Total: 7.964600 ms (FindLiveObjects: 0.646500 ms CreateObjectMapping: 0.732300 ms MarkObjects: 4.798500 ms  DeleteObjects: 1.786400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.557 seconds
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.667 seconds
+Domain Reload Profiling: 1220ms
+	BeginReloadAssembly (179ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (300ms)
+		LoadAssemblies (272ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (118ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (99ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (667ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (381ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (60ms)
+			ProcessInitializeOnLoadAttributes (244ms)
+			ProcessInitializeOnLoadMethodAttributes (59ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4032 unused Assets / (3.8 MB). Loaded Objects now: 5064.
+Memory consumption went from 188.6 MB to 184.8 MB.
+Total: 6.524600 ms (FindLiveObjects: 0.512500 ms CreateObjectMapping: 0.556400 ms MarkObjects: 3.965200 ms  DeleteObjects: 1.489600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 152.795937 seconds.
+  path: Assets/Tim/Prefabs/Camera Pivot.prefab
+  artifactKey: Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Camera Pivot.prefab using Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7a53bfc7b1030a319e2db5bcc1c575aa') in 0.5056427 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 400
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '084b3270d3257042ff8592624d55a1e1') in 0.0454451 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 262
+
