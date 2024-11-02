@@ -900,3 +900,13 @@ Memory consumption went from 167.3 MB to 163.4 MB.
 Total: 7.342200 ms (FindLiveObjects: 0.660100 ms CreateObjectMapping: 0.586300 ms MarkObjects: 3.990000 ms  DeleteObjects: 2.104600 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 1050.335935 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd94bef9e23334ba842a5ff926bea544b') in 0.5791299 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 292
+
