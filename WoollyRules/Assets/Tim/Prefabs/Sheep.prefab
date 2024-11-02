@@ -213,9 +213,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2127664283110895623}
-  forwardAccel: 7
+  forwardAccel: 6
   maxSpeed: 3
-  maxRotationSpeed: 15
+  maxRotationSpeed: 30
   maxChangeDirInterval: 6
   forceApplyPoint: {fileID: 8138694653642865259}
 --- !u!114 &7415113377439332812
@@ -236,7 +236,7 @@ MonoBehaviour:
   period: 0.2
   verticalMult: 0.08
   verticalOffset: 1
-  minSpeedToAnimate: 1.5
+  minSpeedToAnimate: 0
 --- !u!1 &7912427593920988267
 GameObject:
   m_ObjectHideFlags: 0
