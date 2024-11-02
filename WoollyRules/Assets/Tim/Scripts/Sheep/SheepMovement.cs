@@ -22,6 +22,8 @@ namespace WoollyRules.Sheep
 
         private void Start()
         {
+            if (maxChangeDirInterval <= 0f) { return; }
+            
             Invoke(nameof(ChangeRotationDirection), Random.Range(0f, maxChangeDirInterval));
         }
 

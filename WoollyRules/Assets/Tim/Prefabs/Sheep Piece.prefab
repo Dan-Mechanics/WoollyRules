@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8906150222497907843}
   - component: {fileID: 7368989483537769068}
   - component: {fileID: 6082697631280445304}
+  - component: {fileID: 6795842502285219909}
   m_Layer: 0
   m_Name: Sheep Piece
   m_TagString: Untagged
@@ -35,6 +36,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 990460562180259461}
+  - {fileID: 921529510130401600}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &4894613568625895316
@@ -77,8 +79,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 4894613568625895316}
-  speed: 2.5
-  randomSpeed: 2.5
+  speed: 3
+  randomSpeed: 1
 --- !u!114 &8906150222497907843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,6 +119,55 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standUprightTorque: 100
+--- !u!114 &6795842502285219909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4894613568625895311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78fd897638b0d8546b530d5e6981341b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 4894613568625895316}
+  forwardAccel: 10
+  maxSpeed: 1
+  maxRotationSpeed: 0
+  maxChangeDirInterval: 0
+  forceApplyPoint: {fileID: 921529510130401600}
+--- !u!1 &7218795341977528096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 921529510130401600}
+  m_Layer: 0
+  m_Name: Force Apply Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &921529510130401600
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7218795341977528096}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.408, z: 0.024}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4894613568625895312}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &7597113164513133071
 PrefabInstance:
   m_ObjectHideFlags: 0

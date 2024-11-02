@@ -10,6 +10,7 @@ namespace WoollyRules.Sheep
         [SerializeField] private float period = 0f;
         [SerializeField] private float verticalMult = 0f;
         [SerializeField] private float verticalOffset = 0f;
+        //[SerializeField] private MeshRenderer meshRenderer = null;
         //[SerializeField] private float minSpeedToAnimate = 0f;
 
         private Vector3 startingScale;
@@ -21,6 +22,9 @@ namespace WoollyRules.Sheep
 
             // these numbers dont really matter just need to be biggerthan 2PI i think.
             startingRandomOffset = Random.Range(-100f, 100f);
+
+            /*if (meshRenderer == null) { return; }
+            meshRenderer.material.color = new Color(Random.value, Random.value, Random.value);*/
         }
           
         private void FixedUpdate()

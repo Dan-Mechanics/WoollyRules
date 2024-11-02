@@ -246,10 +246,9 @@ MonoBehaviour:
   rb: {fileID: 2127664283110895623}
   graphic: {fileID: 7344914961979667525}
   sheepMovement: {fileID: -6486451734984886598}
-  period: 0.2
-  verticalMult: 0.08
+  period: 0.185
+  verticalMult: 0.095
   verticalOffset: 1
-  minSpeedToAnimate: 1.5
 --- !u!1 &7912427593920988267
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,7 +275,7 @@ Transform:
   m_GameObject: {fileID: 7912427593920988267}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.399, z: 0}
+  m_LocalPosition: {x: 0, y: -0.429, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -455,7 +454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6245142118061618721, guid: 219420982f5c97b46a85a19f3f7e153d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.108
+      value: -0.131
       objectReference: {fileID: 0}
     - target: {fileID: 6245142118061618721, guid: 219420982f5c97b46a85a19f3f7e153d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -646,10 +645,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Front Piece
       objectReference: {fileID: 0}
-    - target: {fileID: 4894613568625895311, guid: e4f4e119e26b07848b5491e6ba9b9daf, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4894613568625895312, guid: e4f4e119e26b07848b5491e6ba9b9daf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -689,26 +684,6 @@ PrefabInstance:
     - target: {fileID: 4894613568625895312, guid: e4f4e119e26b07848b5491e6ba9b9daf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4894613568625895316, guid: e4f4e119e26b07848b5491e6ba9b9daf, type: 3}
-      propertyPath: m_Drag
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4894613568625895316, guid: e4f4e119e26b07848b5491e6ba9b9daf, type: 3}
-      propertyPath: m_AngularDrag
-      value: 5.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6082697631280445304, guid: e4f4e119e26b07848b5491e6ba9b9daf, type: 3}
-      propertyPath: standUprightTorque
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 6803763106086349939, guid: e4f4e119e26b07848b5491e6ba9b9daf, type: 3}
-      propertyPath: speed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6803763106086349939, guid: e4f4e119e26b07848b5491e6ba9b9daf, type: 3}
-      propertyPath: randomSpeed
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
