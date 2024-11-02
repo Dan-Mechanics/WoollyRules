@@ -450,6 +450,10 @@ PrefabInstance:
       propertyPath: MaxDistance
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 5644831737721548093, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
+      propertyPath: MinDistance
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 5657507307344487789, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
