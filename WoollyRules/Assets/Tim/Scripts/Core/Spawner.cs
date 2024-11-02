@@ -17,6 +17,7 @@ namespace WoollyRules.Core
         [SerializeField] private Transform[] spawnPoints = null;
 
         private int spawnCount;
+        private Vector3 pos;
 
         private void Start()
         {
@@ -40,7 +41,7 @@ namespace WoollyRules.Core
             Transform spawnPoint = GetRandomSpawnPoint();
             
             // pemdas for vectors ??
-            Vector3 pos = spawnPoint.position + (Random.insideUnitSphere * randomPositionMagnitude);
+            pos = spawnPoint.position + (Random.insideUnitSphere * randomPositionMagnitude);
             //Quaternion rot = spawnPoint.rotation;
 
             GameObject newlySpawned = Instantiate(Random.value < cowPercantage ? cowPrefab : sheepPrefab, pos, Quaternion.identity);
