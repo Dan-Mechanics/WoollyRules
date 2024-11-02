@@ -17,7 +17,7 @@ namespace WoollyRules.Sheep
         {
             startingScale = graphic.localScale;
         }
-
+          
         private void FixedUpdate()
         {
             float scale = (Mathf.Sin(Time.time / period) + 1f) / 2f * verticalMult + verticalOffset;

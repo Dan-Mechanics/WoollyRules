@@ -175,3 +175,5 @@ or we add a cow spawner type thing.
 
 
 if sophie could make the flowers unlit that would be great.
+
+for next time: make sure to restart project after make assemblies for that compile time.
