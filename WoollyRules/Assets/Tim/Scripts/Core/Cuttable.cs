@@ -11,6 +11,7 @@ namespace WoollyRules.Core
         public bool RuleBrokenOnCut => ruleBrokenOnCut;
         public bool BlockHover => blockHover;
         public bool BlockCut => blockCut;
+        public bool IsButton => isButton;
 
         [SerializeField] private bool blockHover = false;
         [SerializeField] private bool blockCut = false;

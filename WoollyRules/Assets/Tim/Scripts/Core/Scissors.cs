@@ -14,6 +14,8 @@ namespace WoollyRules.Core
 
         [SerializeField] private Camera cam = null;
         [SerializeField] private LayerMask cuttableMask = 0;
+        [SerializeField] private AudioSource cutSound = null;
+        [SerializeField] private AudioClip cutClip = null;
 
         [Header("Settings")]
 
@@ -76,6 +78,8 @@ namespace WoollyRules.Core
         private void Cut(Cuttable cuttable) 
         {
             if (!cuttable.BlockCut) { onCut?.Invoke(); }
+
+            if (!cuttable.IsButton) { cutSound.PlayOneShot(cutClip); }
 
             cuttable.Cut();
 

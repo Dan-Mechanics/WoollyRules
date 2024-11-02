@@ -443,6 +443,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5644831737721548093, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644831737721548093, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
       propertyPath: MaxDistance
       value: 70
       objectReference: {fileID: 0}

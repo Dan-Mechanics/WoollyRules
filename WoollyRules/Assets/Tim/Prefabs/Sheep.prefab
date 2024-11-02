@@ -265,6 +265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5117a459b552f4442b9569d4cd58c0bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minTimeBetweenHooks: 0
   maxTimeBetweenHooks: 6
   hookOnStart: 1
   onHook:
@@ -295,7 +296,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -391,6 +392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5117a459b552f4442b9569d4cd58c0bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minTimeBetweenHooks: 0
   maxTimeBetweenHooks: 15
   hookOnStart: 0
   onHook:
