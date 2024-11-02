@@ -7,21 +7,18 @@ namespace WoollyRules.Core
     {
         [Header("Make sure to add the non-sheep here, the one's present in scene by default.")]
         [SerializeField] private List<Cuttable> cuttables = null;
-        [SerializeField] private KeyCode[] keys = null;
+        [SerializeField] private KeyCode key = KeyCode.None;
 
         private void Update()
         {
-            if (keys.Length <= 0) { return; }
+            //if (keys.Length <= 0) { return; }
             if(cuttables.Count <= 0) { return; }
 
-            for (int i = 0; i < keys.Length; i++)
+            if (Input.GetKey(key))
             {
-                if (Input.GetKey(keys[i])) 
-                { 
-                    CutAll();
+                CutAll();
 
-                    return;
-                }
+                return;
             }
         }
 

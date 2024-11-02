@@ -2855,8 +2855,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04e1f24bd964e4a4cad3bb3e9b481960, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cuttables: []
-  keys: 4501000062000000
+  cuttables:
+  - {fileID: 2013863778}
+  key: 325
+--- !u!114 &2013863778 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1492384736, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
+  m_PrefabInstance: {fileID: 658378812}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64829bb2de20db14996eadf6002c36d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2050606985
 GameObject:
   m_ObjectHideFlags: 0
