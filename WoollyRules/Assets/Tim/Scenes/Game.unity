@@ -5662,6 +5662,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 257357490}
   m_Mesh: {fileID: 2494185979427425891, guid: 6f4fba1abc0b1724a9836f226ce80767, type: 3}
+--- !u!114 &355685781 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3864873133951161869, guid: 1971ba566d6387d4a82a4f125b1ee380, type: 3}
+  m_PrefabInstance: {fileID: 596449898}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64829bb2de20db14996eadf6002c36d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &504516457
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52566,6 +52577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cuttables:
   - {fileID: 2013863778}
+  - {fileID: 355685781}
   keys: 45010000
 --- !u!114 &2013863778 stripped
 MonoBehaviour:
