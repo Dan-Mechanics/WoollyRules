@@ -2386,7 +2386,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6933228493867487473, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
       propertyPath: spawnAmount
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6933228493867487473, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
       propertyPath: cutAllButton
