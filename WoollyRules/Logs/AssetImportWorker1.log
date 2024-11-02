@@ -425,3 +425,63 @@ Memory consumption went from 153.6 MB to 149.8 MB.
 Total: 6.617000 ms (FindLiveObjects: 0.524400 ms CreateObjectMapping: 0.509900 ms MarkObjects: 3.902200 ms  DeleteObjects: 1.679900 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 366.981468 seconds.
+  path: Assets/Tim/Prefabs/Camera Pivot.prefab
+  artifactKey: Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Camera Pivot.prefab using Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '276f7568c32037290c66b279e0abc596') in 0.6849337 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 400
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Tim/Prefabs/Scissors Visual.prefab
+  artifactKey: Guid(f74bef246fdb5054bac5318848726fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Scissors Visual.prefab using Guid(f74bef246fdb5054bac5318848726fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '65a946d98e0f03ba0343a95478fcca80') in 0.0164988 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 40
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '368cb76ae63a7f0360131e0f8cff16ff') in 0.0630132 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 262
+
+========================================================================
+Received Import Request.
+  Time since last request: 178.788910 seconds.
+  path: Assets/Beau/Prefab/button.prefab
+  artifactKey: Guid(9ba12740540f4a04799c64cb8b7b888e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Beau/Prefab/button.prefab using Guid(9ba12740540f4a04799c64cb8b7b888e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b87c5d732032b28440b85d9f1aa40db3') in 3.450433 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 34
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.194380 seconds.
+  path: Assets/Beau/Textures/Button/lambert1_Metallic.png
+  artifactKey: Guid(e4618a662c6392849ab740bade753a8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Beau/Textures/Button/lambert1_Metallic.png using Guid(e4618a662c6392849ab740bade753a8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '9885fa1eacda717df2a5330bd3eed98a') in 0.0244381 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Beau/Textures/Button/lambert1_Roughness.png
+  artifactKey: Guid(140cdaadbc5e3944f8b6e8604551120c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Beau/Textures/Button/lambert1_Roughness.png using Guid(140cdaadbc5e3944f8b6e8604551120c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '5994df94dbe705ef6fab09fddf8843ec') in 0.0167807 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
