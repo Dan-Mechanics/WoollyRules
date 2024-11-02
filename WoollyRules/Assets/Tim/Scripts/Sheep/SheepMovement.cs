@@ -8,7 +8,7 @@ namespace WoollyRules.Sheep
     /// </summary>
     public class SheepMovement : MonoBehaviour
     {
-        public float FlatSpeed { get; private set; }
+        //public float FlatSpeed { get; private set; }
 
         [SerializeField] private Rigidbody rb = null;
         [SerializeField] private float forwardAccel = 0f;
@@ -39,7 +39,7 @@ namespace WoollyRules.Sheep
             velocity = transform.InverseTransformDirection(velocity);
             velocity.y = 0f;
 
-            FlatSpeed = velocity.magnitude;
+            //FlatSpeed = velocity.magnitude;
 
             velocity = Vector3.ClampMagnitude(velocity, maxSpeed);
             velocity = transform.TransformDirection(velocity);

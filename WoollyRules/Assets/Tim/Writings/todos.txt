@@ -190,7 +190,7 @@ add button. VVV
 lees appjes V
 
 wool amteials slippery and that works because of good max speed.
-i also think the falling speed is kidna bugged.
+i also think the falling speed is kidna bugged. V
 
 thank you for playing screen better.
 button doesnt work V
@@ -205,5 +205,10 @@ add new background
 ---
 
 shader
-background
+background V
 knip sound, shaap geluid
+
+keyboard compatibility
+onstart with random event. V
+
+waarom vliegt de sheep de lugt in ??
