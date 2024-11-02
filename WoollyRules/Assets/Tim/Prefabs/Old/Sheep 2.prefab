@@ -4945,7 +4945,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64829bb2de20db14996eadf6002c36d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isSheep: 1
+  blockHover: 0
+  blockCut: 0
+  ruleBrokenOnCut: 0
   onCut:
     m_PersistentCalls:
       m_Calls:

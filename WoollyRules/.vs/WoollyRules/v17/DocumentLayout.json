@@ -3,16 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|c:\\users\\dan-mechanics\\development\\github\\woollyrules\\woollyrules\\assets\\tim\\scissorsanimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|solutionrelative:assets\\tim\\scissorsanimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\assets\\tim\\scripts\\webcam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|solutionrelative:assets\\tim\\scripts\\webcam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|c:\\users\\dan-mechanics\\development\\github\\woollyrules\\woollyrules\\assets\\tim\\todos.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|c:\\users\\dan-mechanics\\development\\github\\woollyrules\\woollyrules\\assets\\tim\\scripts\\timertext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|solutionrelative:assets\\tim\\scripts\\timertext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|c:\\users\\dan-mechanics\\development\\github\\woollyrules\\woollyrules\\assets\\tim\\scripts\\destroyable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|solutionrelative:assets\\tim\\scripts\\destroyable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\assets\\tim\\todos.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|solutionrelative:assets\\tim\\todos.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|c:\\users\\dan-mechanics\\development\\github\\woollyrules\\woollyrules\\assets\\tim\\scripts\\scissorsrotator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\assets\\tim\\scripts\\scissorscursor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|solutionrelative:assets\\tim\\scripts\\scissorscursor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|c:\\users\\dan-mechanics\\development\\github\\woollyrules\\woollyrules\\assets\\tim\\scripts\\blinkingtext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|solutionrelative:assets\\tim\\scripts\\blinkingtext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\assets\\tim\\scripts\\prefabspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|solutionrelative:assets\\tim\\scripts\\prefabspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|c:\\users\\dan-mechanics\\development\\github\\woollyrules\\woollyrules\\assets\\tim\\scripts\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|solutionrelative:assets\\tim\\scripts\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\assets\\tim\\scripts\\scissors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|solutionrelative:assets\\tim\\scripts\\scissors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\assets\\tim\\scripts\\sceneswitcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|solutionrelative:assets\\tim\\scripts\\sceneswitcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\assets\\tim\\scripts\\scissorsrotator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|solutionrelative:assets\\tim\\scripts\\scissorsrotator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\assets\\tim\\scripts\\cuttable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|solutionrelative:assets\\tim\\scripts\\cuttable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\assets\\tim\\scripts\\cuttableholder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE525BFA-6ECF-782E-07CF-3EE9901D2033}|Assembly-CSharp.csproj|solutionrelative:assets\\tim\\scripts\\cuttableholder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\ScissorsAnimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Tim\\ScissorsAnimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,46 +66,183 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Destroyable.cs",
+              "DocumentMoniker": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\Scripts\\Destroyable.cs",
+              "RelativeDocumentMoniker": "Assets\\Tim\\Scripts\\Destroyable.cs",
+              "ToolTip": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\Scripts\\Destroyable.cs",
+              "RelativeToolTip": "Assets\\Tim\\Scripts\\Destroyable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T16:44:58.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BlinkingText.cs",
+              "DocumentMoniker": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\Scripts\\BlinkingText.cs",
+              "RelativeDocumentMoniker": "Assets\\Tim\\Scripts\\BlinkingText.cs",
+              "ToolTip": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\Scripts\\BlinkingText.cs",
+              "RelativeToolTip": "Assets\\Tim\\Scripts\\BlinkingText.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T16:08:33.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Timer.cs",
+              "DocumentMoniker": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\Scripts\\Timer.cs",
+              "RelativeDocumentMoniker": "Assets\\Tim\\Scripts\\Timer.cs",
+              "ToolTip": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\Scripts\\Timer.cs",
+              "RelativeToolTip": "Assets\\Tim\\Scripts\\Timer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T14:45:54.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "TimerText.cs",
+              "DocumentMoniker": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\Scripts\\TimerText.cs",
+              "RelativeDocumentMoniker": "Assets\\Tim\\Scripts\\TimerText.cs",
+              "ToolTip": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\Scripts\\TimerText.cs",
+              "RelativeToolTip": "Assets\\Tim\\Scripts\\TimerText.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T14:45:19.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ScissorsCursor.cs",
+              "DocumentMoniker": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\Scripts\\ScissorsCursor.cs",
+              "RelativeDocumentMoniker": "Assets\\Tim\\Scripts\\ScissorsCursor.cs",
+              "ToolTip": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\Scripts\\ScissorsCursor.cs",
+              "RelativeToolTip": "Assets\\Tim\\Scripts\\ScissorsCursor.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T14:39:38.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PrefabSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\Scripts\\PrefabSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Tim\\Scripts\\PrefabSpawner.cs",
+              "ToolTip": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\Scripts\\PrefabSpawner.cs",
+              "RelativeToolTip": "Assets\\Tim\\Scripts\\PrefabSpawner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T14:28:11.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Scissors.cs",
+              "DocumentMoniker": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\Scripts\\Scissors.cs",
+              "RelativeDocumentMoniker": "Assets\\Tim\\Scripts\\Scissors.cs",
+              "ToolTip": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\Scripts\\Scissors.cs",
+              "RelativeToolTip": "Assets\\Tim\\Scripts\\Scissors.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAMwD0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T14:25:59.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Cuttable.cs",
+              "DocumentMoniker": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\Scripts\\Cuttable.cs",
+              "RelativeDocumentMoniker": "Assets\\Tim\\Scripts\\Cuttable.cs",
+              "ToolTip": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\Scripts\\Cuttable.cs",
+              "RelativeToolTip": "Assets\\Tim\\Scripts\\Cuttable.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvwoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T14:25:27.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Webcam.cs",
+              "DocumentMoniker": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\Scripts\\Webcam.cs",
+              "RelativeDocumentMoniker": "Assets\\Tim\\Scripts\\Webcam.cs",
+              "ToolTip": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\Scripts\\Webcam.cs",
+              "RelativeToolTip": "Assets\\Tim\\Scripts\\Webcam.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T14:16:51.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "todos.txt",
               "DocumentMoniker": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\todos.txt",
               "RelativeDocumentMoniker": "Assets\\Tim\\todos.txt",
               "ToolTip": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\todos.txt",
               "RelativeToolTip": "Assets\\Tim\\todos.txt",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAAAIYAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2024-10-28T12:54:00.982Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
+              "Title": "CuttableHolder.cs",
+              "DocumentMoniker": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\Scripts\\CuttableHolder.cs",
+              "RelativeDocumentMoniker": "Assets\\Tim\\Scripts\\CuttableHolder.cs",
+              "ToolTip": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\Scripts\\CuttableHolder.cs",
+              "RelativeToolTip": "Assets\\Tim\\Scripts\\CuttableHolder.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAIA3wBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T14:25:47.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SceneSwitcher.cs",
+              "DocumentMoniker": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\Scripts\\SceneSwitcher.cs",
+              "RelativeDocumentMoniker": "Assets\\Tim\\Scripts\\SceneSwitcher.cs",
+              "ToolTip": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\Scripts\\SceneSwitcher.cs",
+              "RelativeToolTip": "Assets\\Tim\\Scripts\\SceneSwitcher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T14:43:19.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ScissorsRotator.cs",
               "DocumentMoniker": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\Scripts\\ScissorsRotator.cs",
               "RelativeDocumentMoniker": "Assets\\Tim\\Scripts\\ScissorsRotator.cs",
               "ToolTip": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\Scripts\\ScissorsRotator.cs",
               "RelativeToolTip": "Assets\\Tim\\Scripts\\ScissorsRotator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T12:48:51.507Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T12:48:51.507Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 13,
               "Title": "ScissorsAnimator.cs",
               "DocumentMoniker": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\ScissorsAnimator.cs",
               "RelativeDocumentMoniker": "Assets\\Tim\\ScissorsAnimator.cs",
               "ToolTip": "C:\\Users\\Dan-Mechanics\\Development\\GITHUB\\WoollyRules\\WoollyRules\\Assets\\Tim\\ScissorsAnimator.cs",
               "RelativeToolTip": "Assets\\Tim\\ScissorsAnimator.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T12:43:40.424Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T12:43:40.424Z"
             }
           ]
         }

@@ -1,0 +1,221 @@
+rotate planet
+scissors 3d works
+implement shader assets
+
+future thing maybe: namespaces for different people working in project ???
+
+under description github desktop --> add co-auther might seem useful for what im doing but its public anyway so who cares.
+
+fun idea: add shaker.cs but like random spam when point at bear and blinking scissor curser to give the effect of dont cut the bear.
+
+///
+
+refactor pointer.cs name. VV
+scene naming could be better
+implement planet shader.
+
+Scissors backend different from scissors model.
+
+camera pivot.pos and the planet pos need to be the same.
+
+---
+
+still got to add the animation to the scissor graphic in the world.
+
+fix the planet round surface not blockey.
+
+schaar animatie when cutting
+
+---
+
+implement luuk sheep model
+
+---
+
+i dont have the power cable i cant really do much atm
+what i would like to do is make it so that the forward works better
+and thats basically it.s
+
+---
+
+to ask : i need better scissor cursor thing. --> ask #art channel and then send ur cursor file with dimensions so they can make it a little bit better.
+wont have that DIY indie feel anymore tho but whatever.
+
+todo for this day ish:
+scissor orientation hotfix VVV
+webcam preload bool and recording icon topright. VVV
+sheep and planet orientation. --> i be needing that sheep model kinda soon tho, espcially for splliting logic. VVV
+scissors actually respond like cursor. VVV
+dont make ICuttable its too much hastle because you have inheritance anyway VVV
+
+blinkingtext and blinking are same thing. VVV
+
+add prefabs folder VVV
+
+FIX: It could maybe make more sense if the position of this object is used as reference. --> prefabspawner.cs VVV
+
+---
+
+now i need lukes sheep model and then implement that and see from there with regard to split object orientation and all that ...
+befoer that i could use sophie sheep model to get mvp
+
+possible change: make the sheep collider sqaure and i think it would still work.
+
+make sure to scale the collider accoridng to the model not the model accoridng to the collider.
+
+now just kinda waiting in more assets i guess.
+i also would like more people to collaborate on this with me on the github.
+
+tomorrow: hopefully have sheep model and ask for artists to make better cursor
+
+---
+
+today i would like to implement luke sheep VVV
+
+todo:
+remove cursor ish --> dynamic solution whereby i can remove and add custom cursor at will. VVV
+better cut animation VVV
+check writings.txt commits for this project ?? --> did i lose something ? --> no VVV
+
+i need button from beau
+i need scissors cursor from flynn
+i need better performance and colloration on globe from sophie.
+
+now im basically waiting for art ...
+sound effects ?? where be those ??
+
+whatever i forgot sometinhg agian because my head is full
+the thigns at the top here are the most important so do that.
+
+move script back into the folder, but prolyl something else
+
+---
+
+must do spawning amount of sheep.
+
+ik moet een TIMER.cs scritp maken
+en dan een timer display script voor de txt.
+
+timer display script needs to be better.
+
+make it so that stuff aint getting destroy because now the game ends without having broken the rule with good timer text.
+
+coding convention:
+if (conditional )
+	return;
+
+rider commercial free and also free for students nice.
+
+todo: make game end script with the yeeet  attached scripts.
+
+the game doesn't end when the rule is broken ???
+if so i cant use that destroy yeet. 
+the game doesn't end when rule broken
+decrease timer value when onscreen.
+de timer is alleen zichtbaar als je de regel breekt.
+tijd wordt niet recuded yeet.
+
+maybe add button.cs
+
+basically lots of stuff to do because
+
+fix timers
+fix rule text.
+hij wordt gewoon rood
+
+debatale: pos of webcam.
+
+we still gotta add music
+we gotta add better sophie planet
+
+unity event paradigm --> heavy disaster component based.
+
+9:15 hier dus 8:45 weg.
+
+make sure to disable not destrpy webcam/
+
+---
+
+read discord messages
+disable after time not destroy after time --> we use timer.cs for that V
+make is so that the only way that the game stop is throug the timer V
+all other rule breakers just show the webcam which is then hidden and shown again perhaps via preload or not whatever V
+cow model importn.
+improve prefabspawner.cs V
+i still need the open scissors cursor
+clean scene a little bit V
+implemetn globe model
+
+can we fix the skybox? no. --> maybe ??? --> should we lock the sun to the cam ? --> maybe use like a render texture or an overlay image
+or something like that we might be able to fix it --> i really dont want to have to rotate the globe since i dont think that would work 
+easily with the sheep. VVV
+
+i think i cna find a way to do not preload and still enable and disable it. perhaps i should make a webcam methods for
+enalbe and disable in the actual webcam script
+
+and i just need to impleemnt everyone's art basically, at least sophie can use github a little but it doesnt matter as long as it works.
+
+also i would maybe just keep the scissor cursor ?? nah i feel like you only have the scissor cursor when you can cut things.
+fix timer texts ...
+
+also make sure to keep ur discord open for people sending in art.
+
+/// <summary>
+    /// You always need to ask yourself: how does this contribute to the intention ??
+    /// </summary>
+
+the text should just become red ez peasy. V
+
+for next time: only have post processing on the last camera overlay.
+
+NAMESPACES AND ASSEMBLIES NOWW !!!!!!!!!!!!!!
+
+make it so that the cow spawns based on the sheep sapwner i think
+or we add a cow spawner type thing.
+
+
+if sophie could make the flowers unlit that would be great.
+
+for next time: make sure to restart project after make assemblies for that compile time.
+
+---
+
+wath grass tuturoail video
+
+///
+
+luuk sheep anim
+add button. VVV
+
+lees appjes V
+
+wool amteials slippery and that works because of good max speed.
+i also think the falling speed is kidna bugged. V
+
+thank you for playing screen better. V
+button doesnt work V
+button color ?? --> prolly not they say its good.
+
+sheep spawned in de arde V
+
+sheep spawn out of beeld. V
+
+add new background V
+
+---
+
+shader
+background V
+knip sound, shaap geluid
+
+keyboard compatibility
+onstart with random event. V
+
+waarom vliegt de schaap de lugt in ??
+
+ive added B to the button button but it would make sure sense if it was SPACE.
+
+
+
+
+waarvoor HMDI kabel nodig ?

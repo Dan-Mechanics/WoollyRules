@@ -42,25 +42,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1801927529696930614}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d3bb3c5f38a78249accaeab639022b9, type: 3}
+  m_Script: {fileID: 11500000, guid: b749727ef3b287a43a9c8837ef3cdb99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scissors: {fileID: 0}
-  scissorsVisual: {fileID: 349113634334004226}
+  scissorsVisual: {fileID: 0}
   scissorsForward: {fileID: 0}
-  scissorParts:
-  - {fileID: 7050303024154708916}
-  - {fileID: 7676148590338813591}
-  scissorPartsOpen:
-  - {fileID: 0}
-  - {fileID: 0}
-  scissorPartsClosed:
-  - {fileID: 0}
-  - {fileID: 0}
-  cutLerpValue: 0.1
-  hoverLerpValue: 0.1
-  openScissorsAngle: 22.5
-  cutAnimationTime: 0.35
+  scissorParts: []
+  scissorPartsOpen: []
+  scissorPartsClosed: []
+  cutLerpValue: 0
+  hoverLerpValue: 0
+  openScissorsAngle: 0
+  cutAnimationTime: 0
 --- !u!1001 &5921295422040241978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -145,15 +139,5 @@ PrefabInstance:
 --- !u!4 &6171641973618217169 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 86f64885a707ff2409421aa0c8ddc2c6, type: 3}
-  m_PrefabInstance: {fileID: 5921295422040241978}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &7050303024154708916 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -5477749408508380018, guid: 86f64885a707ff2409421aa0c8ddc2c6, type: 3}
-  m_PrefabInstance: {fileID: 5921295422040241978}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &7676148590338813591 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4083501151425157549, guid: 86f64885a707ff2409421aa0c8ddc2c6, type: 3}
   m_PrefabInstance: {fileID: 5921295422040241978}
   m_PrefabAsset: {fileID: 0}
