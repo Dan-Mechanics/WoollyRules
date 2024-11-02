@@ -15,6 +15,8 @@ namespace WoollyRules.Webcam
         [SerializeField] private bool matchImageSizeToWebcamSize = false;
         [SerializeField] private bool preload = false;
         [SerializeField] private RectTransform rectTransform = null;
+        [SerializeField] private AudioSource backgroundMusic = null;
+        [SerializeField] private bool musicStopsWhenShowingWebcam = false;
 
         private WebCamTexture webCamTexture;
         private Texture2D texture;
@@ -25,15 +27,25 @@ namespace WoollyRules.Webcam
 
         private bool showing;
         private bool setupDone;
+        private float defaultVolume;
 
         private void Start()
         {
+            defaultVolume = backgroundMusic.volume;
+            
             if (preload) 
             {
                 //Application.targetFrameRate = 300;
                 
                 StartCoroutine(Auhtorize());
             }
+        }
+
+        private void FixedUpdate()
+        {
+            if (!musicStopsWhenShowingWebcam) { return; }
+
+            backgroundMusic.volume = imageToProjectWebcamOn.gameObject.activeSelf ? 0f : defaultVolume;
         }
 
         public void Show() 

@@ -139,7 +139,7 @@ PrefabInstance:
     - target: {fileID: 1492384736, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
       propertyPath: onCut.m_PersistentCalls.m_Calls.Array.data[6].m_Target
       value: 
-      objectReference: {fileID: 5539992680914843057}
+      objectReference: {fileID: 3259419187264028336}
     - target: {fileID: 1492384736, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
       propertyPath: onCut.m_PersistentCalls.m_Calls.Array.data[7].m_Target
       value: 
@@ -166,7 +166,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1492384736, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
       propertyPath: onCut.m_PersistentCalls.m_Calls.Array.data[6].m_TargetAssemblyTypeName
-      value: CutTheSheep.Destroyable, Assembly-CSharp
+      value: WoollyRules.Piece.Destroyable, Piece
       objectReference: {fileID: 0}
     - target: {fileID: 1492384736, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
       propertyPath: onCut.m_PersistentCalls.m_Calls.Array.data[6].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -349,9 +349,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 7086231096161d94aa303ead783100e7, type: 2}
     - target: {fileID: 7415113377439332812, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
+      propertyPath: period
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7415113377439332812, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
       propertyPath: graphic
       value: 
       objectReference: {fileID: 5752910209636326158}
+    - target: {fileID: 7415113377439332812, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
+      propertyPath: verticalMult
+      value: 0.08
+      objectReference: {fileID: 0}
     - target: {fileID: 8138694653642865259, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.367
@@ -578,7 +586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7eedb092bf019e5489d5512fe3125a0e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.446
+      value: -0.525
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7eedb092bf019e5489d5512fe3125a0e, type: 3}
       propertyPath: m_LocalPosition.z

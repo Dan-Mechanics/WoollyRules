@@ -174,10 +174,10 @@ Material:
     - _Control_View_Smoothing: {r: 0.26, g: 3.14, b: 0, a: 0}
     - _DistantColor_Multiplier: {r: 1.8126194, g: 2.7608411, b: 0.8490887, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EntityPosition1: {r: 149.95422, g: 143.65356, b: 154.41467, a: 1}
-    - _EntityPosition2: {r: 131.79895, g: 142.0023, b: 178.89037, a: 1}
-    - _EntityPosition3: {r: 129.99254, g: 144.878, b: 155.40903, a: 1}
-    - _EntityPosition4: {r: 137.71342, g: 145.30865, b: 165.05028, a: 1}
+    - _EntityPosition1: {r: 150.00153, g: 143.64705, b: 154.52266, a: 1}
+    - _EntityPosition2: {r: 131.59497, g: 142.03038, b: 178.71301, a: 1}
+    - _EntityPosition3: {r: 130.05405, g: 144.87718, b: 155.47023, a: 1}
+    - _EntityPosition4: {r: 137.71468, g: 145.30919, b: 165.04657, a: 1}
     - _EntityShadowColor: {r: 0.59478086, g: 0.735849, b: 0.24852253, a: 0}
     - _EntityShadowDistance: {r: 5.12, g: 3, b: 0, a: 0}
     - _EntityShadows: {r: 0.5643931, g: 0.7207546, b: 0.27606258, a: 0}

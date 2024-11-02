@@ -3567,3 +3567,107 @@ Start importing Assets/Tim/Prefabs/Sheep Piece.prefab using Guid(e4f4e119e26b078
  -> (artifact id: '603f617eaecb841ed03b9d4701cac5ef') in 0.011262 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 42
 
+========================================================================
+Received Import Request.
+  Time since last request: 18.140110 seconds.
+  path: Assets/Tim/Prefabs/Camera Pivot.prefab
+  artifactKey: Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Camera Pivot.prefab using Guid(12d5a4b206f859942886b26b4e2db61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b56ac0390a5b7984c0dceed8e4b96b4b') in 0.0518146 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 406
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Tim/Prefabs/Sheep Piece.prefab
+  artifactKey: Guid(e4f4e119e26b07848b5491e6ba9b9daf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Sheep Piece.prefab using Guid(e4f4e119e26b07848b5491e6ba9b9daf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '58f22cc90fd052ca0fbbd8d6f204217b') in 0.02616 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 40
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.568310 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c8f2c4526d488205e3d7b75dec85c453') in 0.0588742 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 262
+
+========================================================================
+Received Import Request.
+  Time since last request: 328.697618 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3cda473fd10f6cab0f948ece4a7b5ef1') in 0.0491464 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 262
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.366260 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2e007d6491239fe7c2cfbba546fd4bd4') in 0.0512981 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 262
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.556760 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7f2799c9d010c7a5d349efd9ef8e5add') in 0.0502344 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 262
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.112786 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '616eda6c96ecd8c26b8ab8ec95de2b08') in 0.0473299 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 262
+
+========================================================================
+Received Import Request.
+  Time since last request: 173.288564 seconds.
+  path: Assets/Tim/Prefabs/Brown Sheep Variant.prefab
+  artifactKey: Guid(88a5dd8104811c343889bebb90d85921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Brown Sheep Variant.prefab using Guid(88a5dd8104811c343889bebb90d85921) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '46010616cbfb8b53475fffec47a15c98') in 0.0315497 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 223
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Tim/Prefabs/Sheep.prefab
+  artifactKey: Guid(873ac4319968629409b71c89cddb23a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Sheep.prefab using Guid(873ac4319968629409b71c89cddb23a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '92ec516b4ef978bc302b5e37ec159941') in 0.0302586 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 152
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Tim/Prefabs/Cow Variant.prefab
+  artifactKey: Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Cow Variant.prefab using Guid(1971ba566d6387d4a82a4f125b1ee380) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'cfe6e595b8d31b6978394dafcd01de8b') in 0.0630279 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 262
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
