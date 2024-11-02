@@ -5781,15 +5781,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2892492694044777965, guid: 1971ba566d6387d4a82a4f125b1ee380, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.5238614
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 2892492694044777965, guid: 1971ba566d6387d4a82a4f125b1ee380, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 52.82
+      value: 52.32
       objectReference: {fileID: 0}
     - target: {fileID: 2892492694044777965, guid: 1971ba566d6387d4a82a4f125b1ee380, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.0697784
+      value: 8.3
       objectReference: {fileID: 0}
     - target: {fileID: 2892492694044777965, guid: 1971ba566d6387d4a82a4f125b1ee380, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5924,7 +5924,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2127664283110895616, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 53.5
+      value: 53
       objectReference: {fileID: 0}
     - target: {fileID: 2127664283110895616, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5962,6 +5962,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sheep
       objectReference: {fileID: 0}
+    - target: {fileID: 3289239365233593600, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
+      propertyPath: onHook.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: f540c0892c9e57348bba1e7bb22e77d1, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
