@@ -197,3 +197,5 @@ button doesnt work V
 button color ?? --> prolly not they say its good.
 
 sheep spawned in de arde
+
+sheep spawn out of beeld.

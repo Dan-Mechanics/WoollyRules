@@ -6,41 +6,35 @@ namespace WoollyRules.Sheep
     {
         [SerializeField] private Rigidbody rb = null;
         [SerializeField] private Transform graphic = null;
+
+        [SerializeField] private Transform state1Graphic = null;
+        [SerializeField] private Transform state2Graphic = null;
+
         [SerializeField] private SheepMovement sheepMovement = null;
         [SerializeField] private float period = 0f;
-        [SerializeField] private float verticalMult = 0f;
-        [SerializeField] private float verticalOffset = 0f;
-        //[SerializeField] private MeshRenderer meshRenderer = null;
-        //[SerializeField] private float minSpeedToAnimate = 0f;
-
-        private Vector3 startingScale;
+        [SerializeField] private float waveMult = 0f;
+        //private Vector3 startingScale;
         private float startingRandomOffset;
 
         private void Start()
         {
-            startingScale = graphic.localScale;
+            //startingScale = graphic.localScale;
 
-            // these numbers dont really matter just need to be biggerthan 2PI i think.
-            startingRandomOffset = Random.Range(-100f, 100f);
-
-            /*if (meshRenderer == null) { return; }
-            meshRenderer.material.color = new Color(Random.value, Random.value, Random.value);*/
+            startingRandomOffset = Random.Range(0f, 1000f);
         }
-          
+        
         private void FixedUpdate()
         {
-            float scale = (Mathf.Sin((Time.time + startingRandomOffset) / period) + 1f) / 2f * verticalMult + verticalOffset;
-            graphic.localScale = scale * startingScale;
+            float lerpValue = WaveValue(Time.time + startingRandomOffset) * waveMult;
 
-            /*if (sheepMovement.FlatSpeed >= minSpeedToAnimate)
-            {
-                float scale = (Mathf.Sin((Time.time + startingRandomOffset) / period) + 1f) / 2f * verticalMult + verticalOffset;
-                graphic.localScale = scale * startingScale;
-            }
-            else 
-            {
-                graphic.localScale = startingScale;
-            }*/
+            graphic.localScale = Vector3.Lerp(state1Graphic.localScale, state2Graphic.localScale, lerpValue);
+            graphic.localPosition = Vector3.Lerp(state1Graphic.localPosition, state2Graphic.localPosition, lerpValue);
+            graphic.localRotation = Quaternion.Lerp(state1Graphic.localRotation, state2Graphic.localRotation, lerpValue);
+        }
+
+        private float WaveValue(float x) 
+        {
+            return (Mathf.Sin(x / period) + 1f) / 2f;
         }
     }
 }
