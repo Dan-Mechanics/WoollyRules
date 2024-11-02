@@ -13,13 +13,11 @@ namespace WoollyRules.Sheep
         [SerializeField] private SheepMovement sheepMovement = null;
         [SerializeField] private float period = 0f;
         [SerializeField] private float waveMult = 0f;
-        //private Vector3 startingScale;
+
         private float startingRandomOffset;
 
         private void Start()
         {
-            //startingScale = graphic.localScale;
-
             startingRandomOffset = Random.Range(0f, 1000f);
         }
         

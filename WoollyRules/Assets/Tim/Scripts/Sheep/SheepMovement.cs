@@ -2,10 +2,6 @@ using UnityEngine;
 
 namespace WoollyRules.Sheep
 {
-    /// <summary>
-    /// Link with sheep animation with property
-    /// make the rotation better.
-    /// </summary>
     public class SheepMovement : MonoBehaviour
     {
         [SerializeField] private Rigidbody rb = null;
@@ -15,49 +11,19 @@ namespace WoollyRules.Sheep
         [SerializeField] private Transform forceApplyPoint = null;
 
         private float rotationDirection;
-        //private Vector3 velocity;
         private bool isGrounded;
 
         private void FixedUpdate()
         {
+            if (!isGrounded) { return; }
 
-            if (isGrounded)
-            {
-                transform.Rotate(rotationDirection * Time.fixedDeltaTime * Vector3.up, Space.Self);
+            transform.Rotate(rotationDirection * Time.fixedDeltaTime * Vector3.up, Space.Self);
 
-                rb.AddForceAtPosition(transform.forward * forwardAccel, forceApplyPoint.position, ForceMode.Acceleration);
+            rb.AddForceAtPosition(transform.forward * forwardAccel, forceApplyPoint.position, ForceMode.Acceleration);
 
-                rb.linearVelocity = Vector3.ClampMagnitude(rb.linearVelocity, maxSpeed);
-            }
-
-            /*transform.Rotate(rotationDirection * Time.fixedDeltaTime * Vector3.up, Space.Self);
-
-            rb.AddForceAtPosition(transform.forward * forwardAccel, forceApplyPoint.position, ForceMode.Acceleration);*/
-
-            /*if (isGrounded) 
-            {
-                transform.Rotate(rotationDirection * Time.fixedDeltaTime * Vector3.up, Space.Self);
-
-                rb.AddForceAtPosition(transform.forward * forwardAccel, forceApplyPoint.position, ForceMode.Acceleration);
-            }
-
-            velocity = rb.linearVelocity;
-
-            // idk if this is the right one.
-            velocity = transform.InverseTransformDirection(velocity);
-            velocity.y = 0f;
-
-            //FlatSpeed = velocity.magnitude;
-
-            velocity = Vector3.ClampMagnitude(velocity, maxSpeed);
-            velocity = transform.TransformDirection(velocity);
-            velocity.y = rb.linearVelocity.y;
-
-            rb.linearVelocity = velocity;*/
+            rb.linearVelocity = Vector3.ClampMagnitude(rb.linearVelocity, maxSpeed);
 
             isGrounded = false;
-
-            
         }
 
         private void OnCollisionStay(Collision collision)
@@ -68,8 +34,6 @@ namespace WoollyRules.Sheep
         public void ChangeRotationDirection() 
         {
             rotationDirection = Random.Range(-maxRotationSpeed, maxRotationSpeed);
-
-            //Invoke(nameof(ChangeRotationDirection), Random.Range(0f, maxChangeDirInterval));
         }
     }
 }

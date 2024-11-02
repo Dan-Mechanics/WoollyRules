@@ -1672,17 +1672,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7351176887216728611, guid: 4b811c1e577aa6b4e9f0f203e8d10d12, type: 3}
-      propertyPath: m_Volume
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 7579657725302264423, guid: 4b811c1e577aa6b4e9f0f203e8d10d12, type: 3}
       propertyPath: m_Name
       value: Background Music
-      objectReference: {fileID: 0}
-    - target: {fileID: 7579657725302264423, guid: 4b811c1e577aa6b4e9f0f203e8d10d12, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8456140541267758927, guid: 4b811c1e577aa6b4e9f0f203e8d10d12, type: 3}
       propertyPath: m_LocalPosition.x
