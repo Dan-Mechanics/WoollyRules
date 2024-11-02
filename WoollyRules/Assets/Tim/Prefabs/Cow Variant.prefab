@@ -433,7 +433,7 @@ PrefabInstance:
     - target: {fileID: 3289239365233593600, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
       propertyPath: onHook.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 8300000, guid: f540c0892c9e57348bba1e7bb22e77d1, type: 3}
+      objectReference: {fileID: 8300000, guid: c3b9bc7e7feb0174c9563a807cb739f2, type: 3}
     - target: {fileID: 4578204368795435918, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
       propertyPath: m_IsActive
       value: 0

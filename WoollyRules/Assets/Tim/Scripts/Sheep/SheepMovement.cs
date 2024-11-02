@@ -15,12 +15,26 @@ namespace WoollyRules.Sheep
         [SerializeField] private Transform forceApplyPoint = null;
 
         private float rotationDirection;
-        private Vector3 velocity;
+        //private Vector3 velocity;
         private bool isGrounded;
 
         private void FixedUpdate()
         {
-            if (isGrounded) 
+
+            if (isGrounded)
+            {
+                transform.Rotate(rotationDirection * Time.fixedDeltaTime * Vector3.up, Space.Self);
+
+                rb.AddForceAtPosition(transform.forward * forwardAccel, forceApplyPoint.position, ForceMode.Acceleration);
+
+                rb.linearVelocity = Vector3.ClampMagnitude(rb.linearVelocity, maxSpeed);
+            }
+
+            /*transform.Rotate(rotationDirection * Time.fixedDeltaTime * Vector3.up, Space.Self);
+
+            rb.AddForceAtPosition(transform.forward * forwardAccel, forceApplyPoint.position, ForceMode.Acceleration);*/
+
+            /*if (isGrounded) 
             {
                 transform.Rotate(rotationDirection * Time.fixedDeltaTime * Vector3.up, Space.Self);
 
@@ -39,9 +53,11 @@ namespace WoollyRules.Sheep
             velocity = transform.TransformDirection(velocity);
             velocity.y = rb.linearVelocity.y;
 
-            rb.linearVelocity = velocity;
+            rb.linearVelocity = velocity;*/
 
             isGrounded = false;
+
+            
         }
 
         private void OnCollisionStay(Collision collision)
