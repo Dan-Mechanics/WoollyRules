@@ -1129,7 +1129,7 @@ GameObject:
   - component: {fileID: 1497449479}
   m_Layer: 0
   m_Name: Scissors
-  m_TagString: Untagged
+  m_TagString: Scissors
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1982,9 +1982,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04e1f24bd964e4a4cad3bb3e9b481960, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cuttables:
-  - {fileID: 0}
-  wizardKey: 98
+  cuttables: []
+  keys: 45010000
 --- !u!1 &2050606985
 GameObject:
   m_ObjectHideFlags: 0
@@ -2072,9 +2071,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 690818052603756747, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
+      propertyPath: isButton
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 690818052603756747, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
       propertyPath: onCut.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1976796249}
+    - target: {fileID: 1088670346498798704, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1766823186201215785, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
       propertyPath: scissors
       value: 
@@ -2139,6 +2146,10 @@ PrefabInstance:
       propertyPath: scissors
       value: 
       objectReference: {fileID: 1497449479}
+    - target: {fileID: 7638153695043444267, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
+      propertyPath: shakeStrength
+      value: 0.75
+      objectReference: {fileID: 0}
     - target: {fileID: 8041410369033268743, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
       propertyPath: spawnAmount
       value: 12

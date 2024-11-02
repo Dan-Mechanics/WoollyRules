@@ -5,17 +5,23 @@ namespace WoollyRules.Core
 {
     public class CutAllButton : MonoBehaviour
     {
-        [Header("Make sure to add the non-sheep here.")]
+        [Header("Make sure to add the non-sheep here, the one's present in scene by default.")]
         [SerializeField] private List<Cuttable> cuttables = null;
-        [SerializeField] private KeyCode wizardKey = KeyCode.None;
+        [SerializeField] private KeyCode[] keys = null;
 
         private void Update()
         {
-            if (wizardKey == KeyCode.None) { return; }
+            if (keys.Length <= 0) { return; }
+            if(cuttables.Count <= 0) { return; }
 
-            if (Input.GetKey(wizardKey) && cuttables.Count > 0) 
+            for (int i = 0; i < keys.Length; i++)
             {
-                CutAll();
+                if (Input.GetKey(keys[i])) 
+                { 
+                    CutAll();
+
+                    return;
+                }
             }
         }
 

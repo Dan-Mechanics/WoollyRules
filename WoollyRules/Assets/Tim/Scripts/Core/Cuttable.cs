@@ -14,7 +14,7 @@ namespace WoollyRules.Core
 
         [SerializeField] private bool blockHover = false;
         [SerializeField] private bool blockCut = false;
-
+        [SerializeField] private bool isButton = false;
         [SerializeField] private bool ruleBrokenOnCut = false; // this should be something like ruleBrokenOnCut
 
         /// <summary>
@@ -25,6 +25,13 @@ namespace WoollyRules.Core
         [SerializeField] private Rigidbody rb = null;
         [SerializeField] private Rigidbody[] rigidbodies = null;
 
+        private Scissors scissors;
+
+        private void Awake()
+        {
+            scissors = GameObject.FindWithTag("Scissors").GetComponent<Scissors>();
+        }
+
         public virtual void Cut() 
         {
             for (int i = 0; i < rigidbodies.Length; i++)
@@ -34,7 +41,10 @@ namespace WoollyRules.Core
                 childRigidbody.linearVelocity = rb.linearVelocity;
                 childRigidbody.angularVelocity = rb.angularVelocity;
             }
-            
+
+            // what about the phyiscal button ?
+            if (ruleBrokenOnCut && !isButton) { scissors.BreakRule(); }
+
             onCut?.Invoke();
         }
     }
