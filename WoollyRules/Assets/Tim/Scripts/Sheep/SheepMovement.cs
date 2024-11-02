@@ -14,7 +14,7 @@ namespace WoollyRules.Sheep
         [SerializeField] private float forwardAccel = 0f;
         [SerializeField] private float maxSpeed = 0f;
         [SerializeField] private float maxRotationSpeed = 0f;
-        [SerializeField] private float maxChangeDirInterval = 0f;
+        //[SerializeField] private float maxChangeDirInterval = 0f;
         [SerializeField] private Transform forceApplyPoint = null;
 
         private float rotationDirection;
@@ -22,9 +22,9 @@ namespace WoollyRules.Sheep
 
         private void Start()
         {
-            if (maxChangeDirInterval <= 0f) { return; }
+            //if (maxChangeDirInterval <= 0f) { return; }
             
-            Invoke(nameof(ChangeRotationDirection), Random.Range(0f, maxChangeDirInterval));
+            //Invoke(nameof(ChangeRotationDirection), Random.Range(0f, maxChangeDirInterval));
         }
 
         private void FixedUpdate()
@@ -48,11 +48,11 @@ namespace WoollyRules.Sheep
             rb.linearVelocity = velocity;
         }
 
-        private void ChangeRotationDirection() 
+        public void ChangeRotationDirection() 
         {
             rotationDirection = Random.Range(-maxRotationSpeed, maxRotationSpeed);
 
-            Invoke(nameof(ChangeRotationDirection), Random.Range(0f, maxChangeDirInterval));
+            //Invoke(nameof(ChangeRotationDirection), Random.Range(0f, maxChangeDirInterval));
         }
     }
 }

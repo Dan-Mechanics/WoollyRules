@@ -14,6 +14,8 @@ namespace WoollyRules.Core
         [SerializeField] private bool spawnWithRandomRotation = false;
         [SerializeField] [Min(0f)] private float randomPositionMagnitude = 0f;
 
+        [SerializeField] private Transform[] spawnPoints = null;
+
         private int spawnCount;
 
         private void Start()
@@ -34,13 +36,18 @@ namespace WoollyRules.Core
         }
 
         private void Spawn() 
-        {   
-            Vector3 pos = transform.position + Random.insideUnitSphere * randomPositionMagnitude;
-            Quaternion rot = spawnWithRandomRotation ? Random.rotationUniform : transform.rotation;
+        {
+            Transform spawnPoint = GetRandomSpawnPoint();
+            
+            // pemdas for vectors ??
+            Vector3 pos = spawnPoint.position + (Random.insideUnitSphere * randomPositionMagnitude);
+            //Quaternion rot = spawnPoint.rotation;
 
-            // ish ...
-            GameObject newlySpawned = Instantiate(Random.value < cowPercantage ? cowPrefab : sheepPrefab, pos, rot);
+            GameObject newlySpawned = Instantiate(Random.value < cowPercantage ? cowPrefab : sheepPrefab, pos, Quaternion.identity);
             newlySpawned.name = sheepPrefab.name;
+
+            newlySpawned.transform.up = pos.normalized;
+            if (spawnWithRandomRotation) { newlySpawned.transform.Rotate(Vector3.up * Random.Range(0f, 360f), Space.Self); }
 
             Cuttable cuttable = newlySpawned.GetComponent<Cuttable>();
             if (cutAllButton != null && cuttable != null) 
@@ -55,6 +62,11 @@ namespace WoollyRules.Core
                 print($"Spawned all the sheep for {gameObject.name}.");
                 CancelInvoke(nameof(Spawn));
             }
+        }
+
+        private Transform GetRandomSpawnPoint() 
+        {
+            return spawnPoints[Random.Range(0, spawnPoints.Length)];
         }
     }
 }

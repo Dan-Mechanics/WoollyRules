@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4669090254976714646}
   - component: {fileID: -6486451734984886598}
   - component: {fileID: 7415113377439332812}
+  - component: {fileID: 3172553139223505468}
   m_Layer: 0
   m_Name: Sheep
   m_TagString: Untagged
@@ -230,7 +231,6 @@ MonoBehaviour:
   forwardAccel: 7
   maxSpeed: 1
   maxRotationSpeed: 35
-  maxChangeDirInterval: 6
   forceApplyPoint: {fileID: 8138694653642865259}
 --- !u!114 &7415113377439332812
 MonoBehaviour:
@@ -251,6 +251,34 @@ MonoBehaviour:
   sheepMovement: {fileID: -6486451734984886598}
   period: 0.175
   waveMult: 2
+--- !u!114 &3172553139223505468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127664283110895676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5117a459b552f4442b9569d4cd58c0bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxTimeBetweenHooks: 6
+  onHook:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -6486451734984886598}
+        m_TargetAssemblyTypeName: WoollyRules.Sheep.SheepMovement, Sheep
+        m_MethodName: ChangeRotationDirection
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7912427593920988267
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,11 +333,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 02d0c7c0139126c4fa46629eef88bd15, type: 3}
       propertyPath: m_LocalScale.x
-      value: 34.08476
+      value: 28.549356
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 02d0c7c0139126c4fa46629eef88bd15, type: 3}
       propertyPath: m_LocalScale.y
-      value: 34.08476
+      value: 33.475063
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 02d0c7c0139126c4fa46629eef88bd15, type: 3}
       propertyPath: m_LocalScale.z
@@ -742,7 +770,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 02d0c7c0139126c4fa46629eef88bd15, type: 3}
       propertyPath: m_LocalScale.x
-      value: 36.66306
+      value: 40.699665
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 02d0c7c0139126c4fa46629eef88bd15, type: 3}
       propertyPath: m_LocalScale.y
