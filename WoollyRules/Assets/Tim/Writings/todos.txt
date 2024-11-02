@@ -192,15 +192,15 @@ lees appjes V
 wool amteials slippery and that works because of good max speed.
 i also think the falling speed is kidna bugged. V
 
-thank you for playing screen better.
+thank you for playing screen better. V
 button doesnt work V
 button color ?? --> prolly not they say its good.
 
-sheep spawned in de arde
+sheep spawned in de arde V
 
-sheep spawn out of beeld.
+sheep spawn out of beeld. V
 
-add new background
+add new background V
 
 ---
 
@@ -211,4 +211,6 @@ knip sound, shaap geluid
 keyboard compatibility
 onstart with random event. V
 
-waarom vliegt de sheep de lugt in ??
+waarom vliegt de schaap de lugt in ??
+
+ive added B to the button button but it would make sure sense if it was SPACE.

@@ -8,30 +8,24 @@ namespace WoollyRules.Sheep
     /// </summary>
     public class SheepMovement : MonoBehaviour
     {
-        //public float FlatSpeed { get; private set; }
-
         [SerializeField] private Rigidbody rb = null;
         [SerializeField] private float forwardAccel = 0f;
         [SerializeField] private float maxSpeed = 0f;
         [SerializeField] private float maxRotationSpeed = 0f;
-        //[SerializeField] private float maxChangeDirInterval = 0f;
         [SerializeField] private Transform forceApplyPoint = null;
 
         private float rotationDirection;
         private Vector3 velocity;
-
-        private void Start()
-        {
-            //if (maxChangeDirInterval <= 0f) { return; }
-            
-            //Invoke(nameof(ChangeRotationDirection), Random.Range(0f, maxChangeDirInterval));
-        }
+        private bool isGrounded;
 
         private void FixedUpdate()
         {
-            transform.Rotate(rotationDirection * Time.fixedDeltaTime * Vector3.up, Space.Self);
+            if (isGrounded) 
+            {
+                transform.Rotate(rotationDirection * Time.fixedDeltaTime * Vector3.up, Space.Self);
 
-            rb.AddForceAtPosition(transform.forward * forwardAccel, forceApplyPoint.position, ForceMode.Acceleration);
+                rb.AddForceAtPosition(transform.forward * forwardAccel, forceApplyPoint.position, ForceMode.Acceleration);
+            }
 
             velocity = rb.linearVelocity;
 
@@ -46,6 +40,13 @@ namespace WoollyRules.Sheep
             velocity.y = rb.linearVelocity.y;
 
             rb.linearVelocity = velocity;
+
+            isGrounded = false;
+        }
+
+        private void OnCollisionStay(Collision collision)
+        {
+            isGrounded = true;
         }
 
         public void ChangeRotationDirection() 
