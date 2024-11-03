@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 3172553139223505468}
   - component: {fileID: 5644831737721548093}
   - component: {fileID: 3289239365233593600}
+  - component: {fileID: -534161226293338915}
   m_Layer: 0
   m_Name: Sheep
   m_TagString: Untagged
@@ -393,7 +394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minTimeBetweenHooks: 0
-  maxTimeBetweenHooks: 15
+  maxTimeBetweenHooks: 30
   hookOnStart: 0
   onHook:
     m_PersistentCalls:
@@ -404,6 +405,36 @@ MonoBehaviour:
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 8300000, guid: c3b9bc7e7feb0174c9563a807cb739f2, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-534161226293338915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127664283110895676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5117a459b552f4442b9569d4cd58c0bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minTimeBetweenHooks: 0
+  maxTimeBetweenHooks: 30
+  hookOnStart: 0
+  onHook:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5644831737721548093}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 859347f106964e145b1be118f0a762d0, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0

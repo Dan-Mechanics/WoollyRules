@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace WoollyRules.Core
 {
@@ -8,6 +9,9 @@ namespace WoollyRules.Core
         [Header("Make sure to add the non-sheep here, the one's present in scene by default.")]
         [SerializeField] private List<Cuttable> cuttables = null;
         [SerializeField] private KeyCode[] keys = null;
+
+        [SerializeField] private bool callOnPressedButton = false;
+        [SerializeField] private UnityEvent onPressButton = null;
 
         private void Update()
         {
@@ -19,6 +23,8 @@ namespace WoollyRules.Core
                 if (Input.GetKey(keys[i]))
                 {
                     CutAll();
+
+                    if (callOnPressedButton) { onPressButton?.Invoke(); }
 
                     return;
                 }

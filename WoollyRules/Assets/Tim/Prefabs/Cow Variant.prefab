@@ -214,6 +214,10 @@ PrefabInstance:
       propertyPath: forwardAccel
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: -534161226293338915, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
+      propertyPath: onHook.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: bded95df8e3c16b4fbc4bb3c82faf7ab, type: 3}
     - target: {fileID: 1492384736, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
       propertyPath: ruleBrokenOnCut
       value: 1
