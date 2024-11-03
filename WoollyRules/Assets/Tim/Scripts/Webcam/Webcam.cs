@@ -11,6 +11,8 @@ namespace WoollyRules.Webcam
     public class Webcam : MonoBehaviour
     {
         [SerializeField] private Image imageToProjectWebcamOn = null;
+        [SerializeField] private GameObject background = null;
+
         [SerializeField] private float refreshInterval = 0f;
         [SerializeField] private bool matchImageSizeToWebcamSize = false;
         [SerializeField] private bool preload = false;
@@ -64,6 +66,7 @@ namespace WoollyRules.Webcam
             showing = false;
 
             imageToProjectWebcamOn.gameObject.SetActive(false);
+            background.SetActive(false);
 
             if (!preload && webCamTexture != null) 
             {
@@ -160,6 +163,7 @@ namespace WoollyRules.Webcam
             imageToProjectWebcamOn.sprite = Sprite.Create(texture, rect, pivot, 100f);
 
             imageToProjectWebcamOn.gameObject.SetActive(true);
+            background.SetActive(true);
         }
 
         private void ResizeWebcam() 
