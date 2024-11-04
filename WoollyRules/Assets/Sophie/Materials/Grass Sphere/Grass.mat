@@ -121,7 +121,7 @@ Material:
     m_Floats:
     - _AddPrecomputedVelocity: 0
     - _AlphaClip: 0
-    - _AlphaClipping: 0.89
+    - _AlphaClipping: 0.94
     - _AlphaToMask: 0
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
@@ -169,7 +169,7 @@ Material:
     - _BaseColor: {r: 0.032367468, g: 1, b: 0, a: 1}
     - _Color: {r: 0.032367468, g: 1, b: 0, a: 1}
     - _ColorA: {r: 0.36994922, g: 0.78039217, b: 0.19999997, a: 0}
-    - _ColorB: {r: 0.18952483, g: 0.4528302, b: 0.1260235, a: 0}
+    - _ColorB: {r: 0.39856985, g: 0.6377357, b: 0.18650752, a: 0}
     - _ColorC: {r: 1, g: 0, b: 0.76475954, a: 0}
     - _Control_View_Smoothing: {r: -1.58, g: 3.14, b: 0, a: 0}
     - _DistantColor_Multiplier: {r: 1.4907554, g: 2.270603, b: 0.69831735, a: 1}

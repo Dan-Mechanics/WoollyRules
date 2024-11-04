@@ -4,9 +4,9 @@ namespace WoollyRules.Core
 {
     public class Spawner : MonoBehaviour
     {
-        [SerializeField] private GameObject sheepPrefab = null;
-        [SerializeField] private GameObject cowPrefab = null;
-        [SerializeField] private float cowPercantage = 0f;
+        [SerializeField] private GameObject prefab = null;
+        //[SerializeField] private GameObject cowPrefab = null;
+        //[SerializeField] private float cowPercantage = 0f;
         [SerializeField] private CutAllButton cutAllButton = null;
         [SerializeField] [Min(0.1f)] private float interval = 0f;
         [SerializeField] [Min(0)] private int spawnAmount = 0;
@@ -21,7 +21,7 @@ namespace WoollyRules.Core
 
         private void Start()
         {
-            if (sheepPrefab == null) 
+            if (prefab == null) 
             {
                 Debug.LogError("sheepPrefab is not assigned in the inspector.");
                 return;
@@ -44,8 +44,8 @@ namespace WoollyRules.Core
             pos = spawnPoint.position + (Random.insideUnitSphere * randomPositionMagnitude);
             //Quaternion rot = spawnPoint.rotation;
 
-            GameObject newlySpawned = Instantiate(Random.value < cowPercantage ? cowPrefab : sheepPrefab, pos, Quaternion.identity);
-            newlySpawned.name = sheepPrefab.name;
+            GameObject newlySpawned = Instantiate(prefab, pos, Quaternion.identity);
+            newlySpawned.name = prefab.name;
 
             newlySpawned.transform.up = pos.normalized;
             if (spawnWithRandomRotation) { newlySpawned.transform.Rotate(Vector3.up * Random.Range(0f, 360f), Space.Self); }
@@ -64,8 +64,6 @@ namespace WoollyRules.Core
                 CancelInvoke(nameof(Spawn));
             }
         }
-
-
 
         private Transform GetRandomSpawnPoint() 
         {

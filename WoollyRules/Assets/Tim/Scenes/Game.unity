@@ -5719,6 +5719,108 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 257357490}
   m_Mesh: {fileID: 2494185979427425891, guid: 6f4fba1abc0b1724a9836f226ce80767, type: 3}
+--- !u!1001 &332372077
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 963194228}
+    m_Modifications:
+    - target: {fileID: 1049985577599132471, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
+      propertyPath: m_Name
+      value: Cow Spawner North
+      objectReference: {fileID: 0}
+    - target: {fileID: 2370087657443235538, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2370087657443235538, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 2370087657443235538, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 2370087657443235538, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2370087657443235538, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2370087657443235538, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2370087657443235538, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2370087657443235538, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2370087657443235538, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2370087657443235538, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6933228493867487473, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 2892492694044777937, guid: 1971ba566d6387d4a82a4f125b1ee380, type: 3}
+    - target: {fileID: 6933228493867487473, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
+      propertyPath: interval
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6933228493867487473, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
+      propertyPath: spawnAmount
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6933228493867487473, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
+      propertyPath: cutAllButton
+      value: 
+      objectReference: {fileID: 1976796249}
+    - target: {fileID: 6933228493867487473, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
+      propertyPath: spawnPoints.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6933228493867487473, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
+      propertyPath: randomPositionMagnitude
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6933228493867487473, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
+      propertyPath: 'spawnPoints.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1793697736}
+    - target: {fileID: 6933228493867487473, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
+      propertyPath: 'spawnPoints.Array.data[1]'
+      value: 
+      objectReference: {fileID: 206568913}
+    - target: {fileID: 6933228493867487473, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
+      propertyPath: 'spawnPoints.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1187383319}
+    - target: {fileID: 6933228493867487473, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
+      propertyPath: 'spawnPoints.Array.data[3]'
+      value: 
+      objectReference: {fileID: 1307424303}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
+--- !u!4 &332372078 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2370087657443235538, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
+  m_PrefabInstance: {fileID: 332372077}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &355685781 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3864873133951161869, guid: 1971ba566d6387d4a82a4f125b1ee380, type: 3}
@@ -51725,6 +51827,10 @@ PrefabInstance:
       value: Butterfly particle
       objectReference: {fileID: 0}
     - target: {fileID: 4821342870407301479, guid: d16855b9c5c82c046a69eab08057208f, type: 3}
+      propertyPath: NoiseModule.octaves
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821342870407301479, guid: d16855b9c5c82c046a69eab08057208f, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
       value: 15
       objectReference: {fileID: 0}
@@ -53231,8 +53337,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1497449479}
     - target: {fileID: 8041410369033268743, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 2127664283110895676, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
+    - target: {fileID: 8041410369033268743, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
       propertyPath: interval
-      value: 1.25
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8041410369033268743, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
       propertyPath: spawnAmount
@@ -53292,6 +53402,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 416400810472494626, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
       insertIndex: 1
       addedObject: {fileID: 1824298465}
+    - targetCorrespondingSourceObject: {fileID: 416400810472494626, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 332372078}
     - targetCorrespondingSourceObject: {fileID: 416400810472494626, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1793697736}
