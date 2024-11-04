@@ -690,3 +690,230 @@ Start importing Assets/Tim/Materials/Blue Flower 2.mat using Guid(703c414e2421fb
  -> (artifact id: 'd6a01bcaf1f743e2ecef87d4e2ee0fd8') in 0.0387802 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
 
+========================================================================
+Received Import Request.
+  Time since last request: 1258.259644 seconds.
+  path: Assets/Tim/Prefabs/Environment.prefab
+  artifactKey: Guid(bb4e144bc3c70c64bb40b557d5669b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Environment.prefab using Guid(bb4e144bc3c70c64bb40b557d5669b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c55e5f05699249f71b80e6f2306ae18f') in 0.348013 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 6542
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Tim/Prefabs/Grass Globe.prefab
+  artifactKey: Guid(068858b736007fa4ebf8adbe739f11d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Grass Globe.prefab using Guid(068858b736007fa4ebf8adbe739f11d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '9e9cff0b4c27bfb4be71665c3543fafb') in 2.3455897 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 130028
+
+========================================================================
+Received Import Request.
+  Time since last request: 1467.017595 seconds.
+  path: Assets/Tim/Scripts/Components/Components.asmdef
+  artifactKey: Guid(d67bfa3ba840a18488da981f50378b7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Scripts/Components/Components.asmdef using Guid(d67bfa3ba840a18488da981f50378b7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a1a587be3ab81ff2080faa5206786534') in 0.0662976 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.78 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4032 unused Assets / (3.6 MB). Loaded Objects now: 5060.
+Memory consumption went from 208.1 MB to 204.5 MB.
+Total: 140.097700 ms (FindLiveObjects: 1.419000 ms CreateObjectMapping: 0.587500 ms MarkObjects: 135.701800 ms  DeleteObjects: 2.387100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4031 unused Assets / (4.2 MB). Loaded Objects now: 5060.
+Memory consumption went from 208.1 MB to 203.9 MB.
+Total: 35.400100 ms (FindLiveObjects: 1.363900 ms CreateObjectMapping: 0.949700 ms MarkObjects: 27.265400 ms  DeleteObjects: 5.818200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  4.583 seconds
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.562 seconds
+Domain Reload Profiling: 5143ms
+	BeginReloadAssembly (1061ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (119ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (224ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (3451ms)
+		LoadAssemblies (3933ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (123ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (98ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (562ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (326ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (46ms)
+			ProcessInitializeOnLoadAttributes (220ms)
+			ProcessInitializeOnLoadMethodAttributes (47ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4033 unused Assets / (5.2 MB). Loaded Objects now: 4943.
+Memory consumption went from 203.7 MB to 198.5 MB.
+Total: 5.764400 ms (FindLiveObjects: 0.288600 ms CreateObjectMapping: 0.162700 ms MarkObjects: 3.349600 ms  DeleteObjects: 1.962600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4031 unused Assets / (4.6 MB). Loaded Objects now: 4943.
+Memory consumption went from 203.7 MB to 199.2 MB.
+Total: 8.883800 ms (FindLiveObjects: 0.390400 ms CreateObjectMapping: 0.210900 ms MarkObjects: 6.019800 ms  DeleteObjects: 2.261300 ms)
+
+Prepare: number of updated asset objects reloaded= 1
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.512 seconds
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.609 seconds
+Domain Reload Profiling: 1122ms
+	BeginReloadAssembly (153ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (20ms)
+	LoadAllAssembliesAndSetupDomain (302ms)
+		LoadAssemblies (273ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (106ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (91ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (610ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (330ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (44ms)
+			ProcessInitializeOnLoadAttributes (227ms)
+			ProcessInitializeOnLoadMethodAttributes (44ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4033 unused Assets / (4.2 MB). Loaded Objects now: 4945.
+Memory consumption went from 203.5 MB to 199.3 MB.
+Total: 5.202500 ms (FindLiveObjects: 0.298700 ms CreateObjectMapping: 0.162500 ms MarkObjects: 3.353000 ms  DeleteObjects: 1.387400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 6749.786661 seconds.
+  path: Assets/Luke/Prefab
+  artifactKey: Guid(70d67d6156ca47a469ec6f2ec48dcff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Luke/Prefab using Guid(70d67d6156ca47a469ec6f2ec48dcff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f68c97b55c6bd05852e143df5f9c7f46') in 0.3722215 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/Luke/Cow/CowFront.fbx
+  artifactKey: Guid(6854a85e6f0d5ea4e82903ee010c8c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Luke/Cow/CowFront.fbx using Guid(6854a85e6f0d5ea4e82903ee010c8c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1fac9f5809a77463419b9e16a6e8599f') in 0.8943566 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Luke/Cow/CowNormal.fbx
+  artifactKey: Guid(7eedb092bf019e5489d5512fe3125a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Luke/Cow/CowNormal.fbx using Guid(7eedb092bf019e5489d5512fe3125a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3ac9ba7cfb11a29b5157a680668220ee') in 0.0479221 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Luke/Cow/COWHELP_CowMaterial_MetallicSmoothness.png
+  artifactKey: Guid(6481d959c1e9235458c103b4ad99a5d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Luke/Cow/COWHELP_CowMaterial_MetallicSmoothness.png using Guid(6481d959c1e9235458c103b4ad99a5d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2618bc629abeeaa11d0fc57d876856c6') in 0.0334741 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Luke/Cow/COWHELP_CowMaterial_AlbedoTransparency.png
+  artifactKey: Guid(1469956dbd0fd9545b09dbfa27e570e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Luke/Cow/COWHELP_CowMaterial_AlbedoTransparency.png using Guid(1469956dbd0fd9545b09dbfa27e570e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'eb6875b12978e2bcc57f35da894e0274') in 0.0202514 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Luke/Cow/CowBack.fbx
+  artifactKey: Guid(c865c77f5f61b1d4290fd2445bce81d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Luke/Cow/CowBack.fbx using Guid(c865c77f5f61b1d4290fd2445bce81d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2403bc7dc21b691c709df6155d3af447') in 0.0776504 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.994604 seconds.
+  path: Assets/Luke/Prefab/Background.prefab
+  artifactKey: Guid(0a411975434f63e4a80518193f19b615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Luke/Prefab/Background.prefab using Guid(0a411975434f63e4a80518193f19b615) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1b0b2946daf1596c03bcd64c83136f95') in 0.0551281 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+

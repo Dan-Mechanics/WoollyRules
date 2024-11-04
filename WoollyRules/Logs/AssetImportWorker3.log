@@ -602,3 +602,172 @@ Start importing Assets/Sophie/Materials/Grass Sphere/Wind Mask.jpg using Guid(9f
  -> (artifact id: '0f00d094f5fc43435bd2bfeef05fa335') in 0.050633 seconds
 Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 2
 
+========================================================================
+Received Import Request.
+  Time since last request: 1277.809501 seconds.
+  path: Assets/Tim/Prefabs/Flowers Sphere.prefab
+  artifactKey: Guid(1a706000c645c9144b9683f8c0f8e261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Prefabs/Flowers Sphere.prefab using Guid(1a706000c645c9144b9683f8c0f8e261) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd93ea5bb42b4e97e887d7760d7dd8620') in 0.7774944 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 4515
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.98 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4031 unused Assets / (3.0 MB). Loaded Objects now: 5027.
+Memory consumption went from 165.8 MB to 162.8 MB.
+Total: 87.802300 ms (FindLiveObjects: 2.114900 ms CreateObjectMapping: 0.640800 ms MarkObjects: 81.975800 ms  DeleteObjects: 3.067900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.89 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4031 unused Assets / (2.7 MB). Loaded Objects now: 5027.
+Memory consumption went from 165.8 MB to 163.0 MB.
+Total: 25.654300 ms (FindLiveObjects: 0.990900 ms CreateObjectMapping: 0.597400 ms MarkObjects: 21.003100 ms  DeleteObjects: 3.059800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  4.581 seconds
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.562 seconds
+Domain Reload Profiling: 5143ms
+	BeginReloadAssembly (1062ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (33ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (146ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (3452ms)
+		LoadAssemblies (4152ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (118ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (97ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (563ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (323ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (38ms)
+			ProcessInitializeOnLoadAttributes (221ms)
+			ProcessInitializeOnLoadMethodAttributes (50ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4033 unused Assets / (3.9 MB). Loaded Objects now: 4910.
+Memory consumption went from 161.5 MB to 157.6 MB.
+Total: 4.959500 ms (FindLiveObjects: 0.295000 ms CreateObjectMapping: 0.175700 ms MarkObjects: 3.365900 ms  DeleteObjects: 1.122000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4031 unused Assets / (4.0 MB). Loaded Objects now: 4910.
+Memory consumption went from 161.5 MB to 157.6 MB.
+Total: 7.809800 ms (FindLiveObjects: 0.370100 ms CreateObjectMapping: 0.267000 ms MarkObjects: 5.702100 ms  DeleteObjects: 1.469200 ms)
+
+Prepare: number of updated asset objects reloaded= 1
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.487 seconds
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.595 seconds
+Domain Reload Profiling: 1082ms
+	BeginReloadAssembly (151ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (279ms)
+		LoadAssemblies (252ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (105ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (88ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (596ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (333ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (43ms)
+			ProcessInitializeOnLoadAttributes (231ms)
+			ProcessInitializeOnLoadMethodAttributes (46ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4033 unused Assets / (4.0 MB). Loaded Objects now: 4912.
+Memory consumption went from 161.3 MB to 157.3 MB.
+Total: 5.386000 ms (FindLiveObjects: 0.381700 ms CreateObjectMapping: 0.227100 ms MarkObjects: 3.606600 ms  DeleteObjects: 1.169800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 8219.849530 seconds.
+  path: Assets/Luke/Cow
+  artifactKey: Guid(5fd4094a92520ad458ff505110aed95d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Luke/Cow using Guid(5fd4094a92520ad458ff505110aed95d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '4934cf7117920dc862bce3a744b57d96') in 0.3740059 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/Luke/Cow/COWHELP_CowMaterial_Normal.png
+  artifactKey: Guid(25ba239ddb318fc49a34464a67cb6de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Luke/Cow/COWHELP_CowMaterial_Normal.png using Guid(25ba239ddb318fc49a34464a67cb6de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '27a3a4453bdb2c97503196b4725c3173') in 0.2328515 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Luke/Cow/CowMaterial.mat
+  artifactKey: Guid(17d72f95d1d3d6d409b881e96c87af7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Luke/Cow/CowMaterial.mat using Guid(17d72f95d1d3d6d409b881e96c87af7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '638710295b9b14f3eccc496cab63c551') in 0.6669984 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
