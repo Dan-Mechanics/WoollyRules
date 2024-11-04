@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -128,7 +129,7 @@ namespace WoollyRules.Webcam
         {
             //imageToProjectWebcamOn.enabled = true;
 
-            webCamTexture = new WebCamTexture(WebCamTexture.devices[1].name);
+            webCamTexture = new WebCamTexture(WebCamTexture.devices[WebCamTexture.devices.Length - 1].name);
 
             if (!webCamTexture.isPlaying) { webCamTexture.Play(); }
 
