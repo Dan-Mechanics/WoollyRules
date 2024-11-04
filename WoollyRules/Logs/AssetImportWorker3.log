@@ -320,3 +320,53 @@ Start importing Assets/Luke/sheep-122256.mp3 using Guid(c3b9bc7e7feb0174c9563a80
  -> (artifact id: '1abe7e442e8b797816e845b79ca2cdb8') in 0.0532362 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
+========================================================================
+Received Import Request.
+  Time since last request: 1914.594746 seconds.
+  path: Assets/Tim/Sprites/new_open.png
+  artifactKey: Guid(75e702a7e136e1849afb13e03a3064cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Sprites/new_open.png using Guid(75e702a7e136e1849afb13e03a3064cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f490143a36b4f6295c91cb606b3c292f') in 0.0414836 seconds
+Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Beau/new_sprites/Play_Button.png
+  artifactKey: Guid(de32954837991ff4c8907872e3aade24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Beau/new_sprites/Play_Button.png using Guid(de32954837991ff4c8907872e3aade24) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0ed73c63a964850a914344d9093ad158') in 0.026069 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.965214 seconds.
+  path: Assets/Luke/Sprites/Middle Layer.png
+  artifactKey: Guid(b2e8ff3482caa7a4ab2ced941d4b25c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Luke/Sprites/Middle Layer.png using Guid(b2e8ff3482caa7a4ab2ced941d4b25c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3f86299d64098323ed714ce08d0abd22') in 0.0431746 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 360.301762 seconds.
+  path: Assets/Beau/IMG_5115.png
+  artifactKey: Guid(9040b8e079a32244b91bea3968a5f91d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Beau/IMG_5115.png using Guid(9040b8e079a32244b91bea3968a5f91d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6c5354b7d96cb854ec437c22e03629d5') in 0.0398621 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Beau/Sheep.png
+  artifactKey: Guid(d00f646099b415b45945411a5c5ba5e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Beau/Sheep.png using Guid(d00f646099b415b45945411a5c5ba5e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a28b36b8f8389538fc18bc40e57d7251') in 0.0410467 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+

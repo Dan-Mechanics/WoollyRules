@@ -52,3 +52,11 @@ Thumbs.db
 # DUMB DAN-MECHANICS CHANGE !!!
 ###
 *.vs
+
+
+---
+
+Luke yeet
+
+timer webcam ??
+ending scnree ??
