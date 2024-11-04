@@ -50818,9 +50818,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageToProjectWebcamOn: {fileID: 184644353}
   background: {fileID: 1664501692}
-  refreshInterval: 0.2
+  refreshInterval: 0.1
   matchImageSizeToWebcamSize: 0
-  preload: 1
+  preload: 0
   rectTransform: {fileID: 1098676777}
   backgroundMusic: {fileID: 1954304948}
   musicStopsWhenShowingWebcam: 1
