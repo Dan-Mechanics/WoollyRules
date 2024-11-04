@@ -128,7 +128,7 @@ namespace WoollyRules.Webcam
         {
             //imageToProjectWebcamOn.enabled = true;
 
-            webCamTexture = new WebCamTexture();
+            webCamTexture = new WebCamTexture(WebCamTexture.devices[1].name);
 
             if (!webCamTexture.isPlaying) { webCamTexture.Play(); }
 
