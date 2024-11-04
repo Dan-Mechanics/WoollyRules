@@ -370,3 +370,16 @@ Start importing Assets/Beau/Sheep.png using Guid(d00f646099b415b45945411a5c5ba5e
  -> (artifact id: 'a28b36b8f8389538fc18bc40e57d7251') in 0.0410467 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4031 unused Assets / (2.3 MB). Loaded Objects now: 4879.
+Memory consumption went from 154.8 MB to 152.5 MB.
+Total: 344.675200 ms (FindLiveObjects: 4.464100 ms CreateObjectMapping: 0.346300 ms MarkObjects: 336.988500 ms  DeleteObjects: 2.874200 ms)
+
+Prepare: number of updated asset objects reloaded= 1
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly

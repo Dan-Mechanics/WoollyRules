@@ -417,3 +417,25 @@ Start importing Assets/Tim/Writings/pending_todos_draft_old.txt using Guid(b4afd
  -> (artifact id: '7001c9f3fff3fcc79160867cfa8098b0') in 0.0040998 seconds
 Number of updated asset objects reloaded before import = 1Number of asset objects unloaded after import = 1
 
+========================================================================
+Received Import Request.
+  Time since last request: 278.853601 seconds.
+  path: Assets/Tim/Scenes/Game.unity
+  artifactKey: Guid(78dbf5982f8d0e145bb5794dcf76a3fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tim/Scenes/Game.unity using Guid(78dbf5982f8d0e145bb5794dcf76a3fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'fbad3bd4c506b9c1ba32348a8cfe5345') in 0.0010767 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.07 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4031 unused Assets / (2.3 MB). Loaded Objects now: 4878.
+Memory consumption went from 154.8 MB to 152.5 MB.
+Total: 314.109400 ms (FindLiveObjects: 4.473500 ms CreateObjectMapping: 0.371500 ms MarkObjects: 306.084300 ms  DeleteObjects: 3.177500 ms)
+
+Prepare: number of updated asset objects reloaded= 1
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly

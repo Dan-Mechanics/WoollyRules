@@ -65,6 +65,8 @@ namespace WoollyRules.Core
             }
         }
 
+
+
         private Transform GetRandomSpawnPoint() 
         {
             return spawnPoints[Random.Range(0, spawnPoints.Length)];
