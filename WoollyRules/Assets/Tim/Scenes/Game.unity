@@ -52734,6 +52734,7 @@ MonoBehaviour:
   - {fileID: 2013863778}
   - {fileID: 355685781}
   keys: 45010000
+  alwaysBreakRule: 1
   callOnPressedButton: 0
   onPressButton:
     m_PersistentCalls:
@@ -52750,6 +52751,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  scissors: {fileID: 0}
 --- !u!82 &1976796250
 AudioSource:
   m_ObjectHideFlags: 0
@@ -53034,7 +53036,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8041410369033268743, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
       propertyPath: spawnAmount
-      value: 25
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 8041410369033268743, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
       propertyPath: cutAllButton
@@ -53042,7 +53044,7 @@ PrefabInstance:
       objectReference: {fileID: 1976796249}
     - target: {fileID: 8041410369033268743, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
       propertyPath: cowPercantage
-      value: 0.1
+      value: 0.125
       objectReference: {fileID: 0}
     - target: {fileID: 8041410369033268743, guid: 12d5a4b206f859942886b26b4e2db61e, type: 3}
       propertyPath: spawnPoints.Array.size

@@ -10,8 +10,10 @@ namespace WoollyRules.Core
         [SerializeField] private List<Cuttable> cuttables = null;
         [SerializeField] private KeyCode[] keys = null;
 
+        [SerializeField] private bool alwaysBreakRule = false;
         [SerializeField] private bool callOnPressedButton = false;
         [SerializeField] private UnityEvent onPressButton = null;
+        [SerializeField] private Scissors scissors = null;
 
         private void Update()
         {
@@ -25,6 +27,8 @@ namespace WoollyRules.Core
                     CutAll();
 
                     if (callOnPressedButton) { onPressButton?.Invoke(); }
+
+                    if (alwaysBreakRule) { scissors.BreakRule(); }
 
                     return;
                 }
