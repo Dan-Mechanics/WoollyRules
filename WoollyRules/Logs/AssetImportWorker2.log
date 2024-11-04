@@ -299,3 +299,43 @@ Memory consumption went from 154.0 MB to 150.4 MB.
 Total: 13.958900 ms (FindLiveObjects: 0.779700 ms CreateObjectMapping: 0.553900 ms MarkObjects: 9.443800 ms  DeleteObjects: 3.179900 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 906.809010 seconds.
+  path: Assets/Beau/new_sprites/Starting_Screen.png
+  artifactKey: Guid(a96d3b75d6182bd40aabd669d328ae36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Beau/new_sprites/Starting_Screen.png using Guid(a96d3b75d6182bd40aabd669d328ae36) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ea239f098bfe6342ea8d320f2ad5ccf1') in 0.2360947 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.531930 seconds.
+  path: Assets/Luke/mixkit-cow-animal-breath-1746.wav
+  artifactKey: Guid(f540c0892c9e57348bba1e7bb22e77d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Luke/mixkit-cow-animal-breath-1746.wav using Guid(f540c0892c9e57348bba1e7bb22e77d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b566bc571f6c5de484a4a6ca5a658b00') in 0.0652413 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.301986 seconds.
+  path: Assets/Flynn/newest_rule.png
+  artifactKey: Guid(088bfc944c1846a4ea9296130255abc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flynn/newest_rule.png using Guid(088bfc944c1846a4ea9296130255abc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '27eb00d58bb90ee530e441fa51a5d460') in 0.0230718 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.021929 seconds.
+  path: Assets/Flynn/newest_rule.png
+  artifactKey: Guid(088bfc944c1846a4ea9296130255abc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flynn/newest_rule.png using Guid(088bfc944c1846a4ea9296130255abc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e638d8de46f51f1b8edb820100073a6d') in 0.0329421 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+

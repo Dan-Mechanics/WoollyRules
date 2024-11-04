@@ -290,3 +290,33 @@ Memory consumption went from 153.4 MB to 151.1 MB.
 Total: 14.469900 ms (FindLiveObjects: 0.703100 ms CreateObjectMapping: 0.557700 ms MarkObjects: 11.201200 ms  DeleteObjects: 2.006800 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 2587997.554701 seconds.
+  path: Assets/Flynn/Untitled223_20241102170135.png
+  artifactKey: Guid(8dbbf9d9c8814a745b52b3edc1c17906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flynn/Untitled223_20241102170135.png using Guid(8dbbf9d9c8814a745b52b3edc1c17906) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f5c26163ca889dc99d62b4d77e44e93b') in 0.195016 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Flynn/You_may_only_cut_one_sheep_at_a_time.png
+  artifactKey: Guid(a170c25cc29f9794298bf923820b1da1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Flynn/You_may_only_cut_one_sheep_at_a_time.png using Guid(a170c25cc29f9794298bf923820b1da1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '368cb809148f160faeb1b7430b6e61cc') in 0.0259435 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.497603 seconds.
+  path: Assets/Luke/sheep-122256.mp3
+  artifactKey: Guid(c3b9bc7e7feb0174c9563a807cb739f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Luke/sheep-122256.mp3 using Guid(c3b9bc7e7feb0174c9563a807cb739f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1abe7e442e8b797816e845b79ca2cdb8') in 0.0532362 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
