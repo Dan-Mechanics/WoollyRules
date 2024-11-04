@@ -598,7 +598,7 @@ PlayerSettings:
   enableInternalProfiler: 0
   logObjCUncaughtExceptions: 1
   enableCrashReportAPI: 0
-  cameraUsageDescription: 
+  cameraUsageDescription: This game requires a webcam to function correctly.
   locationUsageDescription: 
   microphoneUsageDescription: 
   bluetoothUsageDescription: 
