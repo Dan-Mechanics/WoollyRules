@@ -1,8 +1,7 @@
 using UnityEngine;
 using System.Collections;
-using WoollyRules.Core;
 
-namespace WoollyRules.ScissorsVisualization
+namespace WoollyRules
 {
     /// <summary>
     /// TODO: add headers.

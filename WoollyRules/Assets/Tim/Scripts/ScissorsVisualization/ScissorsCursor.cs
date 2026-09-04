@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using WoollyRules.Core;
 
-namespace WoollyRules.ScissorsVisualization
+namespace WoollyRules
 {
     /// <summary>
     /// Make sure to add the scussors cursor back into the yeet.

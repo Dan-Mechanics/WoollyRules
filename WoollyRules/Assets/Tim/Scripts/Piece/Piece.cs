@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace WoollyRules.Piece
+namespace WoollyRules
 {
     [RequireComponent(typeof(SplitForce))]
     [RequireComponent(typeof(Destroyable))]

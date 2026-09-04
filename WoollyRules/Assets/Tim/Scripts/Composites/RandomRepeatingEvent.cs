@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace WoollyRules.Components
+namespace WoollyRules
 {
     public class RandomRepeatingEvent : MonoBehaviour
     {

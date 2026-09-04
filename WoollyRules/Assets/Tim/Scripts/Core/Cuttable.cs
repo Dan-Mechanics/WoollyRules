@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 
-namespace WoollyRules.Core
+namespace WoollyRules
 {
     /// <summary>
     /// Perhaps should be called scissor interactable.

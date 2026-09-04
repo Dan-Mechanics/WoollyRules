@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace WoollyRules.Useful
+namespace WoollyRules
 {
     /// <summary>
     /// Inheritence with blinkingtext ?? --> should not a must.

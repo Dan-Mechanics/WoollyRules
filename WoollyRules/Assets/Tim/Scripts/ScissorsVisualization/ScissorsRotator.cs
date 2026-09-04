@@ -1,7 +1,6 @@
 using UnityEngine;
-using WoollyRules.Core;
 
-namespace WoollyRules.ScissorsVisualization
+namespace WoollyRules
 {
     public class ScissorsRotator : MonoBehaviour
     {

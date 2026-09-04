@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using WoollyRules.Useful;
 
-namespace WoollyRules.TextComponents
+namespace WoollyRules
 {
     public class BlinkingText : Blinker
     {

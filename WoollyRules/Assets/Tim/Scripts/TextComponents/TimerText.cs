@@ -2,9 +2,8 @@
 using UnityEngine.UI;
 using TMPro;
 using System;
-using WoollyRules.Useful;
 
-namespace WoollyRules.TextComponents
+namespace WoollyRules
 {
     public class TimerText : MonoBehaviour
     {

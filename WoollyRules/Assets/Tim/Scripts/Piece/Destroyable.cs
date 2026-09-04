@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace WoollyRules.Piece
+namespace WoollyRules
 {
     /// <summary>
     /// should make it so we have bool here with insta destroy or time perhaps ??

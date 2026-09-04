@@ -1,9 +1,8 @@
 using UnityEngine;
 using TMPro;
-using WoollyRules.Core;
 using UnityEngine.UI;
 
-namespace WoollyRules.TextComponents
+namespace WoollyRules
 {
     public class TextHighlight : MonoBehaviour
     {

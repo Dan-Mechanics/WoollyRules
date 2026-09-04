@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace WoollyRules.Components
+namespace WoollyRules
 {
     public class SceneSwitcher : MonoBehaviour
     {

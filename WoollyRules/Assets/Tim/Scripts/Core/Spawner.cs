@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace WoollyRules.Core
+namespace WoollyRules
 {
     public class Spawner : MonoBehaviour
     {

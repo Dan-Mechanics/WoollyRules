@@ -1,7 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
 
-namespace WoollyRules.Components
+namespace WoollyRules
 {
     public class TextStretcher : MonoBehaviour
     {

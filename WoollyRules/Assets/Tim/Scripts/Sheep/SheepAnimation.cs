@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace WoollyRules.Sheep
+namespace WoollyRules
 {
     public class SheepAnimation : MonoBehaviour
     {

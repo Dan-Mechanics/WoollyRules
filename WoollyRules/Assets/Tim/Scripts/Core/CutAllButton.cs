@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace WoollyRules.Core
+namespace WoollyRules
 {
     public class CutAllButton : MonoBehaviour
     {

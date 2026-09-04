@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 
-namespace WoollyRules.Useful
+namespace WoollyRules
 {
     public class Timer : MonoBehaviour
     {

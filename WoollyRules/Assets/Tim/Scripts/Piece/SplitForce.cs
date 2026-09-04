@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace WoollyRules.Piece
+namespace WoollyRules
 {
     public class SplitForce : MonoBehaviour
     {

@@ -1,9 +1,8 @@
 ﻿using System.Collections;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace WoollyRules.Webcam
+namespace WoollyRules
 {
     /// <summary>
     /// NOTE: you can either preload the webcam or not ...
