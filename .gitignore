@@ -39,3 +39,8 @@ sysinfo.txt
 Icon?
 ehthumbs.db
 Thumbs.db
+
+*.zip
+/WoollyRules/.vs
+/WoollyRules/Logs
+/WoollyRules/UserSettings
