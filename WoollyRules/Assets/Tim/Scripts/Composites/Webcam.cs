@@ -34,13 +34,8 @@ namespace WoollyRules
         private void Start()
         {
             defaultVolume = backgroundMusic.volume;
-            
-            if (preload) 
-            {
-                //Application.targetFrameRate = 300;
-                
+            if (preload)
                 StartCoroutine(Auhtorize());
-            }
         }
 
         private void FixedUpdate()

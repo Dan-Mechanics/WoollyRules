@@ -6,117 +6,89 @@ namespace WoollyRules
 {
     public class Scissors : MonoBehaviour
     {
-        public bool IsHoveringRuleBrokenOnCut => isHoveringRuleBrokenOnCut;
         public event Action<bool, bool> OnHoverFeedback;
         public event Action<bool, Vector3> OnPoint;
         
         [Header("References")]
-
         [SerializeField] private Camera cam = null;
         [SerializeField] private LayerMask cuttableMask = 0;
         [SerializeField] private AudioSource cutSound = null;
         [SerializeField] private AudioClip cutClip = null;
 
         [Header("Settings")]
-
         [SerializeField] private float maxCutRange = 0f;
         [SerializeField] private KeyCode cutKey = KeyCode.None;
         [SerializeField] private float ruleBrokenCooldown = 0f;
 
         [Header("Unity Events")]
-        
         [SerializeField] private UnityEvent onRuleBroken = null;
         [SerializeField] private UnityEvent onWarnRule = null;
         [SerializeField] private UnityEvent onCut = null;
 
-        private bool isHoveringRuleBrokenOnCut;
-        private float nextCanBreakRuleTime;
+        private float nextBreakRuleTime;
+        private bool isWarning;
 
         private void Update()
         {
-            CheckInput();
+            if (Input.GetKeyDown(cutKey) && CastRay(out Cuttable cuttable, out RaycastHit hit))
+                Cut(cuttable);
         }
 
         private void FixedUpdate()
-        {
-            CheckIfHoveringSomething();
-        }
+            => CheckHovering();
 
-        private void CheckInput()
+        private bool CastRay(out Cuttable cuttable, out RaycastHit hit)
         {
-            if (Input.GetKeyDown(cutKey))
-            {
-                Cuttable cuttable = CheckCuttable();
-
-                if (cuttable != null) { Cut(cuttable); }
-            }
-        }
-
-        private Cuttable CheckCuttableHovering(out RaycastHit hit, out bool hasHit)
-        {
+            cuttable = null;
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+            if (!Physics.Raycast(ray, out hit, maxCutRange, cuttableMask, QueryTriggerInteraction.Ignore))
+                return false;
 
-            hasHit = Physics.Raycast(ray, out hit, maxCutRange, cuttableMask, QueryTriggerInteraction.Ignore);
-
-            if (hasHit) { return hit.transform.GetComponent<Cuttable>(); }
-
-            return null;
+            cuttable = hit.transform.GetComponent<Cuttable>();
+            return cuttable;
         }
 
-        private Cuttable CheckCuttable()
-        {
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-
-            if (Physics.Raycast(ray, out RaycastHit hit, maxCutRange, cuttableMask, QueryTriggerInteraction.Ignore)) 
-            {
-                return hit.transform.GetComponent<Cuttable>();
-            }
-
-            return null;
-        }
+        public bool GetIsWarning()
+            => isWarning;
 
         private void Cut(Cuttable cuttable) 
         {
-            if (!cuttable.BlockCut) { onCut?.Invoke(); }
+            if (!cuttable.BlockCut)
+                onCut?.Invoke();
 
-            if (!cuttable.IsButton) { cutSound.PlayOneShot(cutClip); }
+            if (!cuttable.IsButton)
+                cutSound.PlayOneShot(cutClip);
 
             cuttable.Cut();
-
-            if (cuttable.RuleBrokenOnCut) { BreakRule(); }
+            if (cuttable.RuleBrokenOnCut)
+                BreakRule();
         }
 
-        /// <summary>
-        /// IDEA: could make a single-time event for when you mouseOver something basically because this spams it.
-        /// </summary>
-        private void CheckIfHoveringSomething()
+        private void CheckHovering()
         {
-            Cuttable cuttable = CheckCuttableHovering(out RaycastHit hit, out bool hasHit);
-
+            bool hasHit = CastRay(out Cuttable cuttable, out RaycastHit hit);
             OnPoint?.Invoke(hasHit, hit.point);
-
-            if (cuttable != null)
+            if (!cuttable)
             {
-                isHoveringRuleBrokenOnCut = cuttable.RuleBrokenOnCut;
-
-                if (isHoveringRuleBrokenOnCut) { onWarnRule?.Invoke(); } // cutWarning.Warn();
-
-                OnHoverFeedback?.Invoke(!cuttable.BlockHover, isHoveringRuleBrokenOnCut);
-            }
-            else 
-            {
-                isHoveringRuleBrokenOnCut = false;
+                isWarning = false;
                 OnHoverFeedback?.Invoke(false, false);
+                return;
             }
+
+            isWarning = cuttable.RuleBrokenOnCut;
+            if (isWarning)
+                onWarnRule?.Invoke();
+
+            OnHoverFeedback?.Invoke(!cuttable.BlockHover, isWarning);
         }
 
         public void BreakRule()
         {
-            if (Time.time < nextCanBreakRuleTime) { return; }
-            
-            onRuleBroken?.Invoke();
+            if (Time.time < nextBreakRuleTime)
+                return;
 
-            nextCanBreakRuleTime = Time.time + ruleBrokenCooldown;
+            onRuleBroken?.Invoke();
+            nextBreakRuleTime = Time.time + ruleBrokenCooldown;
         }
     }
 }
