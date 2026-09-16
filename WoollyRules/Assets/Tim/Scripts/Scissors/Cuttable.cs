@@ -8,7 +8,7 @@ namespace WoollyRules
         public bool RuleBrokenOnCut => ruleBrokenOnCut;
         public bool BlockHover => blockHover;
         public bool BlockCut => blockCut;
-        public bool IsButton => isButton;
+        public bool HasSoundWhenCut => isButton;
 
         [SerializeField] private bool blockHover = default;
         [SerializeField] private bool blockCut = default;

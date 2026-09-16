@@ -55,7 +55,7 @@ namespace WoollyRules
             if (!cuttable.BlockCut)
                 onCut?.Invoke();
 
-            if (!cuttable.IsButton)
+            if (!cuttable.HasSoundWhenCut)
                 cutSound.PlayOneShot(cutClip);
 
             cuttable.Cut();
