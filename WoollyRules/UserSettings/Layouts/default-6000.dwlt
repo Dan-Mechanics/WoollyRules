@@ -387,9 +387,9 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 430
-      height: 527
-    m_Scale: {x: 0.22395833, y: 0.22395834}
-    m_Translation: {x: 215, y: 263.5}
+      height: 532
+    m_Scale: {x: 0.22395833, y: 0.22395833}
+    m_Translation: {x: 215, y: 266}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -397,12 +397,12 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -960
-      y: -1176.5581
+      y: -1187.721
       width: 1920
-      height: 2353.1162
+      height: 2375.442
     m_MinimalGUI: 1
   m_defaultScale: 0.22395833
-  m_LastWindowPixelSize: {x: 430, y: 548}
+  m_LastWindowPixelSize: {x: 430, y: 553}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -2283,7 +2283,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Tim/Scripts/Webcam
+    - Assets/Tim/Scripts
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -2303,7 +2303,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 260}
     m_SelectedIDs: 9e480200
     m_LastClickedID: 149662
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 000000001c480200
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2332,7 +2332,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 000000001c480200
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
