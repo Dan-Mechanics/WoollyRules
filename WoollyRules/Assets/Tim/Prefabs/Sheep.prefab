@@ -247,11 +247,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf5473aab49a7a74a9a0854a63d1a9d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 2127664283110895623}
   graphic: {fileID: 4737771539907358173}
   state1Graphic: {fileID: 2194677274618111708}
   state2Graphic: {fileID: 6677751593238672947}
-  sheepMovement: {fileID: -6486451734984886598}
   period: 0.175
   waveMult: 2
 --- !u!114 &3172553139223505468
@@ -555,6 +553,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 02d0c7c0139126c4fa46629eef88bd15, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 02d0c7c0139126c4fa46629eef88bd15, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -992,6 +994,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 02d0c7c0139126c4fa46629eef88bd15, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 02d0c7c0139126c4fa46629eef88bd15, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

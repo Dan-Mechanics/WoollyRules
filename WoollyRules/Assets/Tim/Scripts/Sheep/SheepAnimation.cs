@@ -4,11 +4,9 @@ namespace WoollyRules
 {
     public class SheepAnimation : MonoBehaviour
     {
-        [SerializeField] private Rigidbody rb = default;
         [SerializeField] private Transform graphic = default;
         [SerializeField] private Transform state1Graphic = default;
         [SerializeField] private Transform state2Graphic = default;
-        [SerializeField] private SheepMovement sheepMovement = default;
         [SerializeField] private float period = default;
         [SerializeField] private float waveMult = default;
         private float startingRandomOffset;

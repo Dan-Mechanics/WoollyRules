@@ -26,6 +26,8 @@ namespace WoollyRules
         private void Start()
         {
             Application.targetFrameRate = fps;
+            QualitySettings.vSyncCount = 0;
+
             scissors.OnPoint += rotator.PointTo;
             scissors.OnHoverFeedback += textHighlight.ChangeColor;
             scissors.OnHoverFeedback += scissorsAnimator.CheckIfShouldOpen;
