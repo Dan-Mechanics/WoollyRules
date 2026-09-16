@@ -10,9 +10,9 @@ namespace WoollyRules
         public bool IsButton => false;
 
         [SerializeField] private Type type = default;
-        [SerializeField] private UnityEvent onCut = default;
         [SerializeField] private Rigidbody rb = default;
         [SerializeField] private Rigidbody[] rigidbodies = default;
+        [SerializeField] private UnityEvent onCut = default;
 
         public void Cut() 
         {

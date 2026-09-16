@@ -5,12 +5,12 @@ namespace WoollyRules
 {
     public class CutAllButton : MonoBehaviour, ICuttable
     {
+        public bool RuleBrokenOnCut => ruleBrokenOnCut;
+        public bool IsButton => true;
+
         public event Action<ICuttable> OnCut;
         [SerializeField] private bool ruleBrokenOnCut = default;
         [SerializeField] private KeyCode[] keys = default;
-
-        public bool RuleBrokenOnCut => ruleBrokenOnCut;
-        public bool IsButton => true;
 
         private void Update()
         {
