@@ -5,7 +5,6 @@ namespace WoollyRules
     public class Spawner : MonoBehaviour
     {
         [SerializeField] private GameObject prefab = default;
-        [SerializeField] private CutAllButton cutAllButton = default;
         [SerializeField] [Min(0.1f)] private float interval = default;
         [SerializeField] [Min(0)] private int spawnAmount = default;
         [SerializeField] private bool spawnWithRandomRotation = default;
@@ -42,12 +41,6 @@ namespace WoollyRules
             newlySpawned.transform.up = pos.normalized;
             if (spawnWithRandomRotation)
                 newlySpawned.transform.Rotate(Vector3.up * Random.Range(0f, 360f), Space.Self);
-
-            Cuttable cuttable = newlySpawned.GetComponent<Cuttable>();
-            if (cutAllButton != null && cuttable != null) 
-            {
-                cutAllButton.Add(cuttable);
-            }
 
             spawnCount++;
             if (spawnCount >= spawnAmount)

@@ -10,15 +10,11 @@ namespace WoollyRules
         [SerializeField] private Image image = default;
         [SerializeField] private Color normalColor = default;
         [SerializeField] private Color highlightColor = default;
-        [SerializeField] private Scissors scissors = default;
 
         private void Start()
-        {
-            scissors.OnHoverFeedback += ChangeColor;
-            ChangeColor(false, false);
-        }
-        
-        private void ChangeColor(bool isCuttable, bool ruleBrokenOnCut)
+            => ChangeColor(false, false);
+
+        public void ChangeColor(bool isCuttable, bool ruleBrokenOnCut)
         {
             if (text)
                 text.color = ruleBrokenOnCut ? highlightColor : normalColor;

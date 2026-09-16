@@ -227,13 +227,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3f4b4f5d1ea4c34f966f11931b2169f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeValue: 0
-  onTimerComplete:
-    m_PersistentCalls:
-      m_Calls:
-      - {m_Target: {fileID: 1098676778}, m_TargetAssemblyTypeName: WoollyRules.Webcam, Assembly-CSharp, m_MethodName: Hide, m_Mode: 1, m_Arguments: {m_ObjectArgument: {fileID: 0}, m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
-    m_CallsDirty: 1
-  timerCompleted: 0
 --- !u!1 &33701022
 GameObject:
   m_ObjectHideFlags: 0
@@ -5813,17 +5806,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2370087657443235538, guid: ebd71084ac7f11346b429f6d84d0e0ed, type: 3}
   m_PrefabInstance: {fileID: 332372077}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &355685781 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3864873133951161869, guid: 1971ba566d6387d4a82a4f125b1ee380, type: 3}
-  m_PrefabInstance: {fileID: 596449898}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64829bb2de20db14996eadf6002c36d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &504516457
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6145,7 +6127,6 @@ MonoBehaviour:
   image: {fileID: 641020124}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   highlightColor: {r: 0.8018868, g: 0, b: 0, a: 1}
-  scissors: {fileID: 1497449479}
 --- !u!222 &641020126
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -50782,17 +50763,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 4.9999995
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &983407383 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2552611403150391954, guid: e7b65c8f3df58cb48bef1ee716d92621, type: 3}
-  m_PrefabInstance: {fileID: 507640329037270482}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3017ae7512bbba549b1e0cf4af871266, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1071686034
 GameObject:
   m_ObjectHideFlags: 0
@@ -50947,7 +50917,6 @@ MonoBehaviour:
   image: {fileID: 0}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   highlightColor: {r: 1, g: 0, b: 0, a: 1}
-  scissors: {fileID: 1497449479}
 --- !u!1 &1098676776
 GameObject:
   m_ObjectHideFlags: 0
@@ -51055,6 +51024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e6fd4b0a4ed084a9940ad9d9924f68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fps: 0
 --- !u!4 &1179467321
 Transform:
   m_ObjectHideFlags: 0
@@ -51451,7 +51421,6 @@ MonoBehaviour:
   image: {fileID: 1338942647}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   highlightColor: {r: 0.8018868, g: 0, b: 0, a: 1}
-  scissors: {fileID: 1497449479}
 --- !u!222 &1338942646
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -52159,16 +52128,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3f4b4f5d1ea4c34f966f11931b2169f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeValue: 120
-  onTimerComplete:
-    m_PersistentCalls:
-      m_Calls:
-      - {m_Target: {fileID: 1098676778}, m_TargetAssemblyTypeName: WoollyRules.Webcam, Assembly-CSharp, m_MethodName: Hide, m_Mode: 1, m_Arguments: {m_ObjectArgument: {fileID: 0}, m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
-      - {m_Target: {fileID: 983407383}, m_TargetAssemblyTypeName: WoollyRules.ScissorsCursor, Assembly-CSharp, m_MethodName: ShowNormalCursor, m_Mode: 1, m_Arguments: {m_ObjectArgument: {fileID: 0}, m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
-      - {m_Target: {fileID: 67143630}, m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine, m_MethodName: SetActive, m_Mode: 6, m_Arguments: {m_ObjectArgument: {fileID: 0}, m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
-      - {m_Target: {fileID: 1152212322}, m_TargetAssemblyTypeName: WoollyRules.Components.SceneSwitcher, Components, m_MethodName: Switch, m_Mode: 5, m_Arguments: {m_ObjectArgument: {fileID: 0}, m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: Menu, m_BoolArgument: 1}, m_CallState: 2}
-    m_CallsDirty: 1
-  timerCompleted: 0
 --- !u!1 &1793697735
 GameObject:
   m_ObjectHideFlags: 0
@@ -52647,8 +52606,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dbfbaedb90481d4c87d627d08fa0dc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interval: 0.5
-  isBlinking: 0
 --- !u!82 &1954304948 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 1954797900190349795, guid: 6f65a2b91919352439401598153e8b5d, type: 3}
@@ -52664,7 +52621,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1976796248}
   - component: {fileID: 1976796249}
-  - component: {fileID: 1976796250}
   m_Layer: 0
   m_Name: Cut All Button
   m_TagString: Untagged
@@ -52699,125 +52655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04e1f24bd964e4a4cad3bb3e9b481960, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cuttables:
-  - {fileID: 2013863778}
-  - {fileID: 355685781}
   keys: 45010000
-  alwaysBreakRule: 0
-  callOnPressedButton: 0
-  onPressButton:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1976796250}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: PlayOneShot
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 7bd46c90e3b1a2043aac2311e6c17877, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  scissors: {fileID: 1497449479}
---- !u!82 &1976796250
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1976796247}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 0.2
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1978879024
 GameObject:
   m_ObjectHideFlags: 0
@@ -52902,7 +52740,6 @@ MonoBehaviour:
   image: {fileID: 1978879026}
   normalColor: {r: 0.91764706, g: 0.94509804, b: 0.94509804, a: 1}
   highlightColor: {r: 0.8113208, g: 0.18216439, b: 0.18216439, a: 1}
-  scissors: {fileID: 1497449479}
 --- !u!222 &1978879028
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -52911,17 +52748,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978879024}
   m_CullTransparentMesh: 1
---- !u!114 &2013863778 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1492384736, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
-  m_PrefabInstance: {fileID: 658378812}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64829bb2de20db14996eadf6002c36d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2050606985
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,7 +5,6 @@ namespace WoollyRules
 {
     public class ScissorsAnimator : MonoBehaviour
     {
-        [SerializeField] private Scissors scissors = default;
         [SerializeField] private Transform scissorsForward = default;
         [SerializeField] private Transform[] scissorParts = default;
         [SerializeField] private Transform[] scissorPartsOpen = default;
@@ -34,10 +33,9 @@ namespace WoollyRules
                 scissorPartsOpen[i].Rotate(Vector3.forward * openScissorsAngle, Space.Self);
             }
 
-            scissors.OnHoverFeedback += CheckIfShouldOpen;
         }
 
-        private void CheckIfShouldOpen(bool isCuttable, bool ruleBrokenOnCut)
+        public void CheckIfShouldOpen(bool isCuttable, bool ruleBrokenOnCut)
             => isOpen = isCuttable;
 
         private void FixedUpdate()

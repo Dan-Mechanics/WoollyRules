@@ -5,7 +5,6 @@ namespace WoollyRules
 {
     public class ScissorsCursor : MonoBehaviour
     {
-        [SerializeField] private Scissors scissors = default;
         [SerializeField] private RectTransform rect = default;
         [SerializeField] private Image image = default;
         [SerializeField] private Sprite closedScissors = default;
@@ -15,8 +14,6 @@ namespace WoollyRules
         {
             Cursor.visible = false;
             ChangeCursorSprite(false, false);
-            if (scissors)
-                scissors.OnHoverFeedback += ChangeCursorSprite;
         }
 
         private void Update() 
@@ -31,7 +28,7 @@ namespace WoollyRules
             rect.anchoredPosition = cursorPosition;
         }
 
-        private void ChangeCursorSprite(bool isCuttable, bool ruleBrokenOnCut) 
+        public void ChangeCursorSprite(bool isCuttable, bool ruleBrokenOnCut) 
         {
             if (image == null)
                 return;
