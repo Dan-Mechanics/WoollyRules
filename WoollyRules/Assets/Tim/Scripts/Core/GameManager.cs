@@ -4,6 +4,7 @@ namespace WoollyRules
 {
     public class GameManager : MonoBehaviour
     {
+        [SerializeField] private int fps = default;
         private Scissors scissors;
         private ScissorsRotator rotator;
 
@@ -15,7 +16,7 @@ namespace WoollyRules
 
         private void Start()
         {
-            Application.targetFrameRate = 300;
+            Application.targetFrameRate = fps;
             scissors.OnPoint += rotator.PointTo;
             rotator.GetIsWarning = scissors.GetIsWarning;
         }

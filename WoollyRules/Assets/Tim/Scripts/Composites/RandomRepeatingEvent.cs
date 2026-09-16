@@ -5,29 +5,24 @@ namespace WoollyRules
 {
     public class RandomRepeatingEvent : MonoBehaviour
     {
-        [SerializeField] private float minTimeBetweenHooks = 0f;
-        [SerializeField] [Min(0.5f)] private float maxTimeBetweenHooks = 0f;
-        [SerializeField] private bool hookOnStart = false;
-        [SerializeField] private UnityEvent onHook = null;
+        [SerializeField] private float minTimeBetweenHooks = default;
+        [SerializeField] private float maxTimeBetweenHooks = default;
+        [SerializeField] private bool hookOnStart = default;
+        [SerializeField] private UnityEvent onHook = default;
 
         private void Start()
         {
-            if (hookOnStart) { onHook?.Invoke(); }
+            if (hookOnStart)
+                onHook?.Invoke();
 
-            if (maxTimeBetweenHooks <= 0f) { return; }
-
-            Invoke();
-        }
-
-        private void Invoke()
-        {
-            Invoke(nameof(Hook), Random.Range(minTimeBetweenHooks, maxTimeBetweenHooks));
+            if (maxTimeBetweenHooks > 0f)
+                Invoke(nameof(Hook), Random.Range(minTimeBetweenHooks, maxTimeBetweenHooks));
         }
 
         private void Hook() 
         { 
             onHook?.Invoke();
-            Invoke();
+            Invoke(nameof(Hook), Random.Range(minTimeBetweenHooks, maxTimeBetweenHooks));
         }
     }
 }

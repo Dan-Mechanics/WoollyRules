@@ -6,8 +6,8 @@ namespace WoollyRules
     public class PlanetGravity : MonoBehaviour
     { 
         [SerializeField] private float standUprightTorque = default;
-        private Rigidbody rb;
         private Transform planet;
+        private Rigidbody rb;
 
         private void Start()
         {

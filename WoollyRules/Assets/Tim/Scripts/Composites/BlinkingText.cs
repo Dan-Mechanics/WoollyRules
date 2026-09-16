@@ -5,50 +5,42 @@ namespace WoollyRules
 {
     public class BlinkingText : Blinker
     {
-        [SerializeField] private Text text = null;
-        [SerializeField] private Color warnColor = Color.clear;
-
-        [SerializeField] private float minBlinkingTime = 0f;
-
+        [SerializeField] private Text text = default;
+        [SerializeField] private Color warnColor = default;
+        [SerializeField] private float minBlinkingTime = default;
         private WaitForSeconds delay;
 
         private void Awake()
-        {
-            delay = new WaitForSeconds(minBlinkingTime);
-        }
-
-        protected override void Start()
-        {
-            //base.Start();
-        }
+            => delay = new WaitForSeconds(minBlinkingTime);
 
         public override void Play()
         {
-            if (isBlinking) { return; }
+            if (isBlinking)
+                return;
 
             base.Play();
-
             Invoke(nameof(Stop), minBlinkingTime);
         }
 
         public override void Stop()
         {
             base.Stop();
-
             MakeTextNormal();
         }
 
         public override void Blink()
         {
-            //base.Blink();
+            if(text.fontStyle == FontStyle.Bold)
+            {
+                MakeTextNormal();
+                return;
+            }
 
-            if (text.fontStyle != FontStyle.Bold) { text.fontStyle = FontStyle.Bold; text.color = warnColor; }
-            else { MakeTextNormal(); }
+            text.fontStyle = FontStyle.Bold;
+            text.color = warnColor;
         }
 
         private void MakeTextNormal()
-        {
-            text.fontStyle = FontStyle.Normal; text.color = Color.black;
-        }
+            => text.fontStyle = FontStyle.Normal; text.color = Color.black;
     }
 }

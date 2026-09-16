@@ -6,7 +6,7 @@ namespace WoollyRules
     [RequireComponent(typeof(Destroyable))]
     public class Piece : MonoBehaviour
     {
-        [SerializeField] private float destroyTime = 0f;
+        [SerializeField] private float destroyTime = default;
         
         public void Split() 
         {

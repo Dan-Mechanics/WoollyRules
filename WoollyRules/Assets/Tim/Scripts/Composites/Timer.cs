@@ -8,9 +8,8 @@ namespace WoollyRules
         public float TimeValue => timeValue;
         public bool TimerCompleted => timerCompleted;
 
-        [SerializeField] private float timeValue = 0f;
-        [SerializeField] private UnityEvent onTimerComplete = null;
-
+        [SerializeField] private float timeValue = default;
+        [SerializeField] private UnityEvent onTimerComplete = default;
         private bool timerCompleted;
 
         private void FixedUpdate()
@@ -19,13 +18,12 @@ namespace WoollyRules
                 return;
             
             timeValue -= Time.fixedDeltaTime;
+            if (timeValue > 0f)
+                return;
 
-            if (timeValue <= 0f) 
-            { 
-                timeValue = 0f;
-                onTimerComplete?.Invoke();
-                timerCompleted = true;
-            }
+            timeValue = 0f;
+            onTimerComplete?.Invoke();
+            timerCompleted = true;
         }
 
         public void SetTimer(float timeValue) 

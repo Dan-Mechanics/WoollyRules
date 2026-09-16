@@ -4,21 +4,16 @@ using UnityEngine.UI;
 
 namespace WoollyRules
 {
-    /// <summary>
-    /// NOTE: you can either preload the webcam or not ...
-    /// TODO: refactor, should not a must ...
-    /// </summary>
     public class Webcam : MonoBehaviour
     {
-        [SerializeField] private Image imageToProjectWebcamOn = null;
-        [SerializeField] private GameObject background = null;
-
-        [SerializeField] private float refreshInterval = 0f;
-        [SerializeField] private bool matchImageSizeToWebcamSize = false;
-        [SerializeField] private bool preload = false;
-        [SerializeField] private RectTransform rectTransform = null;
-        [SerializeField] private AudioSource backgroundMusic = null;
-        [SerializeField] private bool musicStopsWhenShowingWebcam = false;
+        [SerializeField] private Image imageToProjectWebcamOn = default;
+        [SerializeField] private GameObject background = default;
+        [SerializeField] private float refreshInterval = default;
+        [SerializeField] private bool matchImageSizeToWebcamSize = default;
+        [SerializeField] private bool preload = default;
+        [SerializeField] private RectTransform rectTransform = default;
+        [SerializeField] private AudioSource backgroundMusic = default;
+        [SerializeField] private bool musicStopsWhenShowingWebcam = default;
 
         private WebCamTexture webCamTexture;
         private Texture2D texture;
@@ -47,39 +42,32 @@ namespace WoollyRules
 
         public void Show() 
         {
-            if (showing) { return; }
+            if (showing)
+                return;
+
             showing = true;
-
-            //gameObject.SetActive(true);
-
-            if (!preload) { StartCoroutine(Auhtorize()); }
+            if (!preload)
+                StartCoroutine(Auhtorize());
         }
 
         public void Hide() 
         {
-            if (!showing) { return; }
-            showing = false;
+            if (!showing)
+                return;
 
+            showing = false;
             imageToProjectWebcamOn.gameObject.SetActive(false);
             background.SetActive(false);
-
-            if (!preload && webCamTexture != null) 
+            if (!preload && webCamTexture) 
             {
                 webCamTexture.Stop();
                 webCamTexture = null;
             }
         }
 
-        /// <summary>
-        /// This is a coroutine.
-        /// </summary>
         private IEnumerator Auhtorize()
         {
-            //if (setupDone) { yield break; }
-            
             LogWebcams();
-
-            // spooky magic code here dont touch !
             yield return Application.RequestUserAuthorization(UserAuthorization.WebCam);
 
             if (Application.HasUserAuthorization(UserAuthorization.WebCam))
@@ -96,8 +84,11 @@ namespace WoollyRules
 
         private void Update()
         {
-            if (!showing) { return; }
-            if (!setupDone) { return; }
+            if (!showing)
+                return;
+
+            if (!setupDone)
+                return;
 
             if (Time.time >= nextRefresh) 
             {
@@ -114,35 +105,22 @@ namespace WoollyRules
             }
         }
 
-        /// <summary>
-        /// We do this in the start and then disable because that way the webcam instantly pops up with no delay
-        /// or hesitation. The downsdie is that the webcam light is on the whole time which might be good idk.
-        /// i could fix it ...
-        /// </summary>
         private void Setup()
         {
-            //imageToProjectWebcamOn.enabled = true;
-
-            //webCamTexture = new WebCamTexture(WebCamTexture.devices[WebCamTexture.devices.Length - 1].name);
             webCamTexture = new WebCamTexture();
 
-            if (!webCamTexture.isPlaying) { webCamTexture.Play(); }
+            if (!webCamTexture.isPlaying)
+                webCamTexture.Play();
 
             print($"showing: {webCamTexture.deviceName}");
-
             ResizeWebcam();
-
-            //RefreshWebcam();
-            //gameObject.SetActive(false);
-
             setupDone = true;
         }
 
         private void RefreshWebcam()
         {
-            if (webCamTexture == null || !webCamTexture.isPlaying) { return; }
-
-            //print("RefreshWebcam()");
+            if (webCamTexture == null || !webCamTexture.isPlaying)
+                return;
 
             // just in case.
             if (texture.width != webCamTexture.width || texture.height != webCamTexture.height)

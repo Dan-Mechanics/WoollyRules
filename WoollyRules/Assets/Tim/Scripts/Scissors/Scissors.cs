@@ -10,48 +10,47 @@ namespace WoollyRules
         public event Action<bool, Vector3> OnPoint;
         
         [Header("References")]
-        [SerializeField] private Camera cam = null;
-        [SerializeField] private LayerMask cuttableMask = 0;
-        [SerializeField] private AudioSource cutSound = null;
-        [SerializeField] private AudioClip cutClip = null;
+        [SerializeField] private Camera cam = default;
+        [SerializeField] private LayerMask cuttableMask = default;
+        [SerializeField] private AudioSource cutSound = default;
+        [SerializeField] private AudioClip cutClip = default;
 
         [Header("Settings")]
-        [SerializeField] private float maxCutRange = 0f;
-        [SerializeField] private KeyCode cutKey = KeyCode.None;
-        [SerializeField] private float ruleBrokenCooldown = 0f;
+        [SerializeField] private float maxCutRange = default;
+        [SerializeField] private KeyCode cutKey = default;
+        [SerializeField] private float ruleBrokenCooldown = default;
 
         [Header("Unity Events")]
-        [SerializeField] private UnityEvent onRuleBroken = null;
-        [SerializeField] private UnityEvent onWarnRule = null;
-        [SerializeField] private UnityEvent onCut = null;
-
+        [SerializeField] private UnityEvent onRuleBroken = default;
+        [SerializeField] private UnityEvent onWarnRule = default;
+        [SerializeField] private UnityEvent onCut = default;
         private float nextBreakRuleTime;
         private bool isWarning;
 
         private void Update()
         {
-            if (Input.GetKeyDown(cutKey) && CastRay(out Cuttable cuttable, out RaycastHit hit))
+            if (Input.GetKeyDown(cutKey) && CastRay(out ICuttable cuttable, out RaycastHit hit))
                 Cut(cuttable);
         }
 
         private void FixedUpdate()
             => CheckHovering();
 
-        private bool CastRay(out Cuttable cuttable, out RaycastHit hit)
+        private bool CastRay(out ICuttable cuttable, out RaycastHit hit)
         {
             cuttable = null;
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             if (!Physics.Raycast(ray, out hit, maxCutRange, cuttableMask, QueryTriggerInteraction.Ignore))
                 return false;
 
-            cuttable = hit.transform.GetComponent<Cuttable>();
-            return cuttable;
+            cuttable = hit.transform.GetComponent<ICuttable>();
+            return cuttable != null;
         }
 
         public bool GetIsWarning()
             => isWarning;
 
-        private void Cut(Cuttable cuttable) 
+        private void Cut(ICuttable cuttable) 
         {
             if (!cuttable.BlockCut)
                 onCut?.Invoke();
@@ -66,9 +65,9 @@ namespace WoollyRules
 
         private void CheckHovering()
         {
-            bool hasHit = CastRay(out Cuttable cuttable, out RaycastHit hit);
+            bool hasHit = CastRay(out ICuttable cuttable, out RaycastHit hit);
             OnPoint?.Invoke(hasHit, hit.point);
-            if (!cuttable)
+            if (cuttable == null)
             {
                 isWarning = false;
                 OnHoverFeedback?.Invoke(false, false);

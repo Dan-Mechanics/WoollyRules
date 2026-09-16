@@ -7,20 +7,19 @@ namespace WoollyRules
 {
     public class TimerText : MonoBehaviour
     {
-        [SerializeField] private Text text = null;
-        [SerializeField] private TMP_Text tmp = null;
-
-        [SerializeField] private Timer timer = null;
+        [SerializeField] private Text text = default;
+        [SerializeField] private TMP_Text tmp = default;
+        [SerializeField] private Timer timer = default;
 
         private void FixedUpdate()
         {
-            if (text != null)
+            if (text)
             {
                 text.enabled = !timer.TimerCompleted;
                 text.text = GetTimerString(timer.TimeValue);
             }
 
-            if (tmp != null) 
+            if (tmp) 
             {
                 tmp.enabled = !timer.TimerCompleted;
                 tmp.text = GetTimerString(timer.TimeValue);
@@ -32,13 +31,11 @@ namespace WoollyRules
         /// </summary>
         private string GetTimerString(double seconds)
         {
-            if (seconds > TimeSpan.MaxValue.TotalSeconds) { seconds = TimeSpan.MaxValue.TotalSeconds; }
-            
+            if (seconds > TimeSpan.MaxValue.TotalSeconds)
+                seconds = TimeSpan.MaxValue.TotalSeconds;
+
             TimeSpan time = TimeSpan.FromSeconds(seconds);
-
             return time.ToString(@"mm\:ss\:ff");
-
-            //return time.ToString(@"hh\:mm\:ss\:fff");
         }
     }
 }

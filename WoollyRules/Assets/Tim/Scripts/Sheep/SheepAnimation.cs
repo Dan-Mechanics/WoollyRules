@@ -4,23 +4,18 @@ namespace WoollyRules
 {
     public class SheepAnimation : MonoBehaviour
     {
-        [SerializeField] private Rigidbody rb = null;
-        [SerializeField] private Transform graphic = null;
-
-        [SerializeField] private Transform state1Graphic = null;
-        [SerializeField] private Transform state2Graphic = null;
-
-        [SerializeField] private SheepMovement sheepMovement = null;
-        [SerializeField] private float period = 0f;
-        [SerializeField] private float waveMult = 0f;
-
+        [SerializeField] private Rigidbody rb = default;
+        [SerializeField] private Transform graphic = default;
+        [SerializeField] private Transform state1Graphic = default;
+        [SerializeField] private Transform state2Graphic = default;
+        [SerializeField] private SheepMovement sheepMovement = default;
+        [SerializeField] private float period = default;
+        [SerializeField] private float waveMult = default;
         private float startingRandomOffset;
 
         private void Start()
-        {
-            startingRandomOffset = Random.Range(0f, 1000f);
-        }
-        
+            => startingRandomOffset = Random.Range(0f, 1000f);
+
         private void FixedUpdate()
         {
             float lerpValue = WaveValue(Time.time + startingRandomOffset) * waveMult;
@@ -31,8 +26,6 @@ namespace WoollyRules
         }
 
         private float WaveValue(float x) 
-        {
-            return (Mathf.Sin(x / period) + 1f) / 2f;
-        }
+            => (Mathf.Sin(x / period) + 1f) * 0.5f;
     }
 }

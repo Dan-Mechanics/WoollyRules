@@ -4,15 +4,13 @@ namespace WoollyRules
 {
     public class SplitForce : MonoBehaviour
     {
-        [SerializeField] private Rigidbody rb = null;
-        [SerializeField] private float speed = 0f;
-        [SerializeField] private float randomSpeed = 0f;
+        [SerializeField] private Rigidbody rb = default;
+        [SerializeField] private float speed = default;
+        [SerializeField] private float randomSpeed = default;
 
         public void DoImpact() 
         {
-            // !performance VVV
             rb.AddForce(Random.insideUnitSphere.normalized * randomSpeed, ForceMode.VelocityChange);
-
             rb.AddForce(transform.forward * speed, ForceMode.VelocityChange);
         }
     }
