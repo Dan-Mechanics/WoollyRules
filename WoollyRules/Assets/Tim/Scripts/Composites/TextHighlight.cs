@@ -14,7 +14,7 @@ namespace WoollyRules
         private void Start()
             => ChangeColor(false, false);
 
-        public void ChangeColor(bool isCuttable, bool ruleBrokenOnCut)
+        public void ChangeColor(bool cuttable, bool ruleBrokenOnCut)
         {
             if (text)
                 text.color = ruleBrokenOnCut ? highlightColor : normalColor;

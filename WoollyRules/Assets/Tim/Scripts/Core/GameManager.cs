@@ -32,7 +32,7 @@ namespace WoollyRules
             scissors.OnHoverFeedback += textHighlight.ChangeColor;
             scissors.OnHoverFeedback += scissorsAnimator.CheckIfShouldOpen;
             scissors.OnHoverFeedback += scissorsCursor.ChangeCursorSprite;
-            cutAllButton.OnRuleBroken += scissors.BreakRule;
+            cutAllButton.OnCut += scissors.Cut;
             rotator.GetIsWarning = scissors.GetIsWarning;
         }
     }

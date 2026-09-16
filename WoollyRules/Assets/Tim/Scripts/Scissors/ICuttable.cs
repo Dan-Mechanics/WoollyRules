@@ -3,9 +3,7 @@
     public interface ICuttable 
     {
         bool RuleBrokenOnCut { get; }
-        bool BlockHover { get; }
-        bool BlockCut { get; }
-        bool HasSoundWhenCut { get; }
+        bool IsButton { get; }
         public void Cut();
     }
 }

@@ -2310,7 +2310,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1824298465}
-  - component: {fileID: 1824298468}
   - component: {fileID: 1824298466}
   - component: {fileID: 1824298469}
   m_Layer: 6
@@ -2358,39 +2357,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3858036501013369419, guid: 72ac8366b038814439eebcc8326670fd, type: 3}
---- !u!114 &1824298468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1824298464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64829bb2de20db14996eadf6002c36d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blockHover: 1
-  blockCut: 0
-  isButton: 1
-  ruleBrokenOnCut: 1
-  onCut:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1824298469}
-        m_TargetAssemblyTypeName: WoollyRules.CutAllButton, Assembly-CSharp
-        m_MethodName: CutAll
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  rb: {fileID: 0}
-  rigidbodies: []
 --- !u!114 &1824298469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2403,6 +2369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04e1f24bd964e4a4cad3bb3e9b481960, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ruleBrokenOnCut: 1
   keys: 45010000
 --- !u!1 &1895376569
 GameObject:
@@ -3323,7 +3290,7 @@ SceneRoots:
   - {fileID: 8992003769869682197}
   - {fileID: 6160339257942011832}
   - {fileID: 70456164}
-  - {fileID: 2050606988}
-  - {fileID: 862688088}
   - {fileID: 1536567462}
   - {fileID: 196127929}
+  - {fileID: 2050606988}
+  - {fileID: 862688088}

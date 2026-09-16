@@ -227,6 +227,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: bded95df8e3c16b4fbc4bb3c82faf7ab, type: 3}
     - target: {fileID: 1492384736, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
+      propertyPath: type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1492384736, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
+      propertyPath: hasSoundWhenCut
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1492384736, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
       propertyPath: ruleBrokenOnCut
       value: 1
       objectReference: {fileID: 0}
@@ -408,7 +416,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2127664283110895676, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
       propertyPath: m_Name
-      value: Cow Variant
+      value: Cow
       objectReference: {fileID: 0}
     - target: {fileID: 2127664284955403436, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
       propertyPath: m_Name

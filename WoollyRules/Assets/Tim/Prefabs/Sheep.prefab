@@ -88,7 +88,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blockHover: 0
   blockCut: 0
-  isButton: 0
+  hasSoundWhenCut: 1
   ruleBrokenOnCut: 0
   onCut:
     m_PersistentCalls:

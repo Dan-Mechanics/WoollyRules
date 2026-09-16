@@ -5,35 +5,23 @@ namespace WoollyRules
 {
     public class Cuttable : MonoBehaviour, ICuttable
     {
-        public bool RuleBrokenOnCut => ruleBrokenOnCut;
-        public bool BlockHover => blockHover;
-        public bool BlockCut => blockCut;
-        public bool HasSoundWhenCut => isButton;
+        public enum Type { Sheep, Cow }
+        public bool RuleBrokenOnCut => type == Type.Cow;
+        public bool IsButton => false;
 
-        [SerializeField] private bool blockHover = default;
-        [SerializeField] private bool blockCut = default;
-        [SerializeField] private bool isButton = default;
-        [SerializeField] private bool ruleBrokenOnCut = default; 
+        [SerializeField] private Type type = default;
         [SerializeField] private UnityEvent onCut = default;
         [SerializeField] private Rigidbody rb = default;
         [SerializeField] private Rigidbody[] rigidbodies = default;
-        private Scissors scissors;
 
-        private void Awake()
-            => scissors = GameObject.FindWithTag("Scissors").GetComponent<Scissors>();
-
-        public virtual void Cut() 
+        public void Cut() 
         {
             for (int i = 0; i < rigidbodies.Length; i++)
             {
-                Rigidbody childRigidbody = rigidbodies[i];
-
-                childRigidbody.linearVelocity = rb.linearVelocity;
-                childRigidbody.angularVelocity = rb.angularVelocity;
+                Rigidbody temp = rigidbodies[i];
+                temp.linearVelocity = rb.linearVelocity;
+                temp.angularVelocity = rb.angularVelocity;
             }
-
-            if (ruleBrokenOnCut && !isButton)
-                scissors.BreakRule();
 
             onCut?.Invoke();
         }

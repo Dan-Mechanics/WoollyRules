@@ -49,14 +49,16 @@ namespace WoollyRules
         public bool GetIsWarning()
             => isWarning;
 
-        private void Cut(ICuttable cuttable) 
+        public void Cut(ICuttable cuttable) 
         {
-            if (!cuttable.BlockCut)
-                onCut?.Invoke();
+            if (cuttable.IsButton)
+            {
+                cuttable.Cut();
+                return;
+            }
 
-            if (!cuttable.HasSoundWhenCut)
-                cutSound.PlayOneShot(cutClip);
-
+            onCut?.Invoke();
+            cutSound.PlayOneShot(cutClip);
             cuttable.Cut();
             if (cuttable.RuleBrokenOnCut)
                 BreakRule();
@@ -74,7 +76,7 @@ namespace WoollyRules
             }
 
             isWarning = cuttable.RuleBrokenOnCut;
-            OnHoverFeedback?.Invoke(!cuttable.BlockHover, cuttable.RuleBrokenOnCut);
+            OnHoverFeedback?.Invoke(true, isWarning);
         }
 
         public void BreakRule()
