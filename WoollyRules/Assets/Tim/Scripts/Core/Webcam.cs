@@ -96,7 +96,7 @@ namespace WoollyRules
         private void Setup()
         {
             webCamTexture = new WebCamTexture();
-            if (!webCamTexture.isPlaying)
+            if (webCamTexture && !webCamTexture.isPlaying)
                 webCamTexture.Play();
 
             print($"showing: {webCamTexture.deviceName}");
@@ -136,6 +136,9 @@ namespace WoollyRules
         }
 
         private void OnDestroy()
-            => webCamTexture?.Stop();
+        {
+            if (webCamTexture)
+                webCamTexture.Stop();
+        }
     }
 }

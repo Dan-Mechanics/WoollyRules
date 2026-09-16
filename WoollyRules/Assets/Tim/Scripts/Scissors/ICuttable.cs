@@ -3,7 +3,7 @@
     public interface ICuttable 
     {
         bool RuleBrokenOnCut { get; }
-        bool IsButton { get; }
+        bool Ignore { get; }
         public void Cut();
     }
 }

@@ -7,7 +7,7 @@ namespace WoollyRules
     {
         public enum Type { Sheep, Cow }
         public bool RuleBrokenOnCut => type == Type.Cow;
-        public bool IsButton => false;
+        public bool Ignore => false;
 
         [SerializeField] private Type type = default;
         [SerializeField] private Rigidbody rb = default;

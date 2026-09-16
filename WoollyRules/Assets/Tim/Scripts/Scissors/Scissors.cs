@@ -51,7 +51,7 @@ namespace WoollyRules
 
         public void Cut(ICuttable cuttable) 
         {
-            if (cuttable.IsButton)
+            if (cuttable.Ignore)
             {
                 cuttable.Cut();
                 return;

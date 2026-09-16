@@ -6,7 +6,7 @@ namespace WoollyRules
     public class CutAllButton : MonoBehaviour, ICuttable
     {
         public bool RuleBrokenOnCut => ruleBrokenOnCut;
-        public bool IsButton => true;
+        public bool Ignore => true;
 
         public event Action<ICuttable> OnCut;
         [SerializeField] private bool ruleBrokenOnCut = default;
