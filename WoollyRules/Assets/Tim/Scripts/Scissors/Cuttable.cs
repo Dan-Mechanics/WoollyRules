@@ -3,9 +3,6 @@ using UnityEngine.Events;
 
 namespace WoollyRules
 {
-    /// <summary>
-    /// Perhaps should be called scissor interactable.
-    /// </summary>
     public class Cuttable : MonoBehaviour
     {
         public bool RuleBrokenOnCut => ruleBrokenOnCut;
@@ -13,25 +10,17 @@ namespace WoollyRules
         public bool BlockCut => blockCut;
         public bool IsButton => isButton;
 
-        [SerializeField] private bool blockHover = false;
-        [SerializeField] private bool blockCut = false;
-        [SerializeField] private bool isButton = false;
-        [SerializeField] private bool ruleBrokenOnCut = false; // this should be something like ruleBrokenOnCut
-
-        /// <summary>
-        /// NOTE: we have to do the same things to the cut piece twice. this is not ideal.
-        /// </summary>
-        [SerializeField] private UnityEvent onCut = null;
-
-        [SerializeField] private Rigidbody rb = null;
-        [SerializeField] private Rigidbody[] rigidbodies = null;
-
+        [SerializeField] private bool blockHover = default;
+        [SerializeField] private bool blockCut = default;
+        [SerializeField] private bool isButton = default;
+        [SerializeField] private bool ruleBrokenOnCut = default; 
+        [SerializeField] private UnityEvent onCut = default;
+        [SerializeField] private Rigidbody rb = default;
+        [SerializeField] private Rigidbody[] rigidbodies = default;
         private Scissors scissors;
 
         private void Awake()
-        {
-            scissors = GameObject.FindWithTag("Scissors").GetComponent<Scissors>();
-        }
+            => scissors = GameObject.FindWithTag("Scissors").GetComponent<Scissors>();
 
         public virtual void Cut() 
         {
@@ -43,8 +32,8 @@ namespace WoollyRules
                 childRigidbody.angularVelocity = rb.angularVelocity;
             }
 
-            // what about the phyiscal button ?
-            if (ruleBrokenOnCut && !isButton) { scissors.BreakRule(); }
+            if (ruleBrokenOnCut && !isButton)
+                scissors.BreakRule();
 
             onCut?.Invoke();
         }

@@ -15,12 +15,12 @@ namespace WoollyRules
         [SerializeField] private AudioSource backgroundMusic = default;
         [SerializeField] private bool musicStopsWhenShowingWebcam = default;
 
+        private Vector2 pivot = new Vector2(0.5f, 0.5f);
         private WebCamTexture webCamTexture;
+        private Color[] webcamColors;
         private Texture2D texture;
         private float nextRefresh;
         private Rect rect;
-        private Vector2 pivot = new Vector2(0.5f, 0.5f);
-        private Color[] webcamColors;
 
         private bool showing;
         private bool setupDone;
@@ -67,13 +67,15 @@ namespace WoollyRules
 
         private IEnumerator Auhtorize()
         {
-            LogWebcams();
-            yield return Application.RequestUserAuthorization(UserAuthorization.WebCam);
+            for (int i = 0; i < WebCamTexture.devices.Length; i++)
+            {
+                print($"webcam {i}: {WebCamTexture.devices[i].name}");
+            }
 
+            yield return Application.RequestUserAuthorization(UserAuthorization.WebCam);
             if (Application.HasUserAuthorization(UserAuthorization.WebCam))
             {
                 print("webcam found.");
-
                 Setup();
             }
             else
@@ -84,31 +86,16 @@ namespace WoollyRules
 
         private void Update()
         {
-            if (!showing)
-                return;
-
-            if (!setupDone)
-                return;
-
-            if (Time.time >= nextRefresh) 
+            if (showing && setupDone && Time.time >= nextRefresh) 
             {
                 RefreshWebcam();
                 nextRefresh = Time.time + refreshInterval;
             }
         }
 
-        private void LogWebcams()
-        {
-            for (int i = 0; i < WebCamTexture.devices.Length; i++)
-            {
-                print($"webcam {i}: {WebCamTexture.devices[i].name}");
-            }
-        }
-
         private void Setup()
         {
             webCamTexture = new WebCamTexture();
-
             if (!webCamTexture.isPlaying)
                 webCamTexture.Play();
 
@@ -122,11 +109,9 @@ namespace WoollyRules
             if (webCamTexture == null || !webCamTexture.isPlaying)
                 return;
 
-            // just in case.
             if (texture.width != webCamTexture.width || texture.height != webCamTexture.height)
             {
                 Debug.LogWarning("if (texture.width != webCamTexture.width || texture.height != webCamTexture.height) was right which is not ideal.");
-                
                 ResizeWebcam();
             }
 
@@ -143,18 +128,14 @@ namespace WoollyRules
         private void ResizeWebcam() 
         {
             print($"webcam dimensions: ({webCamTexture.width}x{webCamTexture.height}).");
-
-            if (matchImageSizeToWebcamSize) { rectTransform.sizeDelta = new Vector2(webCamTexture.width, webCamTexture.height); }
+            if (matchImageSizeToWebcamSize)
+                rectTransform.sizeDelta = new Vector2(webCamTexture.width, webCamTexture.height);
 
             texture = new Texture2D(webCamTexture.width, webCamTexture.height, TextureFormat.RGB24, false);
             rect = new Rect(0f, 0f, texture.width, texture.height);
         }
 
         private void OnDestroy()
-        {
-            if (webCamTexture == null) { return; }
-
-            webCamTexture.Stop();
-        }
+            => webCamTexture?.Stop();
     }
 }

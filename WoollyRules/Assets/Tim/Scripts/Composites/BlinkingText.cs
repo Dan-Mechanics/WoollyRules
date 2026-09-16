@@ -30,7 +30,7 @@ namespace WoollyRules
 
         public override void Blink()
         {
-            if(text.fontStyle == FontStyle.Bold)
+            if (text.fontStyle == FontStyle.Bold)
             {
                 MakeTextNormal();
                 return;
@@ -41,6 +41,9 @@ namespace WoollyRules
         }
 
         private void MakeTextNormal()
-            => text.fontStyle = FontStyle.Normal; text.color = Color.black;
+        {
+            text.fontStyle = FontStyle.Normal; 
+            text.color = Color.black;
+        }
     }
 }

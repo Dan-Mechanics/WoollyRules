@@ -3,35 +3,23 @@ using System.Collections;
 
 namespace WoollyRules
 {
-    /// <summary>
-    /// TODO: add headers.
-    /// </summary>
     public class ScissorsAnimator : MonoBehaviour
     {
-        [SerializeField] private Scissors scissors = null;
-        
-        //[SerializeField] private Transform scissorsVisual = null;
-        [SerializeField] private Transform scissorsForward = null;
-
-        [SerializeField] private Transform[] scissorParts = null;
-        [SerializeField] private Transform[] scissorPartsOpen = null;
-        [SerializeField] private Transform[] scissorPartsClosed = null;
-
-        [SerializeField] private float cutLerpValue = 0f;
-        [SerializeField] private float hoverLerpValue = 0f;
-        [SerializeField] private float openScissorsAngle = 0f;
-
-        [SerializeField] private float cutAnimationTime = 0f;
-
-        private bool isOpen;
-        private bool isCutting;
-
+        [SerializeField] private Scissors scissors = default;
+        [SerializeField] private Transform scissorsForward = default;
+        [SerializeField] private Transform[] scissorParts = default;
+        [SerializeField] private Transform[] scissorPartsOpen = default;
+        [SerializeField] private Transform[] scissorPartsClosed = default;
+        [SerializeField] private float cutLerpValue = default;
+        [SerializeField] private float hoverLerpValue = default;
+        [SerializeField] private float openScissorsAngle = default;
+        [SerializeField] private float cutAnimationTime = default;
         private WaitForSeconds cutDelay;
+        private bool isCutting;
+        private bool isOpen;
 
         private void Awake()
-        {
-            cutDelay = new WaitForSeconds(cutAnimationTime);
-        }
+            => cutDelay = new WaitForSeconds(cutAnimationTime);
 
         private void Start()
         {
@@ -50,23 +38,19 @@ namespace WoollyRules
         }
 
         private void CheckIfShouldOpen(bool isCuttable, bool ruleBrokenOnCut)
-        {
-            isOpen = isCuttable;
-        }
+            => isOpen = isCuttable;
 
         private void FixedUpdate()
         {
-            //areScissorsOpen = Input.GetKey(KeyCode.Mouse1);
-            //isDoingCutAnimation = Input.GetKey(KeyCode.Mouse0);
-
             transform.localPosition = Vector3.Lerp(transform.localPosition, isCutting ? scissorsForward.localPosition : Vector3.zero, cutLerpValue);
-            
             for (int i = 0; i < scissorParts.Length; i++)
             {
-                //scissorParts[i].localRotation = Quaternion.Lerp(scissorParts[i].localRotation, isOpen && !isCutting ? scissorPartsOpen[i].localRotation : scissorPartsClosed[i].localRotation, hoverLerpValue);
                 if (!isCutting)
                 {
-                    scissorParts[i].localRotation = Quaternion.Lerp(scissorParts[i].localRotation, isOpen ? scissorPartsOpen[i].localRotation : scissorPartsClosed[i].localRotation, hoverLerpValue);
+                    scissorParts[i].localRotation = Quaternion.Lerp(
+                        scissorParts[i].localRotation,
+                        isOpen ? scissorPartsOpen[i].localRotation : scissorPartsClosed[i].localRotation,
+                        hoverLerpValue);
                 }
                 else 
                 {
@@ -77,21 +61,14 @@ namespace WoollyRules
 
         public void Cut() 
         {
-            if (isCutting) { return; }
-
-            StartCoroutine(CutCoroutine());
+            if (!isCutting)
+                StartCoroutine(CutDelayed());
         }
 
-
-        /// <summary>
-        /// D.R.Y !!!
-        /// </summary>
-        private IEnumerator CutCoroutine() 
+        private IEnumerator CutDelayed() 
         {
             isCutting = true;
-
             yield return cutDelay;
-
             isCutting = false;
         }
     }

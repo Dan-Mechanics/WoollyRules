@@ -3,52 +3,38 @@ using UnityEngine.UI;
 
 namespace WoollyRules
 {
-    /// <summary>
-    /// Make sure to add the scussors cursor back into the yeet.
-    /// </summary>
     public class ScissorsCursor : MonoBehaviour
     {
-        //public Vector2 CursorPosition => cursorPosition;
-
-        [SerializeField] private Scissors scissors = null;
-        [SerializeField] private RectTransform rect = null;
-        [SerializeField] private Image image = null;
-        [SerializeField] private Sprite closedScissors = null;
-        [SerializeField] private Sprite openScissors = null;
-
-        //private Vector2 cursorPosition;
+        [SerializeField] private Scissors scissors = default;
+        [SerializeField] private RectTransform rect = default;
+        [SerializeField] private Image image = default;
+        [SerializeField] private Sprite closedScissors = default;
+        [SerializeField] private Sprite openScissors = default;
 
         private void Start()
         {
-            //Application.targetFrameRate = 300;
             Cursor.visible = false;
-
-            if (scissors != null)
-            {
-                scissors.OnHoverFeedback += ChangeCursorSprite;
-            }
-
             ChangeCursorSprite(false, false);
+            if (scissors)
+                scissors.OnHoverFeedback += ChangeCursorSprite;
         }
 
-        private void Update() => PlaceCursor();
+        private void Update() 
+            => PlaceCursor();
 
         private void PlaceCursor()
         {
             Vector2 cursorPosition = Input.mousePosition;
-            cursorPosition.x -= Screen.width / 2f;
-            cursorPosition.y -= Screen.height / 2f;
+            cursorPosition.x -= Screen.width * 0.5f;
+            cursorPosition.y -= Screen.height * 0.5f;
 
             rect.anchoredPosition = cursorPosition;
         }
 
-        /// <summary>
-        /// TODO: have an indication in the scissors when ur not allowed to cut ( the bear for example ). VVV
-        /// </summary>
         private void ChangeCursorSprite(bool isCuttable, bool ruleBrokenOnCut) 
         {
-            // if we destroy image when closing game then this might throw an error thats why this is here.
-            if (image == null) { return; }
+            if (image == null)
+                return;
 
             image.sprite = isCuttable ? openScissors : closedScissors;
             image.color = ruleBrokenOnCut ? Color.red : Color.white;
