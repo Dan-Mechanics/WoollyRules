@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace WoollyRules
 {
-    public class SheepAnimation : MonoBehaviour
+    public class AnimalAnimation : MonoBehaviour
     {
         [SerializeField] private Transform graphic = default;
         [SerializeField] private Transform state1Graphic = default;

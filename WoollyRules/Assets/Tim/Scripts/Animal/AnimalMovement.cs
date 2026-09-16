@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace WoollyRules
 {
-    public class SheepMovement : MonoBehaviour
+    public class AnimalMovement : MonoBehaviour
     {
         [SerializeField] private Rigidbody rb = default;
         [SerializeField] private float forwardAccel = default;
