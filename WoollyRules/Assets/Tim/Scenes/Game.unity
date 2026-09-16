@@ -1736,9 +1736,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  onWarnRule:
-    m_PersistentCalls:
-      m_Calls: []
   onCut:
     m_PersistentCalls:
       m_Calls:
@@ -2380,8 +2377,8 @@ MonoBehaviour:
   onCut:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: WoollyRules.CuttableHolder, Assembly-CSharp
+      - m_Target: {fileID: 1824298469}
+        m_TargetAssemblyTypeName: WoollyRules.CutAllButton, Assembly-CSharp
         m_MethodName: CutAll
         m_Mode: 1
         m_Arguments:

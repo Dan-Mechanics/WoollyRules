@@ -22,7 +22,6 @@ namespace WoollyRules
 
         [Header("Unity Events")]
         [SerializeField] private UnityEvent onRuleBroken = default;
-        [SerializeField] private UnityEvent onWarnRule = default;
         [SerializeField] private UnityEvent onCut = default;
         private float nextBreakRuleTime;
         private bool isWarning;
@@ -75,10 +74,7 @@ namespace WoollyRules
             }
 
             isWarning = cuttable.RuleBrokenOnCut;
-            if (isWarning)
-                onWarnRule?.Invoke();
-
-            OnHoverFeedback?.Invoke(!cuttable.BlockHover, isWarning);
+            OnHoverFeedback?.Invoke(!cuttable.BlockHover, cuttable.RuleBrokenOnCut);
         }
 
         public void BreakRule()
