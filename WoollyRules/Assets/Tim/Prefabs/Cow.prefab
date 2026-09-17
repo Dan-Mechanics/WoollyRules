@@ -495,6 +495,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5752910209636326158}
     - target: {fileID: 7415113377439332812, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
+      propertyPath: upBounce
+      value: 
+      objectReference: {fileID: 24545991431195601}
+    - target: {fileID: 7415113377439332812, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
+      propertyPath: downBounce
+      value: 
+      objectReference: {fileID: 7908971698938278989}
+    - target: {fileID: 7415113377439332812, guid: 873ac4319968629409b71c89cddb23a0, type: 3}
       propertyPath: verticalMult
       value: 0.08
       objectReference: {fileID: 0}

@@ -86,10 +86,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64829bb2de20db14996eadf6002c36d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blockHover: 0
-  blockCut: 0
-  hasSoundWhenCut: 1
-  ruleBrokenOnCut: 0
+  type: 0
+  rb: {fileID: 2127664283110895623}
+  rigidbodies:
+  - {fileID: 2127664284955403447}
+  - {fileID: 895259557952834500}
   onCut:
     m_PersistentCalls:
       m_Calls:
@@ -189,10 +190,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  rb: {fileID: 2127664283110895623}
-  rigidbodies:
-  - {fileID: 2127664284955403447}
-  - {fileID: 895259557952834500}
 --- !u!114 &4000651752663161429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,8 +245,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graphic: {fileID: 4737771539907358173}
-  state1Graphic: {fileID: 2194677274618111708}
-  state2Graphic: {fileID: 6677751593238672947}
+  upBounce: {fileID: 2194677274618111708}
+  downBounce: {fileID: 6677751593238672947}
   period: 0.175
   waveMult: 2
 --- !u!114 &3172553139223505468
@@ -714,7 +711,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3090685767800939585, guid: 219420982f5c97b46a85a19f3f7e153d, type: 3}
       propertyPath: m_Name
-      value: Luke Sheep Graphic
+      value: graphic
       objectReference: {fileID: 0}
     - target: {fileID: 3090685767800939585, guid: 219420982f5c97b46a85a19f3f7e153d, type: 3}
       propertyPath: m_IsActive
